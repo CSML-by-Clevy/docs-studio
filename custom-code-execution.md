@@ -2,7 +2,9 @@
 
 When used together with custom "serverless" function runtimes \(cloud-based such as [AWS Lambda](https://aws.amazon.com/fr/lambda/features/), [Azure Functions](https://azure.microsoft.com/fr-fr/services/functions/), [Google Cloud Functions](https://cloud.google.com/functions/docs/)\), or on-premise with [FnProject](https://fnproject.io/), [OpenFaas](https://docs.openfaas.com/) or [OpenWhisk](https://openwhisk.apache.org/)\), the CSML interpreter is able to automatically handle the execution of any payload, any code, in any language.
 
-With CSML Functions, you can integrate your own business logic, on your own servers, in your language of choice. And by using the [CSML Studio by Clevy](https://www.csml.dev), the heavy setup is already done for you, which means that you can import functions in java, python, nodejs, go... without any additional setup, simply by uploading your code and calling the function in your CSML script.
+With CSML Functions, you can integrate your own business logic, on your own servers, in your language of choice. When using the [CSML Studio](https://studio.csml.dev/auth/register), the heavy setup is already done for you, which means that you can import functions in java, python, nodejs, go... without any additional setup, simply by uploading your code and calling the function in your CSML script.
+
+Behind the scenes, your bot's `fn_endpoint` will be called.
 
 Your functions can return any literal or complex type, as defined in the Literals, Objects, Arrays section.
 

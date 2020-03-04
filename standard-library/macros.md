@@ -17,9 +17,9 @@ Given an array, return it with its elements in a random order.
 Especially useful in questions to randomize the available options!
 
 ```cpp
-use Button("Blue") as btn1
-use Button("Red") as btn2
-use Shuffle([btn1, btn2]) as btns
+do btn1 = Button("Blue")
+do btn2 = Button("Red")
+do btns = huffle([btn1, btn2])
 
 say Question(
   title = "Select a pill",

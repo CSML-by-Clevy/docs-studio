@@ -71,7 +71,7 @@ somestep:
 Whether or not a variable "equals", in any way, another variable.
 
 ```cpp
-use Button(
+do Button(
   title = "I agree",
   accept = ["OK", "yes", "right"]
 ) as btn
@@ -97,18 +97,20 @@ By default, the scope is bot/user/channel. The same user on a different channel,
 remember truc = "tutu"
 
 // remember a local variable
-use 123 as myvar
+do myvar = 123
 remember tata = myvar
 
 // overriding a local variable's scope
-use 123 as myvar // `myvar` has a local scope
+do myvar = 123 // `myvar` has a local scope
 remember myvar = myvar // `myvar` is now a globally-available memory
-use myvar as myvar // `myvar` will still be available globally
+do myvar = myvar // `myvar` will still be available globally
 ```
 
 ## do
 
 Execute the following expression. Usually used for executing functions without caring for its return value, or for updating values of objects or arrays.
+
+When used in an assignment \(as in `x = y`\), the value `x` is saved as a local \(temporary\) variable.
 
 ```cpp
 // execute a function
@@ -161,7 +163,7 @@ say "The answer is {{answer}}"
 Iterate over each element of an array.
 
 ```cpp
-use ["a", "b", "c"] as array
+do array = ["a", "b", "c"]
 foreach (val, index) in array {
   say "at position {{index}} is element with value {{val}}"
 }
