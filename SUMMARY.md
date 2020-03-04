@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 
-## Key Concepts
+## 🤖 Key Concepts
 
 * [Navigating in a CSML Bot](navigating-in-a-csml-bot.md)
 * [Sending Messages](sending-messages.md)
