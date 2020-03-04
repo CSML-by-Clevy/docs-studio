@@ -14,14 +14,14 @@
 * [Automatic Type Inference](automatic-type-inference.md)
 * [Literals, Objects, Arrays](literals-objects-arrays.md)
 * [Custom Code Execution](custom-code-execution.md)
-* [Standard Library](standard-library-1/README.md)
-  * [Keywords](standard-library-1/keywords-1.md)
-  * [Macros](standard-library-1/macros.md)
-  * [String methods](standard-library-1/string-methods.md)
-  * [Array methods](standard-library-1/array-methods.md)
-  * [Object methods](standard-library-1/object-methods.md)
-  * [Number methods](standard-library-1/number-methods.md)
-  * [Generic methods](standard-library-1/generic-methods.md)
+* [Standard Library](standard-library/README.md)
+  * [Keywords](standard-library/keywords.md)
+  * [Macros](standard-library/macros.md)
+  * [String methods](standard-library/string-methods.md)
+  * [Array methods](standard-library/array-methods.md)
+  * [Object methods](standard-library/object-methods.md)
+  * [Number methods](standard-library/number-methods.md)
+  * [Generic methods](standard-library/generic-methods.md)
 
 ## 🔌 API
 

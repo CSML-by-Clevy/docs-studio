@@ -1,7 +1,5 @@
 # Variables and Memory
 
-## Introduction
-
 CSML has two types of variables: local variables, which have a very short lifecycle, and more global variables, which are called `memories`.
 
 Local variables are only usable within the current step. It is rather a way to write more readable, expressive code. But they are really powerful, because they allow you to do everything that a regular memory does, but temporarily. For more information about local variables, see the `use..as` keyword.
