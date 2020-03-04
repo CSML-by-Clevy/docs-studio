@@ -108,7 +108,9 @@ do myvar = myvar // `myvar` will still be available globally
 
 ## do
 
-Execute the following expression. Usually used for executing functions without caring for its return value, or for updating values of objects or arrays.
+Execute the following expression.
+
+Usually used for executing functions without caring for its return value, or for updating values of objects or arrays.
 
 When used in an assignment \(as in `x = y`\), the value `x` is saved as a local \(temporary\) variable.
 
@@ -134,7 +136,8 @@ Save any value as a local variable, only available within the step. Local variab
 
 ```cpp
 do Button("A") as btn1
-do Button("B") as btn2
+// is equivalent to
+do btn2 = Button("B")
 
 // say and save a component at the same time
 say Question(
