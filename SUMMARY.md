@@ -17,11 +17,14 @@
 
 ## 📖 Standard Library
 
-* [Introduction](standard-library/introduction.md)
-* [Keywords](standard-library/keywords-1.md)
-* [Macros](standard-library/macros.md)
-* [String methods](standard-library/string-methods.md)
-* [Generic methods](standard-library/generic-methods.md)
+* [Standard Library](standard-library/standard-library/README.md)
+  * [Keywords](standard-library/standard-library/keywords-1.md)
+  * [Macros](standard-library/standard-library/macros.md)
+  * [String methods](standard-library/standard-library/string-methods.md)
+  * [Array methods](standard-library/standard-library/array-methods.md)
+  * [Object methods](standard-library/standard-library/object-methods.md)
+  * [Number methods](standard-library/standard-library/number-methods.md)
+  * [Generic methods](standard-library/standard-library/generic-methods.md)
 
 ## 🔌 API
 
