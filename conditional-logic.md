@@ -8,6 +8,19 @@ A large part of developing CSML flows is about finding out whether an event matc
 
 * comparison operators `==`, `!=`, `<`, `>`, `<=`, `>=`
 * `match` keyword
+* `&&` and `||` operators
+* `if`, `else if`, `else` keywords
+
+```cpp
+do btn = Button("yes")
+do num = 1987
+do batman = "Bruce Wayne"
+
+if ("Hello!" match btn) say "Not at all"
+if (54 < num) say "Absolutely true!"
+if (3 >= 2 && batman != "Robin") say "Correct"
+if (username match batman) say "I'm Batman"
+```
 
 
 
