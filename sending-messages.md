@@ -2,6 +2,8 @@
 
 CSML is able to handle many types of messages by default, and can be extended to accomodate any number of custom types as well \(feature documentation pending\).
 
+To send a message to the end user, simply use the keyword `say` followed by the message type you want to send. 
+
 ```cpp
 somestep:
   say "I'm a text message"
@@ -22,7 +24,7 @@ somestep:
   )
 ```
 
-To send a message to the end user, simply use the keyword `say` followed by the message type you want to send. Below is a list of default valid message components, which are automatically converted to nicely formatted messages for the channel in which the user is talking with the bot:
+Below is a list of default valid message components, which are automatically converted to nicely formatted messages for the channel in which the user is talking with the bot.
 
 | name | description | fallback |
 | :--- | :--- | :--- |
@@ -36,5 +38,5 @@ To send a message to the end user, simply use the keyword `say` followed by the 
 | Button\(string\) | Display `string` inside a clickable button | Text\(string\*\) |
 | Question\(title = string\(, buttons = \[Button\]\)\) | Display a list of buttons with a header of `string`. Title parameter is optional. | Text\(string\) + list of buttons |
 
-\* the content of the parameter may be modified to accommodate the target channel requirements
+> _\* the content of the parameter may be modified to accommodate the target channel requirements_
 

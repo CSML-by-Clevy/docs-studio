@@ -63,3 +63,13 @@ do items[1] = "Z" // ["a", "Z", "x"]
 
 To print any value as a string, simply use the `Text(value)` component or use the curly-brace template syntax `"{{value}}"`
 
+```cpp
+do items = ["a", "b", "c"]
+
+// print a stringified version of the array
+say "{{items}}"
+
+// alternatively, you can also use the .to_string() array method
+say items.to_string()
+```
+
