@@ -13,6 +13,7 @@
 * [Conditional logic](conditional-logic.md)
 * [Automatic Type Inference](automatic-type-inference.md)
 * [Literals, Objects, Arrays](literals-objects-arrays.md)
+* [Custom Code Execution](custom-code-execution.md)
 
 ## Standard Library
 
@@ -21,5 +22,4 @@
 * [Macros](standard-library/macros.md)
 * [String methods](standard-library/string-methods.md)
 * [Generic methods](standard-library/generic-methods.md)
-* [Custom Code Execution](custom-code-execution.md)
 
