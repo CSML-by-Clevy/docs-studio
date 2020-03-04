@@ -15,11 +15,19 @@
 * [Literals, Objects, Arrays](literals-objects-arrays.md)
 * [Custom Code Execution](custom-code-execution.md)
 
-## Standard Library
+## 📖 Standard Library
 
 * [Introduction](standard-library/introduction.md)
 * [Keywords](standard-library/keywords-1.md)
 * [Macros](standard-library/macros.md)
 * [String methods](standard-library/string-methods.md)
 * [Generic methods](standard-library/generic-methods.md)
+
+## 🔌 API
+
+* [Endpoints](api/endpoints.md)
+* [Authentication](api/authentication.md)
+* [Chat API](api/chat-api.md)
+* [Conversations API](api/conversations-api.md)
+* [Bot API](api/bot-api.md)
 
