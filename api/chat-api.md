@@ -1,3 +1,7 @@
+---
+description: Interact with your bot using the Chat API
+---
+
 # Chat API
 
 ## POST /chat

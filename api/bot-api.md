@@ -1,8 +1,8 @@
+---
+description: The Bot API allows you to retrieve information about your bot and its flows
+---
+
 # Bot API
-
-
-
-The Bot API allows you to retrieve information about your bot and its flows
 
 ## GET /bot
 

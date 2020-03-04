@@ -1,6 +1,8 @@
+---
+description: 'With the Conversations API, you can manage your client''s conversation statuses'
+---
+
 # Conversations API
-
-
 
 ## POST /conversations/open
 
