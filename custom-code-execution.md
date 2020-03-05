@@ -4,9 +4,7 @@ When used together with custom "serverless" function runtimes \(cloud-based such
 
 With CSML Functions, you can integrate your own business logic, on your own servers, in your language of choice. When using the [CSML Studio](https://studio.csml.dev/auth/register), the heavy setup is already done for you, which means that you can import functions in java, python, nodejs, go... without any additional setup, simply by uploading your code and calling the function in your CSML script.
 
-Behind the scenes, your bot's `fn_endpoint` will be called.
-
-Your functions can return any literal or complex type, as defined in the Literals, Objects, Arrays section.
+CSML Studio also comes with [many ready-to-use integrations](https://www.csml.dev/integrations.html) that are installable in one-click.
 
 ```cpp
 findweather:
