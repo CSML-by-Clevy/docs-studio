@@ -1,4 +1,4 @@
-# Interpolation
+# Using Variables in Messages
 
 To output the value of any variable in a string, you can use the string interpolation helper: double curly braces `{{ }}`.
 

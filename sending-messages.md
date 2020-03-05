@@ -1,6 +1,6 @@
 # Sending Messages
 
-CSML is able to handle many types of messages by default, and can be extended to accomodate any number of custom types as well \(feature documentation pending\).
+CSML is able to handle many types of messages by default, and can be extended to accommodate any number of custom types as well \(feature documentation pending\).
 
 To send a message to the end user, simply use the keyword `say` followed by the message type you want to send. 
 
@@ -24,6 +24,8 @@ somestep:
   )
 ```
 
+## Message types
+
 Below is a list of default valid message components, which are automatically converted to nicely formatted messages for the channel in which the user is talking with the bot.
 
 | name | description | fallback |
@@ -39,4 +41,20 @@ Below is a list of default valid message components, which are automatically con
 | Question\(title = string\(, buttons = \[Button\]\)\) | Display a list of buttons with a header of `string`. Title parameter is optional. | Text\(string\) + list of buttons |
 
 > _\* the content of the parameter may be modified to accommodate the target channel requirements_
+
+## Asking Questions
+
+A conversation with a chatbot is not very different from a human-to-human dialogue: sometimes the user talks, sometimes the bot talks.
+
+CSML provides a solution when you need the chatbot wait for the user's input: using the `hold` keyword, the chatbot will remember its position in the conversation and simply wait until the user says something, then continue from there.
+
+```cpp
+somestep:
+  say Question("Do you like cheese?", buttons=[Button("yes"), Button("no")])
+  
+  hold
+
+  if (event == "yes") say "I'm glad to know that you like cheese!"
+  else say "Oh that's too bad!"
+```
 

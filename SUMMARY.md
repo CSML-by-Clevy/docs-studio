@@ -11,10 +11,10 @@
 
 * [Navigating in a CSML Bot](navigating-in-a-csml-bot.md)
 * [Sending Messages](sending-messages.md)
-* [Asking Questions](asking-questions.md)
 * [Receiving Events](receiving-events.md)
-* [Variables and Memory](variables-and-memory.md)
-* [Interpolation](interpolation.md)
+* [Memory](memory/README.md)
+  * [Using Variables in Messages](memory/interpolation.md)
+  * [Temporary and Long-Term variables](memory/temporary-and-long-term-variables.md)
 * [Conditional logic](conditional-logic.md)
 * [Automatic Type Inference](automatic-type-inference.md)
 * [Literals, Objects, Arrays](literals-objects-arrays.md)
