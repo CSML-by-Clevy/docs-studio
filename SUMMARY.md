@@ -2,6 +2,11 @@
 
 * [Introduction](README.md)
 
+## 🦜Getting started
+
+* [Discover CSML](getting-started/discover-csml.md)
+* [Create Your First Bot](getting-started/create-your-first-bot.md)
+
 ## 🤖 Key Concepts
 
 * [Navigating in a CSML Bot](navigating-in-a-csml-bot.md)
