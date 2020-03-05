@@ -37,7 +37,7 @@ In a conversational logic, CSML allows the chatbot to wait for a user answer usi
 
 Here is an example of a simple interaction where the bot is asking if the user likes guitar and waiting for two specific answers in order to trigger actions.
 
-![](https://www.csml.dev/img/gs/gs-interactions.gif)
+![](../.gitbook/assets/gs-interactions.gif)
 
 ## **Use memories and local variables**
 
@@ -55,7 +55,7 @@ You can select an existing integration in the apps library or add your own funct
 Once your function is uploaded, you can test it and call it into your CSML step.  
 Here’s an example of a function available in the apps library, performing any HTTP request easily!
 
-![](https://www.csml.dev/img/gs/gs-functions.gif)
+![](../.gitbook/assets/gs-functions.gif)
 
 ## **Deploy your chatbot**
 
