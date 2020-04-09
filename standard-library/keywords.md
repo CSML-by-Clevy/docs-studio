@@ -186,7 +186,7 @@ remember lightsabers = [
   {"color": "green", "owner": "Luke Skywalker"},
  ]
 
-foreach ls in lightsabers {
+foreach (ls) in lightsabers {
   say "{{ls.owner}} had a {{ls.color}} lightsaber"
   // we want to stop after we find the first green lightsaber
   if (ls.color == "green") break
