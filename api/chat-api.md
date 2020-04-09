@@ -265,9 +265,42 @@ CSML message components all have a matching message format for client use.
     "title": "Question",
     "buttons": [Button]
   },
-  "content_type": "video"
+  "content_type": "question"
 }
 ```
 
+### Imbricated components
 
+In cases where components are imbricated, the `content` wrapper is only applied for the top-most element.
+
+For example: 
+
+```cpp
+// CSML
+say Question(
+    "Where is Brian",
+    buttons = [
+        Button("In the kitchen"),
+        Button("Somewhere else"),
+    ]
+)
+
+// JSON output
+{
+    "content": {
+    "title": "Question",
+    "buttons": [
+      {
+        "content_type": "button",
+        "title": "In the kitchen",
+      },
+      {
+        "content_type": "button",
+        "title": "Somewhere else",
+      },
+    ],
+  },
+  "content_type": "video"
+}
+```
 
