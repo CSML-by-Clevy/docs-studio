@@ -36,3 +36,9 @@
 * [Conversations API](api/conversations-api.md)
 * [Bot API](api/bot-api.md)
 
+## 📱Channels
+
+* [Webapp](channels/webapp/README.md)
+  * [Installation](channels/webapp/installation.md)
+  * [Configuration](channels/webapp/configuration.md)
+

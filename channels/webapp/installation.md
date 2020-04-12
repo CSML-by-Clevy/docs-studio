@@ -1,0 +1,24 @@
+# Installation
+
+To create a webapp channel, click on the **channels** menu then on **create new channel**.
+
+![](../../.gitbook/assets/capture-de-cran-2020-04-12-22.10.30.png)
+
+Click on **Webapp**, add a **name** and a **description** \(you can change it later\), then click on **Submit**.
+
+![](../../.gitbook/assets/capture-de-cran-2020-04-12-22.10.49.png)
+
+After a few seconds, your webapp is created and ready to use!
+
+![](../../.gitbook/assets/capture-de-cran-2020-04-12-22.13.12.png)
+
+There are two ways to use a webapp: either by visiting the link at the top, or by adding the embed link for integrating it into your existing website. It works on mobile too!
+
+![Full screen view](../../.gitbook/assets/capture-de-cran-2020-04-12-22.21.12%20%281%29.png)
+
+![Mobile view](../../.gitbook/assets/capture-de-cran-2020-04-12-22.21.56.png)
+
+![Example of a website using an embedded webapp \(or chatbox\)](../../.gitbook/assets/capture-de-cran-2020-04-12-22.24.27.png)
+
+## 
+
