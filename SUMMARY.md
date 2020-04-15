@@ -42,4 +42,13 @@
 * [Webapp](channels/webapp/README.md)
   * [Installation](channels/webapp/installation.md)
   * [Configuration](channels/webapp/configuration.md)
+  * [Features](channels/webapp/features.md)
+* [Messenger](channels/messenger.md)
+* [Whatsapp \(via MessageBird\)](channels/whatsapp-via-messagebird/README.md)
+  * [Installation](channels/whatsapp-via-messagebird/installation.md)
+  * [Features](channels/whatsapp-via-messagebird/features.md)
+* [Workplace Chat](channels/workplace-chat.md)
+* [Google Assistant](channels/google-assistant.md)
+* [Slack](channels/slack.md)
+* [Upcoming channels](channels/upcoming-channels.md)
 
