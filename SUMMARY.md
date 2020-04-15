@@ -38,6 +38,7 @@
 
 ## 📱Channels
 
+* [Introduction](channels/introduction.md)
 * [Webapp](channels/webapp/README.md)
   * [Installation](channels/webapp/installation.md)
   * [Configuration](channels/webapp/configuration.md)
