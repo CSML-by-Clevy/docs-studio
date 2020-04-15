@@ -15,7 +15,7 @@ Whatsapp \(via MessageBird\) supports the following components:
 
 Markdown is partially supported \(only **bold**, _italic_ and ~~strikethrough~~\). 
 
-To send completely custom requests, use `say Object(...)` . The content of the object will be forwarded as is in the request body.
+To send completely custom requests, use `say Object(...)` . The content of the object will be forwarded as is in the request body. For a complete reference, please visit [MessageBird's API documentation](https://developers.messagebird.com/api/conversations/#whatsapp-api).
 
 ## Limitations
 
@@ -54,13 +54,17 @@ You must upload videos in mp4 format. Videos hosted on Youtube, Dailymotion or V
 
 You must upload audio files in mp3 format. Audio files hosted on Spotify, Deezer or Soundcloud will not display \(use the `Url()` component\).
 
-### Files \(any type\)
+### Files
 
-There is a hard limit of 25MB for all uploaded files. Also, the file upload process happens asynchronously on Whatsapp, so messages might show out of order if there is a large upload with not enough time left for its upload before sending the next message.
+There is a hard limit of 25MB for all uploaded files \(including image, video and audio files\).
+
+In a `File()` component, not all file types are supported. A list of supported file types could not be found, but it is safe to recommend using very common file types only.
+
+The file upload process happens asynchronously on Whatsapp, so messages might show out of order if there is a large upload with not enough time left for its upload before sending the next message.
 
 ### Carousel, Card
 
-Carousel\(\) and Card\(\) are currently not supported.
+`Carousel()` and `Card()` components are currently not supported.
 
 
 
