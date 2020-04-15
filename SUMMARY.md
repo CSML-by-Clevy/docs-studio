@@ -22,6 +22,7 @@
   * [Automatic Type Inference](automatic-type-inference/automatic-type-inference.md)
 * [Standard Library](standard-library/README.md)
   * [Keywords](standard-library/keywords.md)
+  * [HTTP](standard-library/http.md)
   * [Macros](standard-library/macros.md)
   * [String methods](standard-library/string-methods.md)
   * [Array methods](standard-library/array-methods.md)
