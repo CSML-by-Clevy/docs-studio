@@ -75,7 +75,7 @@ email:
 	hold
 	
 	// does the user's input look like an email address?
-	if (event.contains("@") {
+	if (event.to_string().contains("@")) {
 		remember nlEmail = event
 		goto save
 	}
@@ -182,7 +182,7 @@ email:
 	hold
 	
 	// does the user's input look like an email address?
-	if (event.contains("@") {
+	if (event.to_string().contains("@")) {
 		remember nlEmail = event
 		goto save
 	}
