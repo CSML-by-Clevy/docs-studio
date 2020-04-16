@@ -30,6 +30,8 @@
   * [Number methods](standard-library/number-methods.md)
   * [Generic methods](standard-library/generic-methods.md)
 
+## 🔌 API
+
 ## 📱Channels
 
 * [Introduction](channels/introduction.md)
