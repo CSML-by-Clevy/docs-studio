@@ -30,16 +30,14 @@
   * [Number methods](standard-library/number-methods.md)
   * [Generic methods](standard-library/generic-methods.md)
 
-## 🔌 API
-
-* [Introduction](api/introduction.md)
-* [Chat API](api/chat-api.md)
-* [Conversations API](api/conversations-api.md)
-* [Bot API](api/bot-api.md)
-
 ## 📱Channels
 
 * [Introduction](channels/introduction.md)
+* [API](channels/api/README.md)
+  * [Getting started](channels/api/introduction.md)
+  * [Chat API](channels/api/chat-api.md)
+  * [Bot API](channels/api/bot-api.md)
+  * [Conversations API](channels/api/conversations-api.md)
 * [Webapp](channels/webapp/README.md)
   * [Installation](channels/webapp/installation.md)
   * [Configuration](channels/webapp/configuration.md)

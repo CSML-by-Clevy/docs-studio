@@ -6,7 +6,7 @@
 
 Written itself in Rust and fully Turing-complete, the CSML acts as a linguistic/syntactic abstraction layer, designed for humans who want to let other humans interact with any machine, in any setting. The syntax is designed to be learned in a matter of minutes, but also scales to any complexity of chatbot.
 
-The CSML handles short and long-term memory slots, metadata injection, and can be plugged in with any external system by means of standard integrations or [custom APIs](../api/chat-api.md), as well as integrated into other programming languages with parallelized runtimes.
+The CSML handles short and long-term memory slots, metadata injection, and can be plugged in with any external system by means of standard integrations or [custom APIs](../channels/api/chat-api.md), as well as integrated into other programming languages with parallelized runtimes.
 
 To learn more about CSML, you can read this [article](https://medium.com/clevyio/announcing-csml-a-new-open-source-language-to-easily-build-full-featured-chatbots-3787e43ab707).
 
