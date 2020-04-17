@@ -24,7 +24,7 @@ You can create your conversation modifying an existing flow or [creating your ow
 
 A flow is a CSML file which contains several steps to be followed during a conversation with a user. The first instructions have to be placed in the start step, then you can move from a step to the next one using `goto stepname`, and finish the current conversation using `goto end`. Each step contains instructions on how to handle the interactions within the step: what to say, what to remember, where to go...
 
-For the bot to say a sentence, you just need to use the keyword `say` followed by the [type of message](../sending-messages.md#message-types) you want to send.The keyword `say` allows:
+For the bot to say a sentence, you just need to use the keyword `say` followed by the [type of message](../key-concepts/sending-messages.md#message-types) you want to send.The keyword `say` allows:
 
 * to display a message: text, questions, urls, components \(image, video, audio, buttons…\)
 * to simulate behaviors, such as waiting time \(Wait\) or message composition \(Typing\)

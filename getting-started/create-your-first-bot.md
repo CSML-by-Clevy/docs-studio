@@ -17,9 +17,9 @@ Note that `Typing(2000)` needs to be preceded by the `say` keyword, this will sh
 
 ```cpp
 start:
-	say Typing(2000)
-	say "Hi 🤓, I just need a few informations in order to add you to my mailing list."
-	goto firstname
+    say Typing(2000)
+    say "Hi 🤓, I just need a few informations in order to add you to my mailing list."
+    goto firstname
 ```
 
 We can then move on to the next step in which we will start asking for user informations.
@@ -34,12 +34,12 @@ In order to remember what the user said, we can ask the chat to `remember nlFirs
 
 ```cpp
 firstname:
-	say Typing(2000)
-	say "What's your firstname?"
-	hold
-	
-	remember nlFirstname = event 
-	goto lastname
+    say Typing(2000)
+    say "What's your firstname?"
+    hold
+
+    remember nlFirstname = event 
+    goto lastname
 ```
 
 Let's move to the next step : `lastname`
@@ -52,39 +52,38 @@ As the user answers, we check if the input matches the button or what it accepts
 
 ```cpp
 lastname:
-	say Typing(2000)
-	do btnLastname = Button(
-		title = "I don't want to share my lastname",
-		accept = ["No", "No", "no", "NA", "N/A", "na", "n/a"]
-	)
-	
-	say Question(title="What's your lastname?", buttons=[btnLastname])
-	hold
-	
-	if (event match btnLastname) remember nlLastname = "N/A"
-	else remember nlLastname = event
-	goto email
+    say Typing(2000)
+    do btnLastname = Button(
+        title = "I don't want to share my lastname",
+        accept = ["No", "No", "no", "NA", "N/A", "na", "n/a"]
+    )
+
+    say Question(title="What's your lastname?", buttons=[btnLastname])
+    hold
+
+    if (event match btnLastname) remember nlLastname = "N/A"
+    else remember nlLastname = event
+    goto email
 ```
 
 The same goes with the email, only this time we're checking if the user input contains a `@`, if it doesn't we start the step again, otherwise we remember the email and move on to save everything.
 
 ```cpp
 email:
-	say Typing(2000)
-	say "What's your email address?"
-	hold
-	
-	// does the user's input look like an email address?
-	if (event.to_string().contains("@")) {
-		remember nlEmail = event
-		goto save
-	}
+    say Typing(2000)
+    say "What's your email address?"
+    hold
 
-	// otherwise the input is probably not a valid email address
-	// we need to ask them again
-	say "That's not a valid email address 😱"
-	goto email
+    // does the user's input look like an email address?
+    if (event.to_string().contains("@")) {
+        remember nlEmail = event
+        goto save
+    }
 
+    // otherwise the input is probably not a valid email address
+    // we need to ask them again
+    say "That's not a valid email address 😱"
+    goto email
 ```
 
 ## **Sending data to Mailchimp**
@@ -95,20 +94,20 @@ Note that `Fn(...)` needs to be used in a `do` statement.
 
 ```cpp
 save:
-	// prepare the arguments required by the mailchimp function
-	do options = {
-		"listId": "d8acdcc85f",
-		"email": nlEmail,
+    // prepare the arguments required by the mailchimp function
+    do options = {
+        "listId": "d8acdcc85f",
+        "email": nlEmail,
     "firstname": nlFirstname,
     "lastname": nlLastname,
-	}
-	// execute the function
-	do mailchimpResponse = Fn("mailchimp", action="subscribeToList", options=options)
-	
-	say Typing(2000)
-	say "I have added you to our newsletter subscription list !"
-	
-	goto feedback
+    }
+    // execute the function
+    do mailchimpResponse = Fn("mailchimp", action="subscribeToList", options=options)
+
+    say Typing(2000)
+    say "I have added you to our newsletter subscription list !"
+
+    goto feedback
 ```
 
 Now it's time to get some feedback from the user!
@@ -119,26 +118,26 @@ We want to use the [SAP Conversational AI](https://cai.tools.sap/) to find out i
 
 ```cpp
 feedback:
-	say "How did you like this newsletter onboarding?"
-	hold
-	
-	// query the NLP service
-	do sapcaiResponse = Fn("sap/cai", text=event)
-	
-	// this contains the sentiment analysis of the query
-	say sapcaiResponse.results.sentiment
-	
-	if (Find("positive", in=sapcaiResponse.results.sentiment)) {
-		say "Thank you so much for your kind words 😇."
-	} 
-	else if (Find("negative", in=sapcaiResponse.results.sentiment)) {
-		say "I'd love to know what went wrong, please join our slack channel and let us know."
-	} 
-	else {
-		say "I am sure you'll get to love CSML :D"
-	}
-	
-	goto end
+    say "How did you like this newsletter onboarding?"
+    hold
+
+    // query the NLP service
+    do sapcaiResponse = Fn("sap/cai", text=event)
+
+    // this contains the sentiment analysis of the query
+    say sapcaiResponse.results.sentiment
+
+    if (Find("positive", in=sapcaiResponse.results.sentiment)) {
+        say "Thank you so much for your kind words 😇."
+    } 
+    else if (Find("negative", in=sapcaiResponse.results.sentiment)) {
+        say "I'd love to know what went wrong, please join our slack channel and let us know."
+    } 
+    else {
+        say "I am sure you'll get to love CSML :D"
+    }
+
+    goto end
 ```
 
 ## **That's it !**
@@ -147,92 +146,91 @@ You've done it, you've created your first CSML bot from scratch ! Here is the fu
 
 ```cpp
 start:
-	say Typing(2000)
-	say "Hi 🤓, I just need a few informations in order to add you to my mailing list."
-	goto firstname
+    say Typing(2000)
+    say "Hi 🤓, I just need a few informations in order to add you to my mailing list."
+    goto firstname
 
-	
+
 firstname:
-	say Typing(2000)
-	say "What's your firstname?"
-	hold
-	
-	remember nlFirstname = event 
-	goto lastname
+    say Typing(2000)
+    say "What's your firstname?"
+    hold
+
+    remember nlFirstname = event 
+    goto lastname
 
 
 lastname:
-	say Typing(2000)
-	do btnLastname = Button(
-		title = "I don't want to share my lastname",
-		accept = ["No", "No", "no", "NA", "N/A", "na", "n/a"]
-	)
-	
-	say Question(title="What's your lastname?", buttons=[btnLastname])
-	hold
-	
-	if (event match btnLastname) remember nlLastname = "N/A"
-	else remember nlLastname = event
-	goto email
-	
+    say Typing(2000)
+    do btnLastname = Button(
+        title = "I don't want to share my lastname",
+        accept = ["No", "No", "no", "NA", "N/A", "na", "n/a"]
+    )
+
+    say Question(title="What's your lastname?", buttons=[btnLastname])
+    hold
+
+    if (event match btnLastname) remember nlLastname = "N/A"
+    else remember nlLastname = event
+    goto email
+
 
 email:
-	say Typing(2000)
-	say "What's your email address?"
-	hold
-	
-	// does the user's input look like an email address?
-	if (event.to_string().contains("@")) {
-		remember nlEmail = event
-		goto save
-	}
+    say Typing(2000)
+    say "What's your email address?"
+    hold
 
-	// otherwise the input is probably not a valid email address
-	// we need to ask them again
-	say "That's not a valid email address 😱"
-	goto email
+    // does the user's input look like an email address?
+    if (event.to_string().contains("@")) {
+        remember nlEmail = event
+        goto save
+    }
+
+    // otherwise the input is probably not a valid email address
+    // we need to ask them again
+    say "That's not a valid email address 😱"
+    goto email
 
 
 feedback:
-	say "How did you like this newsletter onboarding?"
-	hold
-	
-	// query the NLP service
-	do sapcaiResponse = Fn("sap/cai", text=event)
-	
-	// this contains the sentiment analysis of the query
-	say sapcaiResponse.results.sentiment
-	
-	if (Find("positive", in=sapcaiResponse.results.sentiment)) {
-		say "Thank you so much for your kind words 😇."
-	} 
-	else if (Find("negative", in=sapcaiResponse.results.sentiment)) {
-		say "I'd love to know what went wrong, please join our slack channel and let us know."
-	} 
-	else {
-		say "I am sure you'll get to love CSML :D"
-	}
-	
-	goto end
+    say "How did you like this newsletter onboarding?"
+    hold
+
+    // query the NLP service
+    do sapcaiResponse = Fn("sap/cai", text=event)
+
+    // this contains the sentiment analysis of the query
+    say sapcaiResponse.results.sentiment
+
+    if (Find("positive", in=sapcaiResponse.results.sentiment)) {
+        say "Thank you so much for your kind words 😇."
+    } 
+    else if (Find("negative", in=sapcaiResponse.results.sentiment)) {
+        say "I'd love to know what went wrong, please join our slack channel and let us know."
+    } 
+    else {
+        say "I am sure you'll get to love CSML :D"
+    }
+
+    goto end
 
 
 save:
-	// prepare the arguments required by the mailchimp function
-	do options = {
-		"listId": "d8acdcc85f",
-		"email": nlEmail,
+    // prepare the arguments required by the mailchimp function
+    do options = {
+        "listId": "d8acdcc85f",
+        "email": nlEmail,
     "firstname": nlFirstname,
     "lastname": nlLastname,
-	}
-	// execute the function
-	do mailchimpResponse = Fn("mailchimp", action="subscribeToList", options=options)
-	
-	say Typing(2000)
-	say "I have added you to our newsletter subscription list !"
-	
-	goto feedback
+    }
+    // execute the function
+    do mailchimpResponse = Fn("mailchimp", action="subscribeToList", options=options)
+
+    say Typing(2000)
+    say "I have added you to our newsletter subscription list !"
+
+    goto feedback
 ```
 
-If you have any question, please come ask us on [Slack](https://join.slack.com/t/csml-by-clevy/shared_invite/enQtODAxMzY2MDQ4Mjk0LWZjOTZlODI0YTMxZTg4ZGIwZDEzYTRlYmU1NmZjYWM2MjAwZTU5MmU2NDdhNmU2N2Q5ZTU2ZTcxZDYzNTBhNTc)!  
-
+If you have any question, please come ask us on [Slack](https://join.slack.com/t/csml-by-clevy/shared_invite/enQtODAxMzY2MDQ4Mjk0LWZjOTZlODI0YTMxZTg4ZGIwZDEzYTRlYmU1NmZjYWM2MjAwZTU5MmU2NDdhNmU2N2Q5ZTU2ZTcxZDYzNTBhNTc)!
 

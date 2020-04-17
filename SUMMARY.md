@@ -9,28 +9,26 @@
 
 ## 🤖 Key Concepts
 
-* [Navigating in a CSML Bot](navigating-in-a-csml-bot.md)
-* [Sending Messages](sending-messages.md)
-* [Receiving Events](receiving-events.md)
-* [Memory](memory/README.md)
-  * [Using Variables in Messages](memory/interpolation.md)
-  * [Temporary and Long-Term variables](memory/temporary-and-long-term-variables.md)
-* [Conditional logic](conditional-logic.md)
-* [Custom Code Execution](custom-code-execution.md)
-* [Value Types](automatic-type-inference/README.md)
-  * [Literals, Objects, Arrays](automatic-type-inference/literals-objects-arrays.md)
-  * [Automatic Type Inference](automatic-type-inference/automatic-type-inference.md)
-* [Standard Library](standard-library/README.md)
-  * [Keywords](standard-library/keywords.md)
-  * [HTTP](standard-library/http.md)
-  * [Macros](standard-library/macros.md)
-  * [String methods](standard-library/string-methods.md)
-  * [Array methods](standard-library/array-methods.md)
-  * [Object methods](standard-library/object-methods.md)
-  * [Number methods](standard-library/number-methods.md)
-  * [Generic methods](standard-library/generic-methods.md)
-
-## 🔌 API
+* [Navigating in a CSML Bot](key-concepts/navigating-in-a-csml-bot.md)
+* [Sending Messages](key-concepts/sending-messages.md)
+* [Receiving Events](key-concepts/receiving-events.md)
+* [Memory](key-concepts/memory/README.md)
+  * [Using Variables in Messages](key-concepts/memory/interpolation.md)
+  * [Temporary and Long-Term variables](key-concepts/memory/temporary-and-long-term-variables.md)
+* [Conditional logic](key-concepts/conditional-logic.md)
+* [Custom Code Execution](key-concepts/custom-code-execution.md)
+* [Value Types](key-concepts/automatic-type-inference/README.md)
+  * [Literals, Objects, Arrays](key-concepts/automatic-type-inference/literals-objects-arrays.md)
+  * [Automatic Type Inference](key-concepts/automatic-type-inference/automatic-type-inference.md)
+* [Standard Library](key-concepts/standard-library/README.md)
+  * [Keywords](key-concepts/standard-library/keywords.md)
+  * [HTTP](key-concepts/standard-library/http.md)
+  * [Macros](key-concepts/standard-library/macros.md)
+  * [String methods](key-concepts/standard-library/string-methods.md)
+  * [Array methods](key-concepts/standard-library/array-methods.md)
+  * [Object methods](key-concepts/standard-library/object-methods.md)
+  * [Number methods](key-concepts/standard-library/number-methods.md)
+  * [Generic methods](key-concepts/standard-library/generic-methods.md)
 
 ## 📱Channels
 
