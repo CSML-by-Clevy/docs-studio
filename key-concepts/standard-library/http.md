@@ -17,8 +17,8 @@ Here is a simple example:
 ```cpp
 do pet = HTTP("https://example.com/pets/1").get().send()
 
-// if no verb is specified, .get() is implicitly used
-do pet = HTTP("https://example.com/pets/1").send()
+// or, if no verb is specified, .get() is implicitly used
+do pet2 = HTTP("https://example.com/pets/2").send()
 
 say "This pet is called: {{pet.name}}"
 ```
