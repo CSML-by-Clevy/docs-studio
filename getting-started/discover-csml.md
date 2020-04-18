@@ -6,7 +6,7 @@
 
 Written itself in Rust and fully Turing-complete, the CSML acts as a linguistic/syntactic abstraction layer, designed for humans who want to let other humans interact with any machine, in any setting. The syntax is designed to be learned in a matter of minutes, but also scales to any complexity of chatbot.
 
-The CSML handles short and long-term memory slots, metadata injection, and can be plugged in with any external system by means of standard integrations or [custom APIs](../channels/api/chat-api.md), as well as integrated into other programming languages with parallelized runtimes.
+The CSML handles short and long-term memory slots, metadata injection, and can be plugged in with any external system by means of standard integrations or [custom APIs](../channels/api/), as well as integrated into other programming languages with parallelized runtimes.
 
 To learn more about CSML, you can read this [article](https://medium.com/clevyio/announcing-csml-a-new-open-source-language-to-easily-build-full-featured-chatbots-3787e43ab707).
 
@@ -59,7 +59,7 @@ Here’s an example of a function available in the apps library, performing any 
 
 ## **Deploy your chatbot**
 
-Once your chatbot is ready to chat with your users, you can select the channel you want to connect on. From now you can connect your bots to Slack or using the [CSML Client API](https://docs.csml.dev/api) to receive requests.
+Once your chatbot is ready to chat with your users, you can select the channel you want to connect on. For example, using the [CSML Studio](https://studio.csml.dev) you can connect your bots to Slack, Messenger, Whatsapp and other channels, or use the [CSML Client API](../channels/api/) to receive requests.
 
 #### **Ready to experiment CSML?**
 
