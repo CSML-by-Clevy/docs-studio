@@ -2,7 +2,7 @@
 
 The Messenger channel on CSML Studio offers some configuration options. More will be added over time!
 
-### Welcome flow
+## Welcome flow
 
 When a user starts using your bot, the first thing they will see is a Get Started button \(the text will be automatically translated in their own configured language and can not be changed\). In the background, a `"GET_STARTED"` payload is sent to the bot.
 
@@ -14,7 +14,7 @@ To configure a welcome flow, simply select it in the dropdown list the flow you 
 
 ![](../../.gitbook/assets/capture-de-cran-2020-04-20-17.54.10.png)
 
-### Persistent Menu
+## Persistent Menu
 
 Messenger makes it possible to add a [persistent menu](https://developers.facebook.com/docs/messenger-platform/send-messages/persistent-menu/#the-persistent-menu) to your bots. 
 
