@@ -60,3 +60,17 @@ do val = ["Batman", "Robin", "Superman"]
 do val.remove_at(1) // ["Batman", "Superman"]
 ```
 
+### .find\(\*\)
+
+Returns a new array with all the values found in the original array matching the given value.
+
+```cpp
+array.find(x) => void
+
+// example
+do val = ["Batman", "Robin", "Superman", "Batman"]
+do val.find("Ironman") // []
+do val.find("Robin") // ["Robin"]
+do val.find("Batman") // ["Batman", "Batman"]
+```
+
