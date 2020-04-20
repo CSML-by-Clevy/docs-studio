@@ -68,9 +68,9 @@ Voilà! You can now search for your chatbot in Facebook Messenger \(it will be l
 **Your App is in Development Mode**
 
 Until your app has been submitted and approved for public use on Messenger, page tokens only allow your bot to interact with Facebook accounts that have been granted the Administrator, Developer, or Tester role for your app.
-
-To grant these roles to other Facebook accounts, go to the 'Roles' tab of your app settings
 {% endhint %}
+
+To grant these roles to other Facebook accounts \(people who you would like to give access to your bot\), go to the 'Roles' tab of your app settings.
 
 ## 5. Publishing your app
 
