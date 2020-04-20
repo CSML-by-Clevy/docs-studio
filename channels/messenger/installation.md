@@ -80,3 +80,7 @@ When you are satisfied with your bot, you need to set the app to Live mode so th
 **You can not send and receive messages from/to the general public before it passes the review process**
 {% endhint %}
 
+When you have successfully passed Facebook's review process, don't forget to set your app to **Live** mode \(toggle switch **In development** at the top of your app's settings pages\).
+
+![](../../.gitbook/assets/capture-de-cran-2020-04-20-18.21.46.png)
+
