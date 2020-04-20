@@ -4,10 +4,10 @@ You can find similar configuration settings between [Messenger](../messenger/con
 
 ## Metadata
 
-This is not really a configuration option, but please know that the `_metadata` object inside your flows will have slightly different information about your user compared to what is available on Messenger. On Workplace Chat, you can access a user's `first_name`, `last_name` and `email`.
+This is not really a configuration option, but know that the `_metadata` object inside your flows will have slightly different information about your user compared to what is available on Messenger. On Workplace Chat, you can directly access a user's `first_name`, `last_name` and `email` in the conversation's metadata.
 
 {% hint style="warning" %}
-There is also an `id` field, however please know that this is not the user's ID on Workplace but what is called an "app-scoped user ID". It can not be related back to the user's actual ID.
+There is also an `id` field, however this is not the user's real Workplace ID but is called an [app-scoped user ID](https://developers.facebook.com/docs/workplace/third-party-apps/development#user-ids). It can not be related back to the user's actual ID.
 {% endhint %}
 
 ## Broadcast
