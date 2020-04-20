@@ -60,7 +60,7 @@ Voilà! You can now search for your chatbot in Facebook Messenger \(it will be l
 
 ![Search for your chatbot in the search bar. It will appear under the Businesses section.](../../.gitbook/assets/capture-de-cran-2020-04-20-17.38.23.png)
 
-![](../../.gitbook/assets/demomessenger.gif)
+![](../../.gitbook/assets/demomessenger-1.gif)
 
 ### Caveats
 
