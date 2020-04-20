@@ -77,7 +77,7 @@ To grant these roles to other Facebook accounts \(people who you would like to g
 When you are satisfied with your bot, you need to set the app to Live mode so that it can receive messages from and to any facebook user, not just your testers. Before that, you need to have Facebook review your bot. This is beyond the scope of this tutorial, and there are plenty of resources online about this process. You can start by reading the [Facebook documentation](https://developers.facebook.com/docs/apps/review/) on the review process!
 
 {% hint style="warning" %}
-**You can not send and receive messages from/to the general public before it passes the review process**
+**You can not send and receive messages from/to the general public before it passes the review process and is set to Live mode.**
 {% endhint %}
 
 When you have successfully passed Facebook's review process, don't forget to set your app to **Live** mode \(toggle switch **In development** at the top of your app's settings pages\).
