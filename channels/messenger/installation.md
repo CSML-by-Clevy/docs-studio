@@ -6,9 +6,9 @@ There are several prerequisites to building a Messenger chatbot, which we will a
 * a Facebook page for your chatbot to be associated with
 * a CSML chatbot ready to go
 
-Please also make sure that your Facebook account is setup as a [developer account](https://developers.facebook.com).
+Please also make sure that your Facebook account is setup as a [developer account](https://developers.facebook.com). Once this is done, visit **Channels &gt; Connect new channel &gt; Messenger** on CSML Studio.
 
-Once this is done, visit **Channels &gt; Connect new channel &gt; Messenger** on CSML Studio.
+The installation process takes about 5 minutes and is relatively easy, although there are many steps involved. Follow along the instructions and everything will be fine!
 
 ## 1. Create a Facebook App
 
