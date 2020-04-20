@@ -50,6 +50,8 @@
   * [Features](channels/whatsapp-via-messagebird/features.md)
 * [Workplace Chat](channels/workplace-chat/README.md)
   * [Installation](channels/workplace-chat/installation.md)
+  * [Uninstallation](channels/workplace-chat/uninstallation.md)
+  * [Configuration](channels/workplace-chat/configuration.md)
 * [Google Assistant](channels/google-assistant.md)
 * [Slack](channels/slack.md)
 * [Upcoming channels](channels/upcoming-channels.md)
