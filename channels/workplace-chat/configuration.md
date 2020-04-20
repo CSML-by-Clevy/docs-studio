@@ -2,14 +2,6 @@
 
 You can find similar configuration settings between [Messenger](../messenger/configuration.md) and Workchat channels. However, Workchat being a professional, internal-only communication channel, there are some additional options you can play with.
 
-## Metadata
-
-This is not really a configuration option, but know that the `_metadata` object inside your flows will have slightly different information about your user compared to what is available on Messenger. On Workplace Chat, you can directly access a user's `name`, `first_name`, `last_name` and `email` in the conversation's metadata.
-
-{% hint style="warning" %}
-There is also an `id` field, however this is not the user's real Workplace ID but is called an [app-scoped user ID](https://developers.facebook.com/docs/workplace/third-party-apps/development#user-ids). It can not be related back to the user's actual ID.
-{% endhint %}
-
 ## Broadcast
 
 The Broadcast feature allows you to trigger any flow for any given user or list of users. To use the broadcast feature, click on **Send broadcast** to open a configuration popup.
