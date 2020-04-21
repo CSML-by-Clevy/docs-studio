@@ -22,6 +22,16 @@ somestep:
       Button("no more")
     ]
   )
+  say Carousel(
+    cards = [
+      Card(
+        title="title",
+        subtitle="an optional description",
+        image_url="https://images.unsplash.com/photo-1567322329435-28658f2958c4",
+        buttons=[Button("click me!")]
+      )
+    ]
+  )
 ```
 
 ## Message types
@@ -39,8 +49,14 @@ Below is a list of default valid message components, which are automatically con
 | Audio\(string\) | Display the audio available at URL `string`. Supports Soundcloud embed links, or mp3, wav and ogg. | Url\(string\) |
 | Button\(string\) | Display `string` inside a clickable button | Text\(string\*\) |
 | Question\(title = string\(, buttons = \[Button\]\)\) | Display a list of buttons with a header of `string`. Title parameter is optional. | Text\(string\) + list of buttons |
+| Card\(title="string", buttons=\[Button\], image\_url="string"\) | Display nicely formatted content in a `Carousel` component \(on supported channels\). Only title is mandatory. | Question\(title, buttons\) |
+| Carousel\(cards=\[Card\]\) | Display a list of `Card`components in a carousel \(on supported channels\). The cards parameter is mandatory. | \_\_ |
 
-> _\* the content of the parameter may be modified to accommodate the target channel requirements_
+{% hint style="info" %}
+Components may receive additional optional parameters to accommodate the needs of certain channels.
+
+For example, in the Messenger channel you can add a `button_type="quick_reply"` parameter to the `Question` component to provide a different type of buttons.
+{% endhint %}
 
 ## Asking Questions
 
