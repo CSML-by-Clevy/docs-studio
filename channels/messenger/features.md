@@ -1,0 +1,114 @@
+# Features
+
+## Available components
+
+Messenger channel supports all CSML components: `Text`, `Typing`, `Wait`, `Image`, `Question`, `Button`, `Carousel`, `Card`, `Audio`, `Video`, `Url`, `File`.
+
+## Special behaviors
+
+### Thumb up event
+
+A "thumb up" button click is interpreted as a special Payload component event. CSML will receive the following data:
+
+```javascript
+{
+  "content_type": "payload",
+  "content": { "payload": ":like:" },
+}
+```
+
+### Buttons and quick replies
+
+Messenger differentiates between several types of buttons. Currently, CSML Studio will allow you to send either [regular](https://developers.facebook.com/docs/messenger-platform/send-messages/buttons) or [quick\_reply](https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies) buttons.
+
+Regular buttons are larger elements, and remain on screen after the user has clicked on them. Quick replies will display just above the user input and disappear once clicked. You can also fit more `quick_reply` buttons \(13\) than regular buttons \(3\) per event.
+
+To send quick\_reply events, use the following syntax:
+
+```cpp
+say Question(
+    "Is it:",
+    buttons=[Button("a bird"), Button("a plane"), Button("Superman")],
+    button_type="quick_reply"
+)
+```
+
+There are several types of [quick\_reply buttons](https://developers.facebook.com/docs/messenger-platform/reference/buttons/quick-replies/#quick_reply). You can play with the `type` and `image_url` attributes. By default, quick\_reply buttons are of type `text`. The requirements/limitations defined in Facebook's documentation apply.
+
+![Examples of quick\_reply buttons. On the right, an image\_url property is set.](../../.gitbook/assets/64375249_668002483666648_541982039046356992_n.png)
+
+### Raw objects
+
+Some behaviors are currently unmatched with CSML components. The coverage for messenger templates will grow over time, however, please note that if you need to send a very specific template, you can always send the raw Messenger-formatted object.
+
+For example, whilst CSML does not \(yet\) cover Airline Templates for Messenger, you can always send a raw [Check-In Template](https://developers.facebook.com/docs/messenger-platform/send-messages/template/airline/#check_in) object if you need it:
+
+```cpp
+say {
+  "attachment": {
+    "type": "template",
+    "payload": {
+      "template_type": "airline_checkin",
+      "intro_message": "Check-in is available now.",
+      "locale": "en_US",        
+      "pnr_number": "ABCDEF",
+      "checkin_url": "https:\/\/www.airline.com\/check-in",  
+      "flight_info": [
+        {
+          "flight_number": "f001",
+          "departure_airport": {
+            "airport_code": "SFO",
+            "city": "San Francisco",
+            "terminal": "T4",
+            "gate": "G8"
+          },
+          "arrival_airport": {
+            "airport_code": "SEA",
+            "city": "Seattle",
+            "terminal": "T4",
+            "gate": "G8"
+          },
+          "flight_schedule": {
+            "boarding_time": "2016-01-05T15:05",
+            "departure_time": "2016-01-05T15:45",
+            "arrival_time": "2016-01-05T17:30"
+          }
+        }
+      ]
+    }
+  }
+}
+```
+
+## Limitations
+
+In general, all Messenger limitations apply. For example, texts can not be larger than 2000 UTF-8 characters, and attachment sizes \(Videos, Audio, Files\) can not be larger than 25MB.
+
+Regular buttons are limited to 3 per single event, while quick\_reply buttons allow up to 13 buttons. The length of the button title should also never be longer than 20 characters.
+
+### Single Button Components
+
+Messenger requires buttons to have an accompanying text. The following CSML code will display an error message in the conversation, as a `Button` can not be used alone:
+
+```cpp
+say Button("Click me!")
+```
+
+You should always use a `Question` component instead:
+
+```cpp
+say Question(
+    "What happens now?",
+    buttons = [Button("Click me!")]
+)
+```
+
+### Fallbacks
+
+* Files that are larger than 25MB will be sent as simple text instead of uploaded as attachments
+* Nice URLs are unavailable. They will display as simple text instead
+* Youtube/Dailymotion/Vimeo videos as well as Spotify/Deezer/Soundcloud audios will display as simple text
+* URL Buttons are currently unsupported natively \(use raw objects for now\)
+
+
+
