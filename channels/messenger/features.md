@@ -37,6 +37,42 @@ There are several types of [quick\_reply buttons](https://developers.facebook.co
 
 ![Examples of quick\_reply buttons. On the right, an image\_url property is set.](../../.gitbook/assets/64375249_668002483666648_541982039046356992_n.png)
 
+### Carousel
+
+Messenger provides a Carousel format which is quite interesting for some use cases. It allows for horizontal scrolling of one or several Cards, each having the ability to display an optional image and up to 3 buttons.
+
+It is perfect as a menu for selecting what to do next!
+
+![](../../.gitbook/assets/13178095_790767981060697_1148772092_n.png)
+
+Messenger's Carousel is a slightly specialized version of CSML's Carousel component: it has the same default parameters but additional options are available:
+
+```cpp
+do card1 = Card(
+    "Classic T-Shirt",
+    image_url="https://petersfancybrownhats.com/company_image.png",
+    subtitle="Medium Grey",
+    default_action=Url("https://zuckstees.com"),
+    buttons=[Button("View Details"), Url("https://zuckstees.com", text="Shop Now")],
+)
+do card2 = Card(
+    "Classic T-Shirt",
+    image_url="https://petersfancybrownhats.com/company_image.png",
+    subtitle="Midnight Blue",
+    default_action=Url("https://zuckstees.com"),
+    buttons=[Button("View Details"), Url("https://zuckstees.com", text="Shop Now")],
+)
+do card3 = Card(
+    "Classic T-Shirt",
+    image_url="https://petersfancybrownhats.com/company_image.png",
+    subtitle="Sky Blue",
+    default_action=Url("https://zuckstees.com"),
+    buttons=[Button("View Details"), Url("https://zuckstees.com", text="Shop Now")],
+)
+
+say Carousel(cards=[card1, card2, card3])
+```
+
 ### Raw objects
 
 Some behaviors are currently unmatched with CSML components. The coverage for messenger templates will grow over time, however, please note that if you need to send a very specific template, you can always send the raw Messenger-formatted object.
