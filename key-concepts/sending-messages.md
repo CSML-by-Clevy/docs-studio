@@ -34,6 +34,25 @@ somestep:
   )
 ```
 
+## Styling text
+
+You can style text using Markdown. Some channels however only partially support Markdown \(Messenger for example only allows bold, italic, strikethrough, but not tables\), so don't get too fancy there.
+
+{% hint style="info" %}
+**Quick Markdown reference**
+
+```cpp
+# Title 1
+## Title 2
+
+**bold**
+*italic*
+~strikethrough
+
+[link text](https://google.com)
+```
+{% endhint %}
+
 ## Message types
 
 Below is a list of default valid message components, which are automatically converted to nicely formatted messages for the channel in which the user is talking with the bot.
