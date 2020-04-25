@@ -66,7 +66,7 @@ Below is a list of default valid message components, which are automatically con
 | Audio\(string\) | Display the audio available at URL `string`. Supports Soundcloud embed links, or mp3, wav and ogg. | Url\(string\) |
 | Button\(string\) | Display `string` inside a clickable button | Text\(string\*\) |
 | Question\(title = string\(, buttons = \[Button\]\)\) | Display a list of buttons with a header of `string`. Title parameter is optional. | Text\(string\) + list of buttons |
-| Card\(title="string", buttons=\[Button\], image\_url="string"\) | Display nicely formatted content in a `Carousel` component \(on supported channels\). Only title is mandatory. | Question\(title, buttons\) |
+| Card\(title="string", buttons=\[Button\], image\_url="string"\) | Display nicely formatted content in a `Carousel` component \(on supported channels\). Only title is mandatory. | Question\(title, buttons\) or Text\(title\) |
 | Carousel\(cards=\[Card\]\) | Display a list of `Card`components in a carousel \(on supported channels\). The cards parameter is mandatory. | \_\_ |
 
 {% hint style="info" %}
@@ -90,4 +90,10 @@ somestep:
   if (event == "yes") say "I'm glad to know that you like cheese!"
   else say "Oh that's too bad!"
 ```
+
+## Limitations
+
+{% hint style="danger" %}
+The maximum theoretical size of a `say` element is **16KB**. However, each channel will have different limitations, so please read each channel's documentation carefully.
+{% endhint %}
 
