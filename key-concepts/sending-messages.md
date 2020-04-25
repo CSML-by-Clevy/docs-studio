@@ -38,8 +38,7 @@ somestep:
 
 You can style text using Markdown. Some channels however only partially support Markdown \(Messenger for example only allows bold, italic, strikethrough, but not tables\), so don't get too fancy there.
 
-{% hint style="info" %}
-**Quick Markdown reference**
+#### Quick Markdown reference
 
 ```cpp
 # Title 1
@@ -51,7 +50,6 @@ You can style text using Markdown. Some channels however only partially support 
 
 [link text](https://google.com)
 ```
-{% endhint %}
 
 ## Message types
 
