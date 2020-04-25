@@ -94,6 +94,6 @@ somestep:
 ## Limitations
 
 {% hint style="danger" %}
-The maximum theoretical size of a `say` element is **16KB**. However, each channel will have different limitations, so please read each channel's documentation carefully.
+The maximum theoretical size of a `say` element is **16KB**. However, each channel will have different limitations depending on the type of Component, so please read each channel's official documentation carefully to find out about the limitations.
 {% endhint %}
 
