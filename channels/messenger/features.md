@@ -146,5 +146,7 @@ say Question(
 * Youtube/Dailymotion/Vimeo videos as well as Spotify/Deezer/Soundcloud audios will display as simple text
 * URL Buttons are currently unsupported natively \(use raw objects for now\)
 
+### Notifications
 
+Due to [the recent changes](https://developers.facebook.com/blog/post/2019/08/29/messenger-launches-new-tools-to-drive-more-valuable-conversations-between-people-and-businesses/) in the way Messenger handles sending notifications to your users, CSML Studio does not allow sending messages to users except for the regular use case of responding directly to a request the user made \(by sending a text message, clicking a button, etc.\). To send one-way notifications \(or broadcasts\) to your users, you need to build your own separate logic.
 
