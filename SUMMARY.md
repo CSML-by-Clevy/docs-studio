@@ -49,6 +49,8 @@
 * [Whatsapp \(via MessageBird\)](channels/whatsapp-via-messagebird/README.md)
   * [Installation](channels/whatsapp-via-messagebird/installation.md)
   * [Features](channels/whatsapp-via-messagebird/features.md)
+* [Microsoft Teams](channels/microsoft-teams/README.md)
+  * [Installation](channels/microsoft-teams/installation.md)
 * [Workplace Chat](channels/workplace-chat/README.md)
   * [Installation](channels/workplace-chat/installation.md)
   * [Uninstallation](channels/workplace-chat/uninstallation.md)
