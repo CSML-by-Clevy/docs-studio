@@ -10,7 +10,7 @@ Retrieve your Messaging endpoint from the Studio configuration page:
 
 ![](../../.gitbook/assets/capture-de-cran-2020-04-26-18.26.03.png)
 
-Visit [https://dev.botframework.com/bots/new](https://dev.botframework.com/bots/new) to create a new bot on Bot Framework. You may be asked to login to your developer account. On the next page, fill in a **name**, **description** and **bot handle** for your bot, as well as the **Messaging endpoint** from the previous step. Leav **Enable Streaming Endpoint** unchecked. Take note of the bot handle for later.
+Visit [https://dev.botframework.com/bots/new](https://dev.botframework.com/bots/new) to create a new bot on Bot Framework. You may be asked to login to your developer account. On the next page, fill in a **logo**, **name**, **description** and **bot handle** for your bot, as well as the **Messaging endpoint** from the previous step. Leav **Enable Streaming Endpoint** unchecked. Take note of the bot handle for later.
 
 ![](../../.gitbook/assets/capture-de-cran-2020-04-26-18.32.07.png)
 
@@ -78,5 +78,5 @@ Then, click on the App you just uploaded, then select Add.
 
 Voilà! Your bot is now available to all users in your team:
 
-![](../../.gitbook/assets/capture-de-cran-2020-04-26-19.18.48.png)
+![](../../.gitbook/assets/capture-de-cran-2020-04-26-19.20.29.png)
 
