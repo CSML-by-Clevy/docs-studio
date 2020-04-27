@@ -29,6 +29,6 @@ We offer a simple way to set precisely the persistent menu you want, by letting 
 This is not really a configuration option, but know that the `_metadata` object inside your flows will contain some info about your user: their `name`, `first_name`, `last_name` and `email` will be accessible in the conversation's metadata, unless they are not correctly set in their profile.
 
 {% hint style="warning" %}
-There is also an `id` field, however this is not the user's real Workplace ID but is called an [app-scoped user ID](https://developers.facebook.com/docs/workplace/third-party-apps/development#user-ids). It can not be related back to the user's actual Facebook ID.
+There is also an `id` field, however this is not the user's real ID but is called an [app-scoped user ID](https://developers.facebook.com/docs/workplace/third-party-apps/development#user-ids). It can not be related back to the user's actual Facebook ID.
 {% endhint %}
 
