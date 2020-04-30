@@ -9,7 +9,7 @@ say Text("There's vomit on his sweater already, mom's spaghetti") // long form
 
 ![](../../.gitbook/assets/capture-de-cran-2020-04-30-09.50.41.png)
 
-The `Text` component of the webapp also supports some basic Markdown:
+The `Text` component of the Webapp channel also supports some basic Markdown:
 
 ```cpp
 say "He's _nervous_, but **on the surface** he looks [calm and ready](https://www.youtube.com/watch?v=_Yhyp-_hX2s)"
