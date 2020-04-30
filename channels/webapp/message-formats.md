@@ -35,7 +35,7 @@ say Image("https://images.unsplash.com/photo-1560114928-40f1f1eb26a0")
 
 ![](../../.gitbook/assets/capture-de-cran-2020-04-30-09.46.21.png)
 
-## Question
+## Question, Button
 
 ```cpp
 say Question(
@@ -62,7 +62,9 @@ say "user clicked on button with the {{event}} payload"
 
 ![](../../.gitbook/assets/capture-de-cran-2020-04-30-09.57.09.png)
 
-The webapp channel also supports single `Button` components. However, as cross-channel support for single buttons is not guaranteed, we encourage you to use the standard Question component instead, with a title.
+{% hint style="info" %}
+The Webapp channel also supports single `Button` components. However, as cross-channel support for single buttons is not guaranteed, we encourage you to use the standard Question component instead, with a title.
+{% endhint %}
 
 ## Video, Audio
 
