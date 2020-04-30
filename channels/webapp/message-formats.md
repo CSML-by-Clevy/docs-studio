@@ -3,10 +3,19 @@
 ## Text
 
 ```cpp
-say "His palms are sweaty, knees weak, arms are heavy"
+say "His palms are sweaty, knees weak, arms are heavy" // short form
+say Text("There's vomit on his sweater already, mom's spaghetti") // long form
 ```
 
 ![](../../.gitbook/assets/capture-de-cran-2020-04-30-09.50.41.png)
+
+The `Text` component of the webapp also supports some basic Markdown:
+
+```cpp
+say "He's _nervous_, but **on the surface** he looks [calm and ready](https://www.youtube.com/watch?v=_Yhyp-_hX2s)"
+```
+
+![](../../.gitbook/assets/capture-de-cran-2020-04-30-10.58.52.png)
 
 ## Typing, Wait
 
@@ -76,6 +85,16 @@ say Audio("https://open.spotify.com/track/1xB3YT8Rakvnfcc1dp2kzJ")
 
 For full control over the clip, prefer using a standard mp3 file URL.
 {% endhint %}
+
+## Url
+
+The `Url` component will automatically retrieve the target's favicon if available. If a `text` parameter is present, it will be used as the component's title.
+
+```cpp
+say Url("https://www.wikipedia.org/", text="Visit Wikipedia")
+```
+
+![](../../.gitbook/assets/capture-de-cran-2020-04-30-10.50.11.png)
 
 ## Carousel, Card
 
