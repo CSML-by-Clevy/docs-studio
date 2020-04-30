@@ -130,3 +130,11 @@ say Carousel(cards=[card1, card2, card3])
 
 ![](../../.gitbook/assets/cleanshot-2020-04-30-at-10.44.54.gif)
 
+## Full reference
+
+For a complete reference of all the code presented on this page, refer to the [following gist](https://gist.github.com/frsechet/a081fd649fc9f37372f144961f19533a):
+
+{% embed url="https://gist.github.com/frsechet/a081fd649fc9f37372f144961f19533a" %}
+
+
+
