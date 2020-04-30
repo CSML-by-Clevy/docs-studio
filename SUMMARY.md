@@ -42,6 +42,7 @@
   * [Installation](channels/webapp/installation.md)
   * [Configuration](channels/webapp/configuration.md)
   * [Features](channels/webapp/features.md)
+  * [Message formats](channels/webapp/message-formats.md)
 * [Messenger](channels/messenger/README.md)
   * [Installation](channels/messenger/installation.md)
   * [Configuration](channels/messenger/configuration.md)
