@@ -217,7 +217,7 @@ CSML message components all have a matching message format for client use. They 
 }
 ```
 
-### Imbricated components
+## Imbricated components
 
 Component payloads can be imbricated into one another seamlessly. For example: 
 
