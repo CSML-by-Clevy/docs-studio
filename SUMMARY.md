@@ -58,7 +58,8 @@
   * [Features](channels/whatsapp-via-messagebird/features.md)
 * [Microsoft Teams \(beta\)](channels/microsoft-teams/README.md)
   * [Installation](channels/microsoft-teams/installation.md)
-* [Slack](channels/slack.md)
+* [Slack](channels/slack/README.md)
+  * [Message formats](channels/slack/message-formats.md)
 * [Google Assistant](channels/google-assistant.md)
 * [Upcoming channels](channels/upcoming-channels.md)
 
