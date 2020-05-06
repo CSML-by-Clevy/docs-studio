@@ -59,6 +59,7 @@
 * [Microsoft Teams \(beta\)](channels/microsoft-teams/README.md)
   * [Installation](channels/microsoft-teams/installation.md)
 * [Slack](channels/slack/README.md)
+  * [Installation](channels/slack/installation.md)
   * [Message formats](channels/slack/message-formats.md)
 * [Google Assistant](channels/google-assistant.md)
 * [Upcoming channels](channels/upcoming-channels.md)
