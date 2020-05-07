@@ -1,4 +1,4 @@
-# Conditional logic
+# Conditional Logic
 
 As in any turing-complete programming language, CSML is able to handle any type of logic, in the form of loops and if/else statements.
 

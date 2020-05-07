@@ -10,12 +10,12 @@
 ## 🤖 Key Concepts
 
 * [Navigating in a CSML Bot](key-concepts/navigating-in-a-csml-bot.md)
-* [Sending Messages](key-concepts/sending-messages.md)
-* [Receiving Events](key-concepts/receiving-events.md)
+* [Sending and Receiving Messages](key-concepts/sending-receiving-messages/README.md)
+  * [Message payloads](key-concepts/sending-receiving-messages/message-payloads.md)
 * [Memory](key-concepts/memory/README.md)
   * [Using Variables in Messages](key-concepts/memory/interpolation.md)
   * [Temporary and Long-Term variables](key-concepts/memory/temporary-and-long-term-variables.md)
-* [Conditional logic](key-concepts/conditional-logic.md)
+* [Conditional Logic](key-concepts/conditional-logic.md)
 * [Custom Code Execution](key-concepts/custom-code-execution.md)
 * [Value Types](key-concepts/automatic-type-inference/README.md)
   * [Literals, Objects, Arrays](key-concepts/automatic-type-inference/literals-objects-arrays.md)
