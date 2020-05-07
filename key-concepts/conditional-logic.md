@@ -1,6 +1,6 @@
 # Conditional Logic
 
-As in any turing-complete programming language, CSML is able to handle any type of logic, in the form of loops and if/else statements.
+As in any [turing-complete](https://en.wikipedia.org/wiki/Turing_completeness) programming language, CSML is able to handle any type of logic, in the form of loops and if/else statements.
 
 As a CSML developer, you can easily implement any logic based on any variable or event, and very expressively decide how your conversation should be handled. Own of the main advantages of CSML is its descriptive textual interface, making it easy for anyone to understand the logic. It just makes sense and hides all the complexity of decision trees behind the simple concepts that every developer knows and uses.
 
