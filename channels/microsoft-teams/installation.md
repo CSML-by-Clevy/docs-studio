@@ -2,7 +2,7 @@
 
 The installation process of a Microsoft Teams chatbot has many steps. You will also need to be able to create an app and bot on your Microsoft Teams and Azure tenants. Once
 
-To get started, visit **Channels &gt; Connect new channel &gt; Microsoft Bot Framework**.
+To get started, visit **Channels &gt; Connect new channel &gt; Microsoft Teams \(beta\)**.
 
 ## 1. Create a bot on Microsoft Bot Framework
 
