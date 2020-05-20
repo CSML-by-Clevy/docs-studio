@@ -48,8 +48,6 @@ CSML Studio will also take advantage of Slack's features to update the content o
 
 ![After selecting the option &quot;Slim Shady&quot;](../../.gitbook/assets/img_0330.jpg)
 
-
-
 ## Image
 
 Send the URL of an image. Slack will attempt to display it.
@@ -116,5 +114,5 @@ You can add several `Button` or `Url` buttons to your `Card` components.
 
 For a complete reference of all the code presented on this page, refer to the [following gist](https://gist.github.com/frsechet/f2c59db56c149dade53c77598229d188):
 
-{% embed url="https://gist.github.com/frsechet/f2c59db56c149dade53c77598229d188" %}
+{% embed url="https://gist.github.com/frsechet/f2c59db56c149dade53c77598229d188" caption="" %}
 

@@ -6,7 +6,7 @@ The purpose of this language is to simplify the creation and maintenance of rich
 
 By using the CSML language, any developer can integrate arbitrarily complex conversational agents on any channel \(Facebook Messenger, Slack, Facebook Workplace, Microsoft Teams, custom webapp, ...\) and make any bot available to any end user. The CSML platform comes with a large number of channel integrations that work out of the box, but developers are free to add new custom integrations by using the CSML interfaces.
 
-### Getting started
+## Getting started
 
 ```cpp
 /* Always start the conversation with this step */
@@ -44,6 +44,4 @@ This goal of the example flow on the right is to retrieve the name of the user.
 To do so, we will first check if we already have it in memory. If so, we can use it to greet our user, and close this conversation. Otherwise, we can go to a different step and simply ask for it. When the user responds, we will be able to `remember` the name for future use, and close the conversation.
 
 This simple flow shows a few of the features of the language. There are many more, which we will go into in detail now!
-
-## 
 

@@ -6,5 +6,3 @@ Workplace Chat is very, very similar to Messenger \(except it's grey\). Please r
 
 {% page-ref page="../messenger/message-formats.md" %}
 
-
-

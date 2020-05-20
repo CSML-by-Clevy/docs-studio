@@ -4,19 +4,17 @@ description: in no particular order!
 
 # Upcoming channels
 
-### SMS \(via Callr\)
+## SMS \(via Callr\)
 
-### SMS \(via Twilio\)
+## SMS \(via Twilio\)
 
-### Amazon Alexa
+## Amazon Alexa
 
-### Hangouts Chat
+## Hangouts Chat
 
-### Telegram
+## Telegram
 
-### WeChat
+## WeChat
 
-### Viber
-
-
+## Viber
 

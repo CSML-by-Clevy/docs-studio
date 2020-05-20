@@ -8,7 +8,7 @@ To get started, visit your [Slack apps](https://api.slack.com/apps) and click on
 
 ![](../../.gitbook/assets/image%20%281%29.png)
 
-Go to **Event Subscriptions** in the left-side menu. Switch on the **Enable Events** toggle, then enter  [**https://clients.csml.dev/prod/slack/receive**](https://clients.csml.dev/prod/slack/receive) in the **Request URL** field.
+Go to **Event Subscriptions** in the left-side menu. Switch on the **Enable Events** toggle, then enter [**https://clients.csml.dev/prod/slack/receive**](https://clients.csml.dev/prod/slack/receive) in the **Request URL** field.
 
 ![](../../.gitbook/assets/image%20%2810%29.png)
 

@@ -1,6 +1,6 @@
 # Installation
 
-### Prerequisites
+## Prerequisites
 
 There are two prerequisites for installing a Whatsapp bot in the CSML Studio.
 
@@ -15,13 +15,13 @@ Once you have created a MessageBird account, you can immediately connect your bo
 Please refer to MessageBird's documentation on [Getting Started with the Whatsapp Sandbox](https://developers.messagebird.com/docs/conversations/whatsapp/getting-started-sandbox/).
 {% endhint %}
 
-Only once your account has been approved by Facebook into the private beta of Whatsapp Business will you be able to connect your chatbot to your real Whatsapp Business account. 
+Only once your account has been approved by Facebook into the private beta of Whatsapp Business will you be able to connect your chatbot to your real Whatsapp Business account.
 
 {% hint style="info" %}
 Registering your chatbot for production use on Whatsapp takes a few days. Please read MessageBird's documentation on [Getting Started with Whatsapp for Business](https://developers.messagebird.com/docs/conversations/whatsapp/getting-started-sandbox/).
 {% endhint %}
 
-### Connecting Whatsapp to CSML Studio
+## Connecting Whatsapp to CSML Studio
 
 In your bot in CSML Studio, go to **Channels** &gt; **Connect a new channel,** then select **Whatsapp**.
 
@@ -29,7 +29,7 @@ In the next screen, enter a name and description for your channel \(it is purely
 
 ![](../../.gitbook/assets/capture-de-cran-2020-04-15-17.49.03.png)
 
-The API Key can be found in the [Developers &gt; API access panel](https://dashboard.messagebird.com/en/developers/access) \(you _must_ use the `live API key`\) and the Signing Key can be found in the [Developers &gt; API settings panel](https://dashboard.messagebird.com/en/developers/settings#). 
+The API Key can be found in the [Developers &gt; API access panel](https://dashboard.messagebird.com/en/developers/access) \(you _must_ use the `live API key`\) and the Signing Key can be found in the [Developers &gt; API settings panel](https://dashboard.messagebird.com/en/developers/settings#).
 
 The Channel ID will be given to you at the end of the setup process for the Whatsapp channel on MessageBird's dashboard.
 

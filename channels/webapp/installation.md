@@ -20,5 +20,3 @@ There are two ways to use a webapp: either by visiting the link at the top, or b
 
 ![Example of a website using an embedded webapp \(or chatbox\)](../../.gitbook/assets/capture-de-cran-2020-04-12-22.24.27.png)
 
-## 
-

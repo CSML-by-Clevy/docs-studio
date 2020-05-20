@@ -6,5 +6,3 @@ Whatsapp is one of the most used messaging platforms in the world, replacing SMS
 **Whatsapp via MessageBird is a paying channel**
 {% endhint %}
 
-
-

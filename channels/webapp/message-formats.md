@@ -52,8 +52,8 @@ If you need to retrieve a specific data when clicking on either button, use the 
 say Question(
   "Hi! My name is:",
   buttons=[
-		Button("What?", payload="btn1"),
-		Button("Who?", payload="btn2"),
+        Button("What?", payload="btn1"),
+        Button("Who?", payload="btn2"),
   ]
 )
 hold
@@ -104,25 +104,25 @@ A `Carousel` is essentially a collection of `Card` elements A single `Card` will
 
 ```cpp
 do card1 = Card(
-	"The Marshall Mathers LP",
-	subtitle="Release date: May 23, 2000",
-	text="The Marshall Mathers LP is the third studio album by American rapper Eminem...",
-	image_url="https://upload.wikimedia.org/wikipedia/en/a/ae/The_Marshall_Mathers_LP.jpg",
-	buttons=[Button("Listen to this album", payload="marshallmatherslp1")]
+    "The Marshall Mathers LP",
+    subtitle="Release date: May 23, 2000",
+    text="The Marshall Mathers LP is the third studio album by American rapper Eminem...",
+    image_url="https://upload.wikimedia.org/wikipedia/en/a/ae/The_Marshall_Mathers_LP.jpg",
+    buttons=[Button("Listen to this album", payload="marshallmatherslp1")]
 )
 do card2 = Card(
-	"The Slim Shady LP",
-	subtitle="Release date: February 23, 1999",
-	text="The Slim Shady LP is the second studio album and the major-label debut by American rapper Eminem...",
-	image_url="https://upload.wikimedia.org/wikipedia/en/3/35/Eminem_-_The_Slim_Shady_LP_CD_cover.jpg",
-	buttons=[Button("Listen to this album", payload="theslimshadylp")]
+    "The Slim Shady LP",
+    subtitle="Release date: February 23, 1999",
+    text="The Slim Shady LP is the second studio album and the major-label debut by American rapper Eminem...",
+    image_url="https://upload.wikimedia.org/wikipedia/en/3/35/Eminem_-_The_Slim_Shady_LP_CD_cover.jpg",
+    buttons=[Button("Listen to this album", payload="theslimshadylp")]
 )
 do card3 = Card(
-	"The Marshall Mathers LP 2",
-	subtitle="Release date: November 5, 2013",
-	text="The Marshall Mathers LP 2 is the eighth studio album by American rapper Eminem...",
-	image_url="https://upload.wikimedia.org/wikipedia/en/8/87/The_Marshall_Mathers_LP_2.png",
-	buttons=[Button("Listen to this album", payload="marshallmatherslp2")]
+    "The Marshall Mathers LP 2",
+    subtitle="Release date: November 5, 2013",
+    text="The Marshall Mathers LP 2 is the eighth studio album by American rapper Eminem...",
+    image_url="https://upload.wikimedia.org/wikipedia/en/8/87/The_Marshall_Mathers_LP_2.png",
+    buttons=[Button("Listen to this album", payload="marshallmatherslp2")]
 )
 
 say Carousel(cards=[card1, card2, card3])
@@ -134,7 +134,5 @@ say Carousel(cards=[card1, card2, card3])
 
 For a complete reference of all the code presented on this page, refer to the [following gist](https://gist.github.com/frsechet/a081fd649fc9f37372f144961f19533a):
 
-{% embed url="https://gist.github.com/frsechet/a081fd649fc9f37372f144961f19533a" %}
-
-
+{% embed url="https://gist.github.com/frsechet/a081fd649fc9f37372f144961f19533a" caption="" %}
 

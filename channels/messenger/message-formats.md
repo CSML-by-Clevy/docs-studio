@@ -50,8 +50,8 @@ say Question(
   "Hi! My name is:",
   button_type="quick_reply",
   buttons=[
-		Button("What?", payload="btn1"),
-		Button("Who?", payload="btn2"),
+        Button("What?", payload="btn1"),
+        Button("Who?", payload="btn2"),
   ]
 )
 ```
@@ -104,34 +104,34 @@ A `Carousel` is essentially a collection of `Card` elements A single `Card` will
 
 ```cpp
 do card1 = Card(
-	"The Marshall Mathers LP",
-	subtitle="Release date: May 23, 2000",
-	image_url="https://upload.wikimedia.org/wikipedia/en/a/ae/The_Marshall_Mathers_LP.jpg",
+    "The Marshall Mathers LP",
+    subtitle="Release date: May 23, 2000",
+    image_url="https://upload.wikimedia.org/wikipedia/en/a/ae/The_Marshall_Mathers_LP.jpg",
   default_action=Url("https://www.eminem.com/"),
-	buttons=[
-		Button("Listen to this album", payload="marshallmatherslp1"),
-		Url("https://www.eminem.com/", text="Visit eminem.com"),
-	]
+    buttons=[
+        Button("Listen to this album", payload="marshallmatherslp1"),
+        Url("https://www.eminem.com/", text="Visit eminem.com"),
+    ]
 )
 do card2 = Card(
-	"The Slim Shady LP",
-	subtitle="Release date: February 23, 1999",
-	image_url="https://upload.wikimedia.org/wikipedia/en/3/35/Eminem_-_The_Slim_Shady_LP_CD_cover.jpg",
+    "The Slim Shady LP",
+    subtitle="Release date: February 23, 1999",
+    image_url="https://upload.wikimedia.org/wikipedia/en/3/35/Eminem_-_The_Slim_Shady_LP_CD_cover.jpg",
   default_action=Url("https://www.eminem.com/"),
-	buttons=[
-		Button("Listen to this album", payload="theslimshadylp"),
-		Url("https://www.eminem.com/", text="Visit eminem.com"),
-	]
+    buttons=[
+        Button("Listen to this album", payload="theslimshadylp"),
+        Url("https://www.eminem.com/", text="Visit eminem.com"),
+    ]
 )
 do card3 = Card(
-	"The Marshall Mathers LP 2",
-	subtitle="Release date: November 5, 2013",
-	image_url="https://upload.wikimedia.org/wikipedia/en/8/87/The_Marshall_Mathers_LP_2.png",
+    "The Marshall Mathers LP 2",
+    subtitle="Release date: November 5, 2013",
+    image_url="https://upload.wikimedia.org/wikipedia/en/8/87/The_Marshall_Mathers_LP_2.png",
   default_action=Url("https://www.eminem.com/"),
-	buttons=[
-		Button("Listen to this album", payload="marshallmatherslp2"),
+    buttons=[
+        Button("Listen to this album", payload="marshallmatherslp2"),
     Url("https://www.eminem.com/", text="Visit eminem.com"),
-	]
+    ]
 )
 
 say Carousel(cards=[card1, card2, card3])
@@ -210,5 +210,5 @@ say {
 
 For a complete reference of all the code presented on this page, refer to the [following gist](https://gist.github.com/frsechet/ad0f371cef0f27ae26efd28de87a8436):
 
-{% embed url="https://gist.github.com/frsechet/ad0f371cef0f27ae26efd28de87a8436" %}
+{% embed url="https://gist.github.com/frsechet/ad0f371cef0f27ae26efd28de87a8436" caption="" %}
 

@@ -13,7 +13,7 @@ Whatsapp \(via MessageBird\) supports the following components:
 * `File()`
 * `Url()`
 
-Markdown is partially supported \(only **bold**, _italic_ and ~~strikethrough~~\). 
+Markdown is partially supported \(only **bold**, _italic_ and ~~strikethrough~~\).
 
 To send completely custom requests, use `say Object(...)` . The content of the object will be forwarded as is in the request body. For a complete reference, please visit [MessageBird's API documentation](https://developers.messagebird.com/api/conversations/#whatsapp-api).
 
@@ -25,7 +25,7 @@ Whatsapp has a very limited set of interactive components. Buttons for example a
 
 ![To select &quot;Latest numbers&quot;, the user has to type &quot;1&quot; or use the emoji &#x1F522;](../../.gitbook/assets/img_0161.PNG)
 
-The mapping of `Question()` and `Button()` components to text is performed  automatically. However you need to set the right `title` and `accepts` values in order to correctly match the user's input.
+The mapping of `Question()` and `Button()` components to text is performed automatically. However you need to set the right `title` and `accepts` values in order to correctly match the user's input.
 
 ### Typing
 
@@ -38,8 +38,8 @@ For instance, the following code:
 
 ```cpp
 start:
-	say Url("https://www.google.com", text="Go to google")
-	goto end
+    say Url("https://www.google.com", text="Go to google")
+    goto end
 ```
 
 Has the following output:
@@ -65,6 +65,4 @@ The file upload process happens asynchronously on Whatsapp, so messages might sh
 ### Carousel, Card
 
 `Carousel()` and `Card()` components are currently not supported.
-
-
 

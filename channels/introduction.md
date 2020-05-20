@@ -2,7 +2,7 @@
 
 Using the CSML Studio, you can connect and deploy your chatbot on a number of communication channels. Each channel has its own set of limitations and features, so when developing a chatbot you must always keep in mind how your end users will be using your chatbot. Vocal chatbots are not consumed the same way as textual chatbot, so it sometimes makes sense to design an entirely separate user experience for channel.
 
-### Default component behavior
+## Default component behavior
 
 CSML can not compensate for limitations in each third-party channel. Instead, it provides a universal way to describe conversational components and an adaptor will try to match with what is available on that channel.
 
@@ -10,7 +10,7 @@ CSML can not compensate for limitations in each third-party channel. Instead, it
 
 In most cases, CSML will try to find a sensible default behavior for each component on each channel. For instance, some channels can not display actual buttons so they will be displayed as plain text: in that case, a good practice is to place buttons in an ordered list and accept the buttons number as a trigger for that button.
 
-### Native channel behavior
+## Native channel behavior
 
 In most cases, CSML offers to send a raw object to the channel adapter. For example, whilst CSML does not \(yet\) cover Airline Templates for Messenger, you can always send a raw [Check-In Template](https://developers.facebook.com/docs/messenger-platform/send-messages/template/airline/#check_in) object if you need it:
 
@@ -53,7 +53,7 @@ say {
 
 Most channels will provide a similar way of accessing native behavior for situations where CSML Components are not sufficient.
 
-### Differentiating between channels
+## Differentiating between channels
 
 If you plan to use the same chatbot on multiple channels at the same time, there may be times where you need your chatbot to have a different behavior based on the type of channel: changing a text, displaying a static image instead of a video, altering the buttons...
 

@@ -80,7 +80,7 @@ You can also choose to force-close any previously open conversation with `close_
 | \*metadata | `object` | Key-value pairs of metadata to inject into the conversation |
 | request\_id | `string` | A random client-issued string for tracing requests. If none is provided, will be automatically generated. |
 | callback\_url | `string` | Endpoint to POST the bot's messages in response to your request. |
-| \*payload | `object` | see [message payload definitions](../../key-concepts/sending-receiving-messages/#message-payloads) |
+| \*payload | `object` | see [message payload definitions]() |
 | \*payload.content\_type | `string` |  |
 | \*payload.content | `object` |  |
 | \*client | `object` |  |
@@ -147,6 +147,4 @@ You can also choose to force-close any previously open conversation with `close_
   "is_authorized": true
 }
 ```
-
-### 
 

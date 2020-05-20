@@ -1,6 +1,6 @@
 # Configuration
 
-### General information
+## General information
 
 The settings panel has a few options to allow you to configure the webapp. Each webapp must have a name, and you can also add an optional description and logo. If needed, you can also link to your own terms and conditions as well.
 
@@ -10,7 +10,7 @@ The settings panel has a few options to allow you to configure the webapp. Each 
 
 ![](../../.gitbook/assets/capture-de-cran-2020-04-12-22.35.06.png)
 
-### Welcome flow
+## Welcome flow
 
 When a user arrives on the page, the chatbot welcomes them with a flow. It can be any flow, but by default it is the Default flow.
 
@@ -18,7 +18,7 @@ When a user arrives on the page, the chatbot welcomes them with a flow. It can b
 
 If you do not want a welcome interaction at all, create an empty flow and use that as the Welcome flow!
 
-### Application menu
+## Application menu
 
 If you want your users to be able to quickly launch any of your flows, you can use the menu, by adding shortcuts to any of the existing flows. For each flow, you must define a label to make it easily recognizable by your users.
 
