@@ -1,3 +1,7 @@
+---
+description: How to setup a Workplace Chat channel in CSML Studio
+---
+
 # Installation
 
 Installing a Workchat bot on CSML Studio is very easy, as it only takes one click. However, it does require admin rights on your Workplace instance.

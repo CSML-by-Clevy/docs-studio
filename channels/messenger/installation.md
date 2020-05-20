@@ -1,3 +1,7 @@
+---
+description: How to setup a Facebook Messenger channel in CSML Studio
+---
+
 # Installation
 
 There are several prerequisites to building a Messenger chatbot, which we will assume are already taken care of. Before we start, please make sure that you already have:
