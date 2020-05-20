@@ -1,3 +1,7 @@
+---
+description: How to setup a Microsoft Teams channel in CSML Studio
+---
+
 # Installation
 
 The installation process of a Microsoft Teams chatbot has many steps. You will also need to be able to create an app and bot on your Microsoft Teams and Azure tenants. Once
