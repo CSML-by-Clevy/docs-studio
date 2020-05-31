@@ -14,7 +14,6 @@
 * [Chat API](api/chat-api.md)
 * [Bot API](api/bot-api.md)
 * [Conversations API](api/conversations-api.md)
-* [Sending chat requests](api/sending-chat-requests.md)
 
 ## 📱Channels
 
