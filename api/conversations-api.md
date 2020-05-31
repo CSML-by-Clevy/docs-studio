@@ -45,5 +45,3 @@ curl -X "POST" "https://clients.csml.dev/prod/api/conversations/open" \
 }
 ```
 
-
-
