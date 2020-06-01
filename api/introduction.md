@@ -1,8 +1,8 @@
 # Getting Started With The API
 
-In CSML Studio, every channel generates a set of API keys that you can use to perform various operations, such as managing the bot, sending broadcasts, getting information about current conversations...
+In CSML Studio, every channel generates a set of API keys that you can use to perform various operations, such as managing the bot, sending broadcasts, getting information about current conversations... Channels are external connectors to your bot.
 
-Every channel has different capabilities but all channels rely on the same API methods.
+Every channel has different capabilities but all channels rely on the same API methods. 
 
 ## Endpoints
 
