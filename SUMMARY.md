@@ -37,6 +37,7 @@
   * [Installation](channels/whatsapp-via-messagebird/installation.md)
   * [Features](channels/whatsapp-via-messagebird/features.md)
 * [Microsoft Teams \(beta\)](channels/microsoft-teams/README.md)
+  * [Features](channels/microsoft-teams/features.md)
   * [Installation](channels/microsoft-teams/installation.md)
 * [Slack](channels/slack/README.md)
   * [Installation](channels/slack/installation.md)
