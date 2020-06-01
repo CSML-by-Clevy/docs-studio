@@ -7,11 +7,27 @@ Send a broadcast on the requested channel \(supported channels only\) to the req
 ### Request example
 
 ```text
-curl "https://clients.csml.dev/v1/api/bot" \
+curl "https://clients.csml.dev/v1/api/broadcasts" \
      -H 'content-type: application/json' \
      -H 'accept: application/json' \
      -H 'x-api-key: ${X-API-KEY}' \
      -H 'x-api-signature: ${X-API-SIGNATURE}'
+     -d $'{
+  "payload": {
+    "content": {
+      "flow_id": "myflow",
+      "close_flows": true
+    },
+    "content_type": "flow_trigger"
+  },
+  "client": {
+    "user_id": "some-user-id"
+  },
+  "metadata": {
+    "somekey": "somevalue"
+  }
+}'
+
 ```
 
 ### Response example
