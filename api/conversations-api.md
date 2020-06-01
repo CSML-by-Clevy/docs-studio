@@ -11,7 +11,7 @@ Find out whether a user currently has an open conversation.
 ### Request example
 
 ```text
-curl -X "POST" "https://clients.csml.dev/prod/api/conversations/open" \
+curl -X "POST" "https://clients.csml.dev/v1/api/conversations/open" \
      -H 'content-type: application/json' \
      -H 'accept: application/json' \
      -H 'x-api-key: ${X-API-KEY}' \

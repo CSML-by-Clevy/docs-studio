@@ -11,7 +11,7 @@ Retrieve the bot for this integration
 ### Request example
 
 ```text
-curl "https://clients.csml.dev/prod/api/bot" \
+curl "https://clients.csml.dev/v1/api/bot" \
      -H 'content-type: application/json' \
      -H 'accept: application/json' \
      -H 'x-api-key: ${X-API-KEY}' \
@@ -60,7 +60,7 @@ Retrieve all the flows in the current bot
 ### Request example
 
 ```text
-curl "https://clients.csml.dev/prod/api/bot/flows" \
+curl "https://clients.csml.dev/v1/api/bot/flows" \
      -H 'content-type: application/json' \
      -H 'accept: application/json' \
      -H 'x-api-key: ${X-API-KEY}' \
@@ -98,7 +98,7 @@ Retrieve a specific flow
 ### Request example
 
 ```text
-curl "https://clients.csml.dev/prod/api/bot/flows/${FLOW_ID}" \
+curl "https://clients.csml.dev/v1/api/bot/flows/${FLOW_ID}" \
      -H 'content-type: application/json' \
      -H 'accept: application/json' \
      -H 'x-api-key: ${X-API-KEY}' \

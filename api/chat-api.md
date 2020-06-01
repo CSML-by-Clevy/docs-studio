@@ -12,7 +12,7 @@ You can query the Chat API by sending a simple text message for analysis. This w
 
 ```bash
 # replace the x-api-key and x-api-signature values with your data
-curl -X "POST" "https://clients.csml.dev/prod/api/chat" \
+curl -X "POST" "https://clients.csml.dev/v1/api/chat" \
      -H 'content-type: application/json' \
      -H 'accept: application/json' \
      -H 'x-api-key: ${API_KEY}|${TIMESTAMP}' \

@@ -2,19 +2,20 @@
 
 * [Introduction](README.md)
 
-## 🦜Getting started
+## 🦜 Getting started
 
 * [Create Your First Bot](getting-started/create-your-first-bot.md)
 
 ## 🔌 Studio API <a id="api"></a>
 
-* [Getting Started With The API](api/introduction.md)
+* [Getting Started](api/introduction.md)
 * [Authentication](api/authentication.md)
 * [Chat API](api/chat-api.md)
 * [Bot API](api/bot-api.md)
+* [Broadcasts API](api/broadcasts-api.md)
 * [Conversations API](api/conversations-api.md)
 
-## 📱Channels
+## 📱 Channels
 
 * [Introduction](channels/introduction.md)
 * [Webapp](channels/webapp/README.md)
