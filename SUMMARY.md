@@ -4,12 +4,11 @@
 
 ## 🦜Getting started
 
-* [Discover CSML](getting-started/discover-csml.md)
 * [Create Your First Bot](getting-started/create-your-first-bot.md)
 
 ## 🔌 Studio API <a id="api"></a>
 
-* [Getting started](api/introduction.md)
+* [Getting Started With The API](api/introduction.md)
 * [Authentication](api/authentication.md)
 * [Chat API](api/chat-api.md)
 * [Bot API](api/bot-api.md)

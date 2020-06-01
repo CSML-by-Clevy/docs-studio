@@ -1,4 +1,4 @@
-# Getting started
+# Getting Started With The API
 
 In CSML Studio, every channel generates a set of API keys that you can use to perform various operations, such as managing the bot, sending broadcasts, getting information about current conversations...
 
