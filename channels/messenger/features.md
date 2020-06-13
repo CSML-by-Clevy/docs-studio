@@ -116,6 +116,20 @@ say {
 }
 ```
 
+## Broadcast
+
+Messenger supports [broadcasts](../../api/broadcasts-api.md), with some important caveats. You should read carefully what the limitations are on [Facebook's documentation](https://developers.facebook.com/docs/messenger-platform/policy/policy-overview). In short:
+
+* You can send any message that you want to any user that previously sent a message to the bot in the last 24 hours
+* Messages must be sent exclusively to the app-scoped user ID \(you can not send a broadcast using the user's email address for example\)
+* After this 24-hours window, you must include one of the valid [message tags](https://developers.facebook.com/docs/messenger-platform/send-messages/message-tags) in your request. This is done by adding a `"message_tag":"TAG_NAME"` in the metadata of the request, as shown below:
+
+![](../../.gitbook/assets/image%20%288%29.png)
+
+{% hint style="warning" %}
+**Failing to respect this rule may get your chatbot and/or page banned from facebook!**
+{% endhint %}
+
 ## Limitations
 
 In general, all Messenger limitations apply. For example, texts can not be larger than 2000 UTF-8 characters, and attachment sizes \(Videos, Audio, Files\) can not be larger than 25MB.
