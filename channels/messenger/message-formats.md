@@ -40,10 +40,23 @@ say Question(
 
 ![](../../.gitbook/assets/img_0306.jpg)
 
+Both `Button()` and `Url()` button types are supported:
+
+```cpp
+say Question(
+    "Hi! My name is",
+    buttons=[
+        Button("Slim Shady"),
+        Url("https://eminem.com", text="Go to website")
+    ]
+)
+```
+
 You can also take advantage of Facebook's "[quick\_reply](https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies)" buttons. Here they are shown with a given payload \(which would also work on the above example\). There are 2 main differences between regular buttons and quick\_replies:
 
 * you can have a maximum of 3 buttons, but up to 13 quick\_reply buttons
 * quick\_reply buttons go away once the user clicks on one or says something, regular buttons stay forever
+* quick\_reply buttons do not support `Url()` types
 
 ```cpp
 say Question(
