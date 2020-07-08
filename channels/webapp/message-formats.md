@@ -100,27 +100,24 @@ say Url("https://www.wikipedia.org/", text="Visit Wikipedia")
 
 ## Carousel, Card
 
-A `Carousel` is essentially a collection of `Card` elements A single `Card` will display as a `Carousel` of 1 element.
+A `Carousel` is essentially a collection of `Card` elements A single `Card` will display as a `Carousel` of 1 element. Each `Card` can have a maximum of 2 `Button` elements.
 
 ```cpp
 do card1 = Card(
     "The Marshall Mathers LP",
     subtitle="Release date: May 23, 2000",
-    text="The Marshall Mathers LP is the third studio album by American rapper Eminem...",
     image_url="https://upload.wikimedia.org/wikipedia/en/a/ae/The_Marshall_Mathers_LP.jpg",
     buttons=[Button("Listen to this album", payload="marshallmatherslp1")]
 )
 do card2 = Card(
     "The Slim Shady LP",
     subtitle="Release date: February 23, 1999",
-    text="The Slim Shady LP is the second studio album and the major-label debut by American rapper Eminem...",
     image_url="https://upload.wikimedia.org/wikipedia/en/3/35/Eminem_-_The_Slim_Shady_LP_CD_cover.jpg",
     buttons=[Button("Listen to this album", payload="theslimshadylp")]
 )
 do card3 = Card(
     "The Marshall Mathers LP 2",
     subtitle="Release date: November 5, 2013",
-    text="The Marshall Mathers LP 2 is the eighth studio album by American rapper Eminem...",
     image_url="https://upload.wikimedia.org/wikipedia/en/8/87/The_Marshall_Mathers_LP_2.png",
     buttons=[Button("Listen to this album", payload="marshallmatherslp2")]
 )
@@ -128,7 +125,7 @@ do card3 = Card(
 say Carousel(cards=[card1, card2, card3])
 ```
 
-![](../../.gitbook/assets/cleanshot-2020-04-30-at-10.44.54.gif)
+![](../../.gitbook/assets/image%20%2811%29.png)
 
 ## Full reference
 
