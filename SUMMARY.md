@@ -5,6 +5,8 @@
 ## 🦜 Getting started
 
 * [Create Your First Bot](getting-started/create-your-first-bot.md)
+* [CSML Functions and Apps](getting-started/using-csml-apps/README.md)
+  * [Tools and utilities](getting-started/using-csml-apps/tools-and-utilities.md)
 
 ## 🔌 Studio API <a id="api"></a>
 
