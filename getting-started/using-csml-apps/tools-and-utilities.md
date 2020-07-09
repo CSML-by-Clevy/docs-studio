@@ -129,7 +129,9 @@ Fn(
 
 ### Caveats
 
-* If you do not set your own schedule\_id, a random schedule\_id will be returned.
+* Events will be executed within 1 minute after your event is scheduled.
+* If you do not set your own `schedule_id`, a random `schedule_id` will be generated.
+* You can use the `delay` \(with either human-readable times, such as `"1 hr"`, `"5 min"` or a number of milliseconds\) or the `schedule_time` \(an ISO-formatted time string OR unix timestamp integer describing when to schedule the event. Example: `1592843603`, `"2020-06-22T16:33:44.377Z"`\) parameters to set the time for your event.
 * You can schedule events at any point within the next 1 minute - 1 month.
 * Failed events will not be retried. We guarantee that the event will go off, but make sure that your endpoint is available at the time of the scheduled webhook, or that the channel supports scheduled broadcasts.
 
