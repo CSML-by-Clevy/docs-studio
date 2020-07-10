@@ -1,4 +1,4 @@
-# CSML Functions and Apps
+# Functions and Apps
 
 CSML provides a way to execute external code in any language of your choice via a _Foreign Function Interface_, represented by the `Fn()` keyword.
 
@@ -24,7 +24,7 @@ There are 2 ways you can augment your CSML chatbot by connecting it to other ser
 
 For instance, if you are looking to add some fun Gifs to your bot, you can try our [Giphy](https://giphy.com) integration. To get started, go to **Functions &gt; Apps directory &gt; Giphy**.
 
-![](../../.gitbook/assets/image%20%2815%29.png)
+![](../.gitbook/assets/image%20%2815%29.png)
 
 Simply click on **Install**, and you are done! Some apps require credentials or API keys, but this one does not. If that's the case you are prompted to add _environment variables_ upon installation.
 
@@ -37,7 +37,7 @@ start:
   goto end
 ```
 
-![The above code will generate a nice gif automatically!](../../.gitbook/assets/image%20%2818%29.png)
+![The above code will generate a nice gif automatically!](../.gitbook/assets/image%20%2818%29.png)
 
 ## Using Custom Code
 
@@ -60,7 +60,7 @@ As an example, let's create a simple nodejs 12.x function that will return a ran
 
 To test this program, simply run `node test.js` at the root of the project. You should see something like the following:
 
-![](../../.gitbook/assets/image%20%2816%29.png)
+![](../.gitbook/assets/image%20%2816%29.png)
 
 ### Creating a deployment package
 
@@ -81,5 +81,5 @@ start:
   goto end 
 ```
 
-![](../../.gitbook/assets/image%20%2813%29.png)
+![](../.gitbook/assets/image%20%2813%29.png)
 

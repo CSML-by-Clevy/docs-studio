@@ -15,7 +15,7 @@ To install the CSML scheduler, go to Functions &gt; Apps directory &gt; Schedule
 
 Imagine an e-commerce chatbot where the user leaves the conversation before checkout, but has items in their cart. In that situation, you might want to send them a reminder a few hours later that they have items in their shopping cart and they might not want to loose them. Heck, why not throw a discount code with it?
 
-![](../../.gitbook/assets/image%20%2814%29.png)
+![](../.gitbook/assets/image%20%2814%29.png)
 
 Of course, if the user did go through with their order, you want to cancel this reminder, because it does not make sense to keep it.
 
