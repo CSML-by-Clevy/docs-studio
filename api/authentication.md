@@ -19,8 +19,8 @@ The CSML server will be able to validate that both the API Key and the API Secre
 
 ## Implementation examples
 
-### Nodejs
-
+{% tabs %}
+{% tab title="nodejs" %}
 ```javascript
 const crypto = require('crypto');
 
@@ -32,9 +32,9 @@ const signature = crypto.createHmac('sha256', secret)
   .digest('hex');
 const XApiSignature = `sha256=${signature}`;
 ```
+{% endtab %}
 
-### Python
-
+{% tab title="python" %}
 ```python
 import time
 import hmac
@@ -50,4 +50,6 @@ signature = hmac.new(
   ).hexdigest()
 x_api_signature = "sha256=" + signature
 ```
+{% endtab %}
+{% endtabs %}
 
