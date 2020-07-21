@@ -7,6 +7,7 @@
 * [Create Your First Bot](getting-started/create-your-first-bot.md)
 * [Functions and Apps](getting-started/using-csml-apps.md)
 * [Tools and utilities](getting-started/tools-and-utilities.md)
+* [Livechat](getting-started/livechat.md)
 
 ## 🔌 Studio API <a id="api"></a>
 
