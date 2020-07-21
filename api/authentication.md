@@ -20,7 +20,7 @@ The CSML server will be able to validate that both the API Key and the API Secre
 ## Implementation examples
 
 {% tabs %}
-{% tab title="nodejs" %}
+{% tab title="Javascript" %}
 ```javascript
 const crypto = require('crypto');
 
@@ -34,7 +34,7 @@ const XApiSignature = `sha256=${signature}`;
 ```
 {% endtab %}
 
-{% tab title="python" %}
+{% tab title="Python" %}
 ```python
 import time
 import hmac
