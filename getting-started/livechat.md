@@ -16,7 +16,7 @@ In this example, we are going to use [Gorgias](https://www.gorgias.com/), a supp
 
 In your Gorgias backoffice, visit Settings &gt; REST API and copy/paste the information in the next screen:
 
-![](../.gitbook/assets/image%20%2824%29.png)
+![](../.gitbook/assets/image%20%2825%29.png)
 
 Then, in Gorgias, go to **Integrations &gt; HTTP &gt; Add new integration**, give it a name and description, check only the "ticket-message-created" event, then copy/paste the following URL under **URL:**
 
@@ -44,9 +44,15 @@ This example flow explains in detail the lifecycle of a livechat request:
 
 ## Tips and tricks
 
+### Using macros
+
 You can configure a macro in Gorgias to trigger the `LIVECHAT_SESSION_END` event under **Settings &gt; Macros**.
 
 ![](../.gitbook/assets/image%20%2822%29.png)
 
+### Getting customer information
 
+Wherever possible, we are trying to pass the metadata information about the user to the livechat backend. For instance here is a demo with the test webapp:
+
+![](../.gitbook/assets/image%20%2824%29.png)
 
