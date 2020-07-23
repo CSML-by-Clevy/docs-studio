@@ -30,12 +30,7 @@ To use the Webhook integration, simply provide a URL that we can send a POST req
 
 ```javascript
 {
-  "text": "TEXT_TO_ANALYZE",
-  "_client": {
-    "user_id": "abcd",
-    "channel_id": "efgh",
-    "bot_id": "ijkl"
-  }
+  "text": "TEXT_TO_ANALYZE"
 }
 ```
 
