@@ -22,7 +22,7 @@ We are working on supporting the following additional providers in the short-ter
 
 If your favorite provider is not in this list, please reach out to [contact@csml.dev](mailto:contact@csml.dev).
 
-## Using a custom engine with the Webhook integration
+## Using the Webhook integration
 
 You can also add a custom NLP engine by using the custom Webhook integration. This is especially useful if we don't currently support your NLP provider of choice or if you are running your NLP services on premise.
 
