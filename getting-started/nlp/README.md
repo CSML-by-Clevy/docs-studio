@@ -36,3 +36,7 @@ start:
   goto end
 ```
 
+{% hint style="info" %}
+**Caveat**: using a NLP provider will send all your text events to that provider, adding some additional delay in the request handling. If you don't need NLP for your use case \(and many great chatbot use cases don't need any NLP\), you also don't need to setup a NLP provider. This is completely optional.
+{% endhint %}
+
