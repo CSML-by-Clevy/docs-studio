@@ -5,7 +5,7 @@
 CSML Studio currently supports the following NLP providers:
 
 * Dialogflow
-* SAP Conversational AI
+* SAP Conversational AI \(formerly Recast.ai\)
 * Amazon Lex
 * Microsoft LUIS
 
