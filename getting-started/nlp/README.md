@@ -1,6 +1,6 @@
-# NLP
+# Natural Language Processing
 
-CSML Studio allows you to use your own pre-trained NLP service directly in your CSML chatbots with very little configuration. You can easily setup your favorite NLP provider in **Bot Settings &gt; NLP**:
+CSML Studio allows you to use your own pre-trained Natural Language Processing \(NLP\) service directly in your CSML chatbots with very little configuration. You can easily setup your favorite NLP provider in **Bot Settings &gt; NLP**:
 
 ![](../../.gitbook/assets/image%20%2828%29.png)
 
@@ -11,6 +11,8 @@ A few additional properties are set in the resulting event:
 * `event._nlp_provider`: contains details about the NLP provider integration
 * `event._nlp_result`: contains the raw response from the NLP provider request
 * `event._original_event`: contains the original, untouched event. Only set if an intent is found.
+
+## Using NLP in your flows
 
 You can now use the event by matching a found intent with a flow command, by setting that intent as one of the accepted commands for a flow:
 

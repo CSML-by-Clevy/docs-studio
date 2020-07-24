@@ -8,7 +8,7 @@
 * [Functions and Apps](getting-started/using-csml-apps.md)
 * [Tools and utilities](getting-started/tools-and-utilities.md)
 * [Livechat](getting-started/livechat.md)
-* [NLP](getting-started/nlp/README.md)
+* [Natural Language Processing](getting-started/nlp/README.md)
   * [Configuring a NLP Provider](getting-started/nlp/configuring-a-nlp-provider.md)
 
 ## 🔌 Studio API <a id="api"></a>
