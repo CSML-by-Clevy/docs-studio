@@ -1,6 +1,6 @@
 # Livechat
 
-With CSML Studio, you can decide to bypass CSML and get your users to talk to a human agent instead! This is especially useful if the user needs help beyond what the chatbot can propose.
+Chatbots are great, but sometimes your users will need some extra human help to go beyond what the chatbot can do. With CSML Studio, you can decide to bypass CSML and get your users to talk to a human agent instead! This is especially useful if the user needs help beyond what the chatbot can propose.
 
 In order to get your users to talk to your human agents over livechat, you will need:
 
