@@ -69,3 +69,10 @@ You can leave the sections below as is for now; if your function took any argume
 
 Once you are done, simply save. You can now use your function in your CSML Chatbot as above.
 
+## Good practices
+
+* As in every development project, functions have a processing cost associated to them. The more difficult the task is, the longer it takes to perform, the worse your user experience will be. Keep in mind that running external functions will also increase the latency between the user's input and the bot's response.
+* It is always a good practice to only return what you intend to use. For example, if you are interfacing with a product catalog, do you need to get all 3542 items in the catalog, or will the first 5 suffice? If you are retrieving a list of items, what properties from that list do you actually need?
+* Functions are limited to 30s of execution time. If it takes longer, the function will stop and return an error.
+* If you are saving the output of your function to a `do x = Fn(..)` \(or a `remember`\), the data is subject to the usual memory size limitations. In general, if your function returns more than a few KB of data, ask yourself if you really need all that data that you most likely won't be able to display in a chatbot \(text-based, so really light\) or if you shouldn't strip it down directly in the function itself!
+
