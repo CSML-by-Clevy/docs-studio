@@ -5,7 +5,10 @@
 ## 🦜 Getting started
 
 * [Create Your First Bot](getting-started/create-your-first-bot.md)
-* [Functions and Apps](getting-started/using-csml-apps.md)
+* [Functions and Apps](getting-started/using-csml-apps/README.md)
+  * [CSML Integrations \(Apps\)](getting-started/using-csml-apps/csml-integrations-apps.md)
+  * [Authoring Custom Functions](getting-started/using-csml-apps/authoring-custom-functions.md)
+  * [Preprocessing](getting-started/using-csml-apps/preprocessing.md)
 * [Tools and utilities](getting-started/tools-and-utilities.md)
 * [Livechat](getting-started/livechat/README.md)
   * [Chatwoot](getting-started/livechat/chatwoot.md)

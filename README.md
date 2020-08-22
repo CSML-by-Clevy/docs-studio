@@ -50,7 +50,7 @@ You can output any variable into a string value with the double curly braces.
 
 You can select an existing integration in the apps library or add your own function coded in any language. Find a few examples in our [GitHub repository](https://github.com/CSML-by-Clevy) and how to use functions in our [documentation.](https://docs.csml.dev/#custom-code-execution)
 
-Once your function is uploaded, you can test it and call it in a CSML flow. Watch an example below or [read more about functions and apps here](getting-started/using-csml-apps.md)!
+Once your function is uploaded, you can test it and call it in a CSML flow. Watch an example below or [read more about functions and apps here](getting-started/using-csml-apps/)!
 
 ![](.gitbook/assets/gs-functions.gif)
 
