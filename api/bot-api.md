@@ -126,3 +126,36 @@ curl "https://clients.csml.dev/v1/api/bot/flows/${FLOW_ID}" \
 }
 ```
 
+## GET /bot/usage
+
+Get usage information about a bot
+
+### Request example
+
+```text
+curl "https://clients.csml.dev/v1/api/bot/usage" \
+     -H 'content-type: application/json' \
+     -H 'accept: application/json' \
+     -H 'x-api-key: ${X-API-KEY}' \
+     -H 'x-api-signature: ${X-API-SIGNATURE}'
+```
+
+### Response example
+
+```javascript
+{
+  "currentmonth": {
+    "messages": 0,
+    "clients": 0
+  },
+  "last30d": {
+    "messages": 0,
+    "clients": 0
+  },
+  "lastmonth": {
+    "messages": 0,
+    "clients": 0
+  }
+}
+```
+
