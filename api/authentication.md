@@ -2,7 +2,7 @@
 
 ## Authentication
 
-All API calls are authenticated with the combination of two separate keys: API Key and API Secret.
+All API calls are authenticated with the combination of two separate keys: **API Key** and **API Secret**.
 
 The **API Key** is the public key and can be put in clear client-side. The **API Secret** should never be shared publicly.
 
