@@ -15,7 +15,7 @@
   * [Gorgias](getting-started/livechat/gorgias.md)
 * [Natural Language Processing](getting-started/nlp/README.md)
   * [Configuring a NLP Provider](getting-started/nlp/configuring-a-nlp-provider.md)
-* [💻CSML Language Reference](https://docs.csml.dev/language)
+* [💻 CSML Language Reference](https://docs.csml.dev/language)
 
 ## 🔌 Studio API <a id="api"></a>
 
