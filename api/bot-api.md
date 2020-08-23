@@ -22,7 +22,7 @@ Retrieve the bot for this integration
 
 {% endapi-method-response-example-description %}
 
-```
+```javascript
 {
   "id": "06e63f93-2e1a-4f76-b174-9c4aa6e31401",
   "organization_id": "0b50ddf9-052b-4dd6-9901-459caa15ed33",
@@ -72,7 +72,7 @@ Retrieve all the flows in the current bot
 
 {% endapi-method-response-example-description %}
 
-```
+```javascript
 [
   {
     "id": "fd2e74e5-1305-4650-a300-8097d71df01f",
@@ -237,7 +237,7 @@ Update flow
 
 {% endapi-method-response-example-description %}
 
-```
+```javascript
 {
   "id": "c3187b49-5833-4572-960f-a6eedd59d9cd",
   "organization_id": "0b50ddf9-052b-4dd6-9901-459caa15ed33",
@@ -314,7 +314,7 @@ Build a new version of the bot
 
 {% endapi-method-response-example-description %}
 
-```
+```javascript
 {
   "id": "38f0cde0-20ed-4082-b42b-e79b164394d9",
   "organization_id": "0b50ddf9-052b-4dd6-9901-459caa15ed33",
@@ -373,7 +373,7 @@ Defaults to \`latest\` if not set.
 
 {% endapi-method-response-example-description %}
 
-```
+```javascript
 {
   "id": "38f0cde0-20ed-4082-b42b-e79b164394d9",
   "organization_id": "0b50ddf9-052b-4dd6-9901-459caa15ed33",
