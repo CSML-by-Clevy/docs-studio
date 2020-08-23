@@ -4,7 +4,7 @@ description: The Bot API allows you to retrieve information about your bot and i
 
 # Bot API
 
-{% api-method method="get" host="https://clients.csml.dev/v1/api" path="/bot" %}
+{% api-method method="get" host="https://clients.csml.dev/v1" path="/api/bot" %}
 {% api-method-summary %}
 Get bot
 {% endapi-method-summary %}
@@ -60,7 +60,7 @@ Retrieve the bot for this integration
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="https://clients.csml.dev/v1/api" path="/bot/flows" %}
+{% api-method method="get" host="https://clients.csml.dev/v1" path="/api/bot/flows" %}
 {% api-method-summary %}
 Get bot flows
 {% endapi-method-summary %}
@@ -347,6 +347,66 @@ Build a new version of the bot
     "id": "3944ec9b-81c8-4b58-854d-b412c89b8e42",
     "organization_id": "0b50ddf9-052b-4dd6-9901-459caa15ed33",
     "name": "test",
+    "default_flow": "4c9d5234-cad2-4c97-be47-a82f31ec26a3",
+    "flows": [
+      {
+        "id": "4c9d5234-cad2-4c97-be47-a82f31ec26a3",
+        "bot_id": "3944ec9b-81c8-4b58-854d-b412c89b8e42",
+        "organization_id": "0b50ddf9-052b-4dd6-9901-459caa15ed33",
+        "name": "Default",
+        "description": "Default custom flow",
+        "commands": [
+          "/default"
+        ],
+        "content": "start:\n  say \"Hello\"\n  goto end",
+        "created_at": "2020-08-23T14:05:27.011Z",
+        "updated_at": "2020-08-23T14:05:27.011Z"
+      }
+    ]
+  },
+  "created_at": "2020-08-23T17:47:21.229Z"
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% api-method method="get" host="https://clients.csml.dev/v1" path="/api/bot/build" %}
+{% api-method-summary %}
+Get bot build version
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-query-parameters %}
+{% api-method-parameter name="version\_id" type="string" required=false %}
+ID of version to retrieve.  
+Defaults to \`latest\` if not set.
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+  "id": "38f0cde0-20ed-4082-b42b-e79b164394d9",
+  "organization_id": "0b50ddf9-052b-4dd6-9901-459caa15ed33",
+  "bot_id": "3944ec9b-81c8-4b58-854d-b412c89b8e42",
+  "data": {
+    "id": "3944ec9b-81c8-4b58-854d-b412c89b8e42",
+    "organization_id": "0b50ddf9-052b-4dd6-9901-459caa15ed33",
+    "name": "test",
+    "default_flow": "4c9d5234-cad2-4c97-be47-a82f31ec26a3",
     "flows": [
       {
         "id": "4c9d5234-cad2-4c97-be47-a82f31ec26a3",
