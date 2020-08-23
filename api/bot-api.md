@@ -22,32 +22,28 @@ curl "https://clients.csml.dev/v1/api/bot" \
 
 ```javascript
 {
-  "updated_at": "2019-12-13T01:27:38.653Z",
-  "organization_id": "0b50ddf9-052b-4dd6-9901-459caa15ed33",
-  "name": "test",
-  "created_at": "2019-12-11T18:59:39.391Z",
-  "description": null,
-  "default_flow": "fd2e74e5-1305-4650-a300-8097d71df01f",
   "id": "06e63f93-2e1a-4f76-b174-9c4aa6e31401",
-  "status": "PUBLISHED",
-  "tags": [],
+  "organization_id": "0b50ddf9-052b-4dd6-9901-459caa15ed33",
+  "name": "MyBot",
+  "description": "This is my bot",
+  "default_flow": "fd2e74e5-1305-4650-a300-8097d71df01f",
+  "created_at": "2019-12-11T18:59:39.391Z",
+  "updated_at": "2019-12-13T01:27:38.653Z",
   "flows": [
-    {
-      "intents": [],
-      "updated_at": "2019-12-13T01:31:51.507Z",
-      "organization_id": "0b50ddf9-052b-4dd6-9901-459caa15ed33",
-      "name": "Default",
-      "created_at": "2019-12-11T18:59:39.610Z",
-      "description": "Default custom flow",
+      {
       "id": "fd2e74e5-1305-4650-a300-8097d71df01f",
       "bot_id": "06e63f93-2e1a-4f76-b174-9c4aa6e31401",
+      "organization_id": "0b50ddf9-052b-4dd6-9901-459caa15ed33",
+      "name": "Default",
+      "description": "Default custom flow",
       "commands": [
         "/default"
       ],
       "content": "start:\n\tsay \"hello!\"\n\tgoto end",
-      "status": "PUBLISHED",
-      "tags": []
-    }
+      "created_at": "2019-12-11T18:59:39.610Z",
+      "updated_at": "2019-12-13T01:31:51.507Z",
+    },
+    ...
   ]
 }
 ```
@@ -71,20 +67,17 @@ curl "https://clients.csml.dev/v1/api/bot/flows" \
 ```javascript
 [
   {
-    "intents": [],
-    "updated_at": "2019-12-13T01:31:51.507Z",
-    "organization_id": "0b50ddf9-052b-4dd6-9901-459caa15ed33",
-    "name": "Default",
-    "created_at": "2019-12-11T18:59:39.610Z",
-    "description": "Default custom flow",
     "id": "fd2e74e5-1305-4650-a300-8097d71df01f",
     "bot_id": "06e63f93-2e1a-4f76-b174-9c4aa6e31401",
+    "organization_id": "0b50ddf9-052b-4dd6-9901-459caa15ed33",
+    "name": "Default",
+    "description": "Default custom flow",
     "commands": [
       "/default"
     ],
     "content": "start:\n\tsay \"hello!\"\n\tgoto end",
-    "status": "PUBLISHED",
-    "tags": []
+    "created_at": "2019-12-11T18:59:39.610Z",
+    "updated_at": "2019-12-13T01:31:51.507Z",
   },
   ...
 ]
@@ -107,22 +100,19 @@ curl "https://clients.csml.dev/v1/api/bot/flows/${FLOW_ID}" \
 ### Response example
 
 ```javascript
-{
-  "intents": [],
-  "updated_at": "2019-12-13T01:31:48.849Z",
-  "organization_id": "0b50ddf9-052b-4dd6-9901-459caa15ed33",
-  "name": "Default",
-  "created_at": "2019-12-11T18:59:39.610Z",
-  "description": "Default custom flow",
-  "id": "fd2e74e5-1305-4650-a300-8097d71df01f",
-  "bot_id": "06e63f93-2e1a-4f76-b174-9c4aa6e31401",
-  "commands": [
-    "/default"
-  ],
-  "content": "start:\n\tsay \"hello!\"\n\tgoto end",
-  "status": "PUBLISHED",
-  "tags": []
-}
+  {
+    "id": "fd2e74e5-1305-4650-a300-8097d71df01f",
+    "bot_id": "06e63f93-2e1a-4f76-b174-9c4aa6e31401",
+    "organization_id": "0b50ddf9-052b-4dd6-9901-459caa15ed33",
+    "name": "Default",
+    "description": "Default custom flow",
+    "commands": [
+      "/default"
+    ],
+    "content": "start:\n\tsay \"hello!\"\n\tgoto end",
+    "created_at": "2019-12-11T18:59:39.610Z",
+    "updated_at": "2019-12-13T01:31:51.507Z",
+  }
 ```
 
 ## GET /bot/usage
