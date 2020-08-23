@@ -1,6 +1,6 @@
 # Broadcasts API
 
-A broadcast is a message sent from the bot to a user, without the user sending a request first. It is a great way to reengage your users, for example to remind them about a conversation they didn't finish, or let them know a product they ordered has been shipped.
+A broadcast is a message sent proactively from the bot to a user, without the user sending a request first. It is a great way to reengage your users, for example to remind them about a conversation they didn't finish, or let them know a product they ordered has been shipped.
 
 ## POST /broadcasts
 
