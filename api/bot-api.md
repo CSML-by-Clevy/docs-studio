@@ -4,23 +4,31 @@ description: The Bot API allows you to retrieve information about your bot and i
 
 # Bot API
 
-## GET /bot
+{% api-method method="get" host="https://clients.csml.dev/v1/api" path="/bot" %}
+{% api-method-summary %}
+Get bot
+{% endapi-method-summary %}
 
+{% api-method-description %}
 Retrieve the bot for this integration
+{% endapi-method-description %}
 
-### Request example
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="" type="string" required=false %}
 
-```text
-curl "https://clients.csml.dev/v1/api/bot" \
-     -H 'content-type: application/json' \
-     -H 'accept: application/json' \
-     -H 'x-api-key: ${X-API-KEY}' \
-     -H 'x-api-signature: ${X-API-SIGNATURE}'
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
 ```
-
-### Response example
-
-```javascript
 {
   "id": "06e63f93-2e1a-4f76-b174-9c4aa6e31401",
   "organization_id": "0b50ddf9-052b-4dd6-9901-459caa15ed33",
@@ -47,24 +55,36 @@ curl "https://clients.csml.dev/v1/api/bot" \
   ]
 }
 ```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
-## GET /bot/flows
+{% api-method method="get" host="https://clients.csml.dev/v1/api" path="/bot/flows" %}
+{% api-method-summary %}
+Get bot flows
+{% endapi-method-summary %}
 
+{% api-method-description %}
 Retrieve all the flows in the current bot
+{% endapi-method-description %}
 
-### Request example
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="" type="string" required=false %}
 
-```text
-curl "https://clients.csml.dev/v1/api/bot/flows" \
-     -H 'content-type: application/json' \
-     -H 'accept: application/json' \
-     -H 'x-api-key: ${X-API-KEY}' \
-     -H 'x-api-signature: ${X-API-SIGNATURE}'
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
 ```
-
-### Response example
-
-```javascript
 [
   {
     "id": "fd2e74e5-1305-4650-a300-8097d71df01f",
@@ -82,6 +102,10 @@ curl "https://clients.csml.dev/v1/api/bot/flows" \
   ...
 ]
 ```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
 {% api-method method="post" host="https://clients.csml.dev/v1" path="/api/bot/flows" %}
 {% api-method-summary %}
@@ -283,6 +307,63 @@ Get usage information about a bot
     "messages": 0,
     "clients": 0
   }
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% api-method method="post" host="https://clients.csml.dev/v1" path="/api/bot/build" %}
+{% api-method-summary %}
+Build bot
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Build a new version of the bot
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="" type="string" required=false %}
+
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+  "id": "38f0cde0-20ed-4082-b42b-e79b164394d9",
+  "organization_id": "0b50ddf9-052b-4dd6-9901-459caa15ed33",
+  "bot_id": "3944ec9b-81c8-4b58-854d-b412c89b8e42",
+  "data": {
+    "id": "3944ec9b-81c8-4b58-854d-b412c89b8e42",
+    "organization_id": "0b50ddf9-052b-4dd6-9901-459caa15ed33",
+    "name": "test",
+    "flows": [
+      {
+        "id": "4c9d5234-cad2-4c97-be47-a82f31ec26a3",
+        "bot_id": "3944ec9b-81c8-4b58-854d-b412c89b8e42",
+        "organization_id": "0b50ddf9-052b-4dd6-9901-459caa15ed33",
+        "name": "Default",
+        "description": "Default custom flow",
+        "commands": [
+          "/default"
+        ],
+        "content": "start:\n  say \"Hello\"\n  goto end",
+        "created_at": "2020-08-23T14:05:27.011Z",
+        "updated_at": "2020-08-23T14:05:27.011Z"
+      }
+    ]
+  },
+  "created_at": "2020-08-23T17:47:21.229Z"
 }
 ```
 {% endapi-method-response-example %}
