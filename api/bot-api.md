@@ -31,7 +31,6 @@ curl "https://clients.csml.dev/v1/api/bot" \
   "id": "06e63f93-2e1a-4f76-b174-9c4aa6e31401",
   "status": "PUBLISHED",
   "tags": [],
-  "file_ids": [],
   "flows": [
     {
       "intents": [],
