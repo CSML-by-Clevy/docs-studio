@@ -6,7 +6,7 @@ description: 'With the Conversations API, you can manage your client''s conversa
 
 ## POST /conversations/open
 
-Find out whether a user currently has an open conversation.
+Find out whether a user currently has an open conversation on the current channel.
 
 ### Request example
 
