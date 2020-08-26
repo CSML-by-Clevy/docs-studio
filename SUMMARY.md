@@ -32,6 +32,7 @@
 * [Webapp](channels/webapp/README.md)
   * [Installation](channels/webapp/installation.md)
   * [Configuration](channels/webapp/configuration.md)
+  * [Chatbox](channels/webapp/chatbox.md)
   * [Features](channels/webapp/features.md)
   * [Message formats](channels/webapp/message-formats.md)
 * [Messenger](channels/messenger/README.md)
