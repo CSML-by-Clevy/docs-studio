@@ -21,6 +21,7 @@
 
 * [Getting Started](api/introduction.md)
 * [Authentication](api/authentication.md)
+* [Studio CLI](api/studio-cli.md)
 * [Chat API](api/chat-api.md)
 * [Bot API](api/bot-api.md)
 * [Broadcasts API](api/broadcasts-api.md)
