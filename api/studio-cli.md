@@ -8,7 +8,24 @@ To setup CSML Studio CLI, simply install the tool with `npm install -g @csml/stu
 
 This command will setup a local development environment where you will be able to manage your chatbot entirely from the comfort of your machine!
 
-### Get started with the CSML Studio CLI:
+### Broadcasting with CSML Studio CLI
+
+Broadcasting to a large number of targets can be done really easily with the CSML Studio CLI tool. Indeed, you simply need to prepare a file with all your targets:
+
+```text
+user1@gmail.com
+someperson@hotmail.com
+mydude@caramail.fr
+angela@gmx.de
+```
+
+Then, simply run the following command, which will send each of these targets a broadcast \(message initiated from the bot\) on the configured channel \(based on the given API keys\):
+
+```text
+csml-studio broadcast -i myfile.csv --flow_id myBroadcastFlow -k MYKEY -s MYSECRET
+```
+
+### Source code and package repository
 
 * [github](https://github.com/CSML-by-Clevy/CSML-Studio-CLI)
 * [npm](https://www.npmjs.com/package/@csml/studio-cli)
