@@ -46,7 +46,7 @@ shop:
   )
   hold
   // the user wants to continue shopping, let them do that
-  if (event match shop) {
+  if (event.match(shop)) {
     goto shop
   }
   goto checkout

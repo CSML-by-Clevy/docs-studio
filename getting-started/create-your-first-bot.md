@@ -61,7 +61,7 @@ lastname:
     say Question(title="What's your lastname?", buttons=[btnLastname])
     hold
 
-    if (event match btnLastname) remember nlLastname = "N/A"
+    if (event.match(btnLastname)) remember nlLastname = "N/A"
     else remember nlLastname = event
     goto email
 ```
@@ -75,7 +75,7 @@ email:
     hold
 
     // does the user's input look like an email address?
-    if (event.to_string().contains("@")) {
+    if (event.is_email()) {
         remember nlEmail = event
         goto save
     }
@@ -98,8 +98,8 @@ save:
     do options = {
         "listId": "d8acdcc85f",
         "email": nlEmail,
-    "firstname": nlFirstname,
-    "lastname": nlLastname,
+        "firstname": nlFirstname,
+        "lastname": nlLastname,
     }
     // execute the function
     do mailchimpResponse = Fn("mailchimp", action="subscribeToList", options=options)
@@ -170,7 +170,7 @@ lastname:
     say Question(title="What's your lastname?", buttons=[btnLastname])
     hold
 
-    if (event match btnLastname) remember nlLastname = "N/A"
+    if (event.match(btnLastname)) remember nlLastname = "N/A"
     else remember nlLastname = event
     goto email
 
@@ -181,7 +181,7 @@ email:
     hold
 
     // does the user's input look like an email address?
-    if (event.to_string().contains("@")) {
+    if (event.is_email() {
         remember nlEmail = event
         goto save
     }
@@ -220,8 +220,8 @@ save:
     do options = {
         "listId": "d8acdcc85f",
         "email": nlEmail,
-    "firstname": nlFirstname,
-    "lastname": nlLastname,
+        "firstname": nlFirstname,
+        "lastname": nlLastname,
     }
     // execute the function
     do mailchimpResponse = Fn("mailchimp", action="subscribeToList", options=options)
