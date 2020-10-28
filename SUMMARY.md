@@ -56,6 +56,8 @@
 * [Slack](channels/slack/README.md)
   * [Installation](channels/slack/installation.md)
   * [Message formats](channels/slack/message-formats.md)
+* [Amazon Alexa \(beta\)](channels/amazon-alexa-beta.md)
+* [Installation](channels/installation.md)
 * [Google Assistant](channels/google-assistant.md)
 * [Upcoming channels](channels/upcoming-channels.md)
 
