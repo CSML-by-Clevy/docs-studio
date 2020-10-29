@@ -8,6 +8,7 @@ CSML Studio currently supports the following NLP providers:
 * SAP Conversational AI \(formerly Recast.ai\)
 * Amazon Lex
 * Microsoft LUIS
+* Custom webhook
 
 Please refer to each provider's documentation for more information on how to generate credentials. CSML Studio supports the most common and secure way of connecting to these providers.
 
