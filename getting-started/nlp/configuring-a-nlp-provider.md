@@ -17,6 +17,7 @@ We are working on supporting the following additional providers in the short-ter
 
 * Rasa
 * IBM Watson
+* Wit.ai
 * Huggingface
 * Lettria
 
