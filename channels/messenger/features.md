@@ -118,7 +118,7 @@ say {
 
 ## Broadcast
 
-Messenger supports [broadcasts](../../api/broadcasts-api.md), with some important caveats. You should read carefully what the limitations are on [Facebook's documentation](https://developers.facebook.com/docs/messenger-platform/policy/policy-overview). In short:
+Messenger supports [broadcasts](../../api/api-reference/broadcasts-api.md), with some important caveats. You should read carefully what the limitations are on [Facebook's documentation](https://developers.facebook.com/docs/messenger-platform/policy/policy-overview). In short:
 
 * You can send any message that you want to any user that previously sent a message to the bot in the last 24 hours
 * Messages must be sent exclusively to the app-scoped user ID \(you can not send a broadcast using the user's email address for example\)

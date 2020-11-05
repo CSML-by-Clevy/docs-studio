@@ -23,10 +23,11 @@
 * [Getting Started](api/introduction.md)
 * [Authentication](api/authentication.md)
 * [Studio CLI](api/studio-cli.md)
-* [Chat API](api/chat-api.md)
-* [Bot API](api/bot-api.md)
-* [Broadcasts API](api/broadcasts-api.md)
-* [Conversations API](api/conversations-api.md)
+* [API Reference](api/api-reference/README.md)
+  * [Chat API](api/api-reference/chat-api.md)
+  * [Bot API](api/api-reference/bot-api.md)
+  * [Conversations API](api/api-reference/conversations-api.md)
+  * [Broadcasts API](api/api-reference/broadcasts-api.md)
 
 ## 📱 Channels
 

@@ -56,7 +56,7 @@ Once your function is uploaded, you can test it and call it in a CSML flow. Watc
 
 ## **Deploy your chatbot**
 
-Once your chatbot is ready to chat with your users, you can select the channel you want to connect on. For example, using the [CSML Studio](https://studio.csml.dev) you can connect your bots to Slack, Messenger, Whatsapp and other channels, or use the [CSML Client API](api/chat-api.md) to receive requests.
+Once your chatbot is ready to chat with your users, you can select the channel you want to connect on. For example, using the [CSML Studio](https://studio.csml.dev) you can connect your bots to Slack, Messenger, Whatsapp and other channels, or use the [CSML Client API](api/api-reference/chat-api.md) to receive requests.
 
 #### **Ready to experience CSML?**
 
