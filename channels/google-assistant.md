@@ -1,4 +1,4 @@
-# Google Assistant
+# Google Assistant \(beta\)
 
-Coming soon...
+Documentation coming soon...
 
