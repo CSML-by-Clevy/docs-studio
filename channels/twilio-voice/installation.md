@@ -20,7 +20,7 @@ Once you have created this app, find its **Application SID** by clicking on its 
 
 You will then need to link this Application with the phone number you created earlier. To do so, visit the [Phone Numbers sections of the Twilio console](https://www.twilio.com/console/phone-numbers/incoming), and click on your number to configure it. Under Voice & Fax, select Accept incoming voice calls, configure with TwiML App and pick the TwiML App we provided earlier.
 
-![](../../.gitbook/assets/image%20%2853%29.png)
+![](../../.gitbook/assets/image%20%2854%29.png)
 
 ### Step 3: Security and Authorization
 
@@ -32,7 +32,7 @@ The last step is to provide CSML Studio with means to make sure that the request
 
 To setup your Twilio Callbot in CSML Studio, you will simply need to visit the Channels section and create a new Twilio \(Voice\) channel. Then simply fill the required fields with the information you gathered earlier.
 
-![](../../.gitbook/assets/image%20%2852%29.png)
+![](../../.gitbook/assets/image%20%2853%29.png)
 
 About the Language field: as Twilio provides Speech-To-Text and Text-To-Speech capabilities, it must know in advance in what language the user is supposed to speak. [The list of all supported languages is available in Twilio's documentation](https://support.twilio.com/hc/en-us/articles/223132827-What-Languages-can-the-Say-TwiML-Verb-Speak-). You must specify the full ISO locale code \(i.e `en-US`, `fr-FR`...\).
 

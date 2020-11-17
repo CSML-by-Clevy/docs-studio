@@ -8,6 +8,10 @@ Designing a callbot is very different from designing a text-based chatbot. There
 * This integration supports both speech and DTMF inputs. When you can, let the caller use the number pad on their phone!
 * It is impossible/difficult to know in advance what language a user will speak, so we recommend using a different phone number/TwiML app for each language that you intend to serve with this chatbot.
 
+Twilio has a web interface to test your chatbot on the TwiML app's page. You can use it to test your bot!
+
+![](../../.gitbook/assets/image%20%2852%29.png)
+
 ## Components
 
 As you can expect, not all CSML components work well with a callbot, as there is no support for any visual component. However you can use all of the following components:
