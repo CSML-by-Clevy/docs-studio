@@ -6,7 +6,7 @@
 
 The first step is to create a new Google Cloud project. Visit [https://console.cloud.google.com/projectcreate](https://console.cloud.google.com/projectcreate) and fill the required fields:
 
-![](../../.gitbook/assets/image%20%2859%29.png)
+![](../../.gitbook/assets/image%20%2860%29.png)
 
 Then, [visit this page](https://console.cloud.google.com/marketplace/product/google/chat.googleapis.com) to enable the Google Chat API for this project:
 
@@ -14,7 +14,7 @@ Then, [visit this page](https://console.cloud.google.com/marketplace/product/goo
 
 Then, go to Identity &gt; Service Accounts in the menu \(or visit [https://console.cloud.google.com/identity/serviceaccounts](https://console.cloud.google.com/identity/serviceaccounts)\) and create a service account for the project.
 
-![](../../.gitbook/assets/image%20%2863%29.png)
+![](../../.gitbook/assets/image%20%2865%29.png)
 
 In the next screen, grant the **Project &gt; Editor** role to the service account:
 
@@ -48,9 +48,9 @@ Click **Save**, and you are all set!
 
 To find your bot in Google Chat, users have to navigate to the Bot catalog, which can be reached either by clicking the + icon next to the bot section of the left sidebar, or by searching for the name of the bot directly:
 
-![](../../.gitbook/assets/image%20%2860%29.png)
+![](../../.gitbook/assets/image%20%2861%29.png)
 
 Upon activating the bot for the first time, the Welcome Message will be displayed:
 
-![](../../.gitbook/assets/image%20%2862%29.png)
+![](../../.gitbook/assets/image%20%2863%29.png)
 

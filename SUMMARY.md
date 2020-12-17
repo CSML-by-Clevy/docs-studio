@@ -55,6 +55,7 @@
   * [Features](channels/microsoft-teams/features.md)
 * [Google Chat](channels/google-chat/README.md)
   * [Installation](channels/google-chat/installation.md)
+  * [Features](channels/google-chat/features.md)
 * [Twilio Voice](channels/twilio-voice/README.md)
   * [Installation](channels/twilio-voice/installation.md)
   * [Features and Limitations](channels/twilio-voice/features-and-limitations.md)
