@@ -8,10 +8,6 @@ description: in no particular order!
 
 ## SMS \(via Twilio\)
 
-## Amazon Alexa
-
-## Hangouts Chat
-
 ## Telegram
 
 ## WeChat
