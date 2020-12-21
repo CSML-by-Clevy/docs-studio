@@ -8,19 +8,12 @@ CSML Studio currently supports the following NLP providers:
 * SAP Conversational AI \(formerly Recast.ai\)
 * Amazon Lex
 * Microsoft LUIS
+* Rasa
+* Wit.ai
+* IBM Watson
 * Custom webhook
 
 Please refer to each provider's documentation for more information on how to generate credentials. CSML Studio supports the most common and secure way of connecting to these providers.
-
-#### Upcoming providers
-
-We are working on supporting the following additional providers in the short-term:
-
-* Rasa
-* IBM Watson
-* Wit.ai
-* Huggingface
-* Lettria
 
 If your favorite provider is not in this list, please reach out to [contact@csml.dev](mailto:contact@csml.dev).
 

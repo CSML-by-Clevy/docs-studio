@@ -14,9 +14,7 @@ A few additional properties are set in the resulting event:
 
 ## Using NLP in your flows
 
-You can now use the event by matching a found intent with a flow command, by setting that intent as one of the accepted commands for a flow:
-
-![](../../../.gitbook/assets/image%20%2827%29.png)
+You can now use the event by matching a found intent with a flow command, by setting that intent as one of the accepted commands for a flow, using the [AI Rules](../ai-rules.md) feature.
 
 Alternatively, you can also decide to match buttons or other actions within a flow with the found data. For instance, you can use NLP to detect a `YES_INTENT`  and match it without having to list all the possible ways to say "yes" in the button's `accepts` array.
 
