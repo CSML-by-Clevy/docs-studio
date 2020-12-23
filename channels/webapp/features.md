@@ -8,7 +8,7 @@ The broadcasting API is currently not supported on this channel.
 
 ## Injecting conversation metadata
 
-In some cases, it can be useful to load the webapp \(or chatbox\) with pre-existing metadata.
+By default, the webapp channel does not include any specific context about the conversation \(see the `_metadata`  object [documentation](https://docs.csml.dev/language/memory/temporary-and-long-term-variables#user-context)\). In some cases, it can be useful to load the webapp \(or chatbox\) with pre-existing metadata.
 
 Some common scenarios:
 
