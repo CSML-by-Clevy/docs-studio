@@ -12,9 +12,9 @@ In some cases, it can be useful to load the webapp \(or chatbox\) with pre-exist
 
 Some scenarios:
 
-* the bot is loaded in a website where the user is already known: in that case, we may be interested in injecting the user's context \(name, email...\) inside the conversation
-* the user is authentified on the parent website and we want to inject an authentication token into the user's conversation for subsequent calls
-* the same bot is used across several websites and we want to know which website the user is currently visiting: in that cas we may want to inject a website identifier into the conversation
+* the bot is loaded in a website where the user is already known: in that case, we may be interested in injecting the user's context \(name, email...\) inside the conversation.
+* the user is authentified on the parent website: in that case, we may want to inject an authentication token into the user's conversation for subsequent calls.
+* the same bot is used across several websites and we want to know which website the user is currently visiting: in that case we can inject a unique website identifier into the conversation.
 
 ![In this example, the chatbot already knows the user&apos;s email address and first name](../../.gitbook/assets/image%20%2870%29.png)
 
