@@ -10,7 +10,7 @@ The broadcasting API is currently not supported on this channel.
 
 In some cases, it can be useful to load the webapp \(or chatbox\) with pre-existing metadata.
 
-Some scenarios:
+Some common scenarios:
 
 * the bot is loaded in a website where the user is already known: in that case, we may be interested in injecting the user's context \(name, email...\) inside the conversation.
 * the user is authentified on the parent website: in that case, we may want to inject an authentication token into the user's conversation for subsequent calls.
