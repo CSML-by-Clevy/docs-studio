@@ -127,6 +127,56 @@ say Carousel(cards=[card1, card2, card3])
 
 ![](../../.gitbook/assets/image%20%2811%29.png)
 
+## Calendar
+
+This component will display a rich calendar in the webapp. By default, when passed with no argument, a simple single-date datepicker will appear:
+
+```cpp
+say Calendar()
+```
+
+![single mode](../../.gitbook/assets/image%20%2871%29.png)
+
+Optional parameters allow to set a `min_date` and/or `max_date` \(by unix timestamp, in milliseconds\) or an `input_mode` to accept `single` \(the default\) `multiple` or `range` inputs by the user:
+
+```cpp
+say Calendar(
+    min_date=1617494400000, // April 4th, 2021
+    max_date=1623974400000, // June 18th, 2021
+    input_mode="range" // can also be "multiple" or "single"
+)
+```
+
+![range mode](../../.gitbook/assets/image%20%2873%29.png)
+
+![multiple mode](../../.gitbook/assets/image%20%2872%29.png)
+
+The `event` value of a Calendar input will be comma-separated values of all user inputs. Also, `event.input_mode` will be set to the mode of the requested calendar, so that you can differenciate between `single`, `multiple` and `range` modes when receiving values.
+
+```cpp
+// given this sample CSML code
+say Calendar(...)
+hold
+say "{{event.get_content()}}"
+
+// example single mode
+{
+  "input_mode":"single",
+  "payload":"2021-04-07T00:00:00.000+02:00"
+}
+// example multiple mode
+{
+  "input_mode":"multiple",
+  "payload":"2021-04-07T00:00:00.000+02:00,2021-04-15T00:00:00.000+02:00,2021-04-20T00:00:00.000+02:00"
+}
+// example range mode
+{
+  "input_mode":"range",
+  "payload":"2021-04-07T00:00:00.000+02:00,2021-04-15T00:00:00.000+02:00"
+}
+
+```
+
 ## Full reference
 
 For a complete reference of all the code presented on this page, refer to the [following gist](https://gist.github.com/frsechet/a081fd649fc9f37372f144961f19533a):
