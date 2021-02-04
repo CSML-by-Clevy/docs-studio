@@ -429,31 +429,22 @@ Build a new version of the bot
 
 ```javascript
 {
-  "id": "38f0cde0-20ed-4082-b42b-e79b164394d9",
-  "organization_id": "0b50ddf9-052b-4dd6-9901-459caa15ed33",
-  "bot_id": "3944ec9b-81c8-4b58-854d-b412c89b8e42",
-  "data": {
-    "id": "3944ec9b-81c8-4b58-854d-b412c89b8e42",
-    "organization_id": "0b50ddf9-052b-4dd6-9901-459caa15ed33",
-    "name": "test",
-    "default_flow": "4c9d5234-cad2-4c97-be47-a82f31ec26a3",
-    "flows": [
-      {
-        "id": "4c9d5234-cad2-4c97-be47-a82f31ec26a3",
-        "bot_id": "3944ec9b-81c8-4b58-854d-b412c89b8e42",
-        "organization_id": "0b50ddf9-052b-4dd6-9901-459caa15ed33",
-        "name": "Default",
-        "description": "Default custom flow",
-        "commands": [
-          "/default"
-        ],
-        "content": "start:\n  say \"Hello\"\n  goto end",
-        "created_at": "2020-08-23T14:05:27.011Z",
-        "updated_at": "2020-08-23T14:05:27.011Z"
-      }
-    ]
-  },
-  "created_at": "2020-08-23T17:47:21.229Z"
+  "id": "3944ec9b-81c8-4b58-854d-b412c89b8e42",
+  "name": "test",
+  "default_flow": "4c9d5234-cad2-4c97-be47-a82f31ec26a3",
+  "created_at": "2020-08-23T17:47:21.229Z",
+  "version_id": "40e19091-9f5b-4f38-9494-9a97a1072640",
+  "engine_version": "1.4.0",
+  "flows": [
+    {
+      "id": "4c9d5234-cad2-4c97-be47-a82f31ec26a3",
+      "name": "Default",
+      "commands": [
+        "/default"
+      ],
+      "content": "start:\n  say \"Hello\"\n  goto end",
+    }
+  ]
 }
 ```
 {% endapi-method-response-example %}
@@ -488,31 +479,22 @@ Defaults to \`latest\` if not set.
 
 ```javascript
 {
-  "id": "38f0cde0-20ed-4082-b42b-e79b164394d9",
-  "organization_id": "0b50ddf9-052b-4dd6-9901-459caa15ed33",
-  "bot_id": "3944ec9b-81c8-4b58-854d-b412c89b8e42",
-  "data": {
-    "id": "3944ec9b-81c8-4b58-854d-b412c89b8e42",
-    "organization_id": "0b50ddf9-052b-4dd6-9901-459caa15ed33",
-    "name": "test",
-    "default_flow": "4c9d5234-cad2-4c97-be47-a82f31ec26a3",
-    "flows": [
-      {
-        "id": "4c9d5234-cad2-4c97-be47-a82f31ec26a3",
-        "bot_id": "3944ec9b-81c8-4b58-854d-b412c89b8e42",
-        "organization_id": "0b50ddf9-052b-4dd6-9901-459caa15ed33",
-        "name": "Default",
-        "description": "Default custom flow",
-        "commands": [
-          "/default"
-        ],
-        "content": "start:\n  say \"Hello\"\n  goto end",
-        "created_at": "2020-08-23T14:05:27.011Z",
-        "updated_at": "2020-08-23T14:05:27.011Z"
-      }
-    ]
-  },
-  "created_at": "2020-08-23T17:47:21.229Z"
+  "id": "3944ec9b-81c8-4b58-854d-b412c89b8e42",
+  "name": "test",
+  "default_flow": "4c9d5234-cad2-4c97-be47-a82f31ec26a3",
+  "created_at": "2020-08-23T17:47:21.229Z",
+  "version_id": "40e19091-9f5b-4f38-9494-9a97a1072640",
+  "engine_version": "1.4.0",
+  "flows": [
+    {
+      "id": "4c9d5234-cad2-4c97-be47-a82f31ec26a3",
+      "name": "Default",
+      "commands": [
+        "/default"
+      ],
+      "content": "start:\n  say \"Hello\"\n  goto end",
+    }
+  ]
 }
 ```
 {% endapi-method-response-example %}
