@@ -8,7 +8,7 @@ Every channel has different capabilities but all channels rely on the same API m
 
 All calls are to be made to `https://clients.csml.dev`.
 
-The API is versioned, and alls must be prefixed by their version number. The most recent version is `v1`. The API is reachable on route prefix `/api`.
+The API is versioned, and all calls must be prefixed by their version number. The most recent version is `v1`. The API is reachable on route prefix `/api`.
 
 Hence, the complete endpoint for the API is `https://clients.csml.dev/v1/api`.
 
