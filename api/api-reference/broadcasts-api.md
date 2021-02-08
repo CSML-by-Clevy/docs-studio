@@ -17,8 +17,7 @@ curl "https://clients.csml.dev/v1/api/broadcasts" \
      -d $'{
   "payload": {
     "content": {
-      "flow_id": "myflow",
-      "close_flows": true
+      "flow_id": "myflow"
     },
     "content_type": "flow_trigger"
   },
