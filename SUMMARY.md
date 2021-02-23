@@ -9,7 +9,7 @@
   * [The Dashboard](getting-started/studio-features/the-dashboard.md)
   * [AI Rules](getting-started/studio-features/ai-rules.md)
   * [Natural Language Processing](getting-started/studio-features/nlp/README.md)
-    * [Configuring a NLP Provider](getting-started/studio-features/nlp/configuring-a-nlp-provider.md)
+    * [Configuring a NLU Provider](getting-started/studio-features/nlp/configuring-a-nlp-provider.md)
   * [Functions and Apps](getting-started/studio-features/using-csml-apps/README.md)
     * [CSML Integrations \(Apps\)](getting-started/studio-features/using-csml-apps/csml-integrations-apps.md)
     * [Authoring Custom Functions](getting-started/studio-features/using-csml-apps/authoring-custom-functions.md)

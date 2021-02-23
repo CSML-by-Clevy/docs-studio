@@ -1,4 +1,4 @@
-# Configuring a NLP Provider
+# Configuring a NLU Provider
 
 ## Using SaaS providers
 
@@ -11,7 +11,7 @@ CSML Studio currently supports the following NLP providers:
 * Rasa
 * Wit.ai
 * IBM Watson
-* Custom webhook
+* Custom Webhook
 
 Please refer to each provider's documentation for more information on how to generate credentials. CSML Studio supports the most common and secure way of connecting to these providers.
 
@@ -35,10 +35,22 @@ When called, this endpoint must return the response in the following form:
 
 ```javascript
 {
-  "intent": "NAME_OF_INTENT", // can be null if no intent is found
-  "data": { 
-    ... any additional data: entities, sentiment analyzis...
+  // intent can also be null if no intent is found
+  "intent": { 
+    "name": "NAME_OF_INTENT", 
+    "confidence": 0.84
+  },
+  "entities": {
+    "someEntity": [
+      {
+        "value": "somevalue",
+        "metadata": { ... any additional information },
+      },
+      // ... other values for the same entity
+    ],
+    // ... other entities
   }
+  // ... any additional data: sentiment analyzis, language...
 }
 ```
 
