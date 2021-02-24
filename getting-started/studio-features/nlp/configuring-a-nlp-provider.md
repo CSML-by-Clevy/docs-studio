@@ -40,11 +40,16 @@ When called, this endpoint must return the response in the following form:
     "name": "NAME_OF_INTENT", 
     "confidence": 0.84
   },
+  "alternative_intents": [ 
+    // ... other matching intents
+  ],
   "entities": {
     "someEntity": [
       {
         "value": "somevalue",
-        "metadata": { ... any additional information },
+        "metadata": { 
+          // ... any additional information about entity
+        },
       },
       // ... other values for the same entity
     ],

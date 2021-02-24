@@ -8,10 +8,39 @@ By default, all bots run in Strict Mode, where the input needs to exactly match 
 
 When a NLP provider is configured, all `text` events will be sent to the NLP provider and returned either as a `payload` event if an intent is found, or untouched if no intent is found.
 
-A few additional properties are set in the resulting event:
+No matter what NLP provider you pick, any event that passes through this process will have the following properties:
+
+```javascript
+// if an intent is found:
+event.intent = {
+  "name": "..." // contains the name of the intent, same
+  "confidence": "..." // the confidence score that this is the right intent
+}
+
+// when no intent is found:
+event.intent == null
+
+// if other intents match the request:
+event.alternative_intents = [ Intent {}, ... ]
+
+// when entities are found, event.entities containes a map of found entities
+event.entities.ENTITY_NAME = [
+  {
+    "value": "the value",
+    "metadata": {
+      // ... additional metadata as returned by the NLP provider
+    }
+  }
+]
+
+// when this information is known, the processing language code
+event.language = "en"
+```
+
+A few additional properties are also set in the resulting event:
 
 * `event._nlp_provider`: contains details about the NLP provider integration
-* `event._nlp_result`: contains the raw response from the NLP provider request
+* `event._nlp_result`: contains the raw response from the NLP provider
 * `event.text`: contains the original text input
 
 ## Using NLU in your flows
