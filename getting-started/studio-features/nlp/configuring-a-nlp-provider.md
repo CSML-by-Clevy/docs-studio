@@ -17,7 +17,7 @@ Please refer to each provider's documentation for more information on how to gen
 
 If your favorite provider is not in this list, please reach out to [contact@csml.dev](mailto:contact@csml.dev).
 
-## Using the Webhook integration
+## Using the Custom Webhook integration
 
 You can also add a custom NLP engine by using the custom Webhook integration. This is especially useful if we don't currently support your NLP provider of choice or if you are running your NLP services on premise.
 
