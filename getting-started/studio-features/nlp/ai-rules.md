@@ -2,7 +2,7 @@
 
 In the AI Rules section of CSML Studio, you will find a way to configure flow commands for any of your flows. This section makes it easy to see in one single screen all the rules that govern the triggering of any of your flows!
 
-Commands are words or sentences that will trigger a given flow. For example, in the example below, if a user says `"Hi"`, no matter where they are in the bot, they will be redirected to the `Welcome` flow:
+Commands are words or sentences \(or intents, when NLU is configured\) that will trigger a given flow. For example, in the example below, if a user says `"Hi"`, no matter where they are in the bot, they will be redirected to the `Welcome` flow:
 
 ![](../../../.gitbook/assets/image%20%2876%29.png)
 
