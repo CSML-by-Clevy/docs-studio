@@ -1,12 +1,12 @@
-# Natural Language Processing
+# AI & Natural Language Processing
 
 CSML Studio allows you to use your own pre-trained Natural Language Processing \(NLP\) service directly in your CSML chatbots with very little configuration. You can easily setup your favorite NLP provider in **AI & NLU &gt; NLU Configuration**:
 
 ![](../../../.gitbook/assets/image%20%2879%29.png)
 
-By default, all bots run in Strict Mode, where the input needs to exactly match one of the given rules to trigger a flow.
+By default, all bots run in `Strict Mode`, where the input needs to exactly match one of the given rules to trigger a flow.
 
-When a NLP provider is configured, all `text` events will be sent to the NLP provider and returned either as a `payload` event if an intent is found, or untouched if no intent is found.
+When a NLP provider is configured, all `text` events will be sent to the NLP provider and returned either as a `payload` event if an intent is found, or untouched if no intent is found. When an intent is found, the value of the payload will be `intent:nameOfIntent`.
 
 No matter what NLP provider you pick, any event that passes through this process will have the following properties:
 
@@ -17,7 +17,7 @@ event.intent = {
   "confidence": "..." // the confidence score that this is the right intent
 }
 
-// when no intent is found:
+// or, when no intent is found:
 event.intent == null
 
 // if other intents match the request:
@@ -45,7 +45,7 @@ A few additional properties are also set in the resulting event:
 
 ## Using NLU in your flows
 
-You can now use the event by matching a found intent with a flow command, by setting that intent as one of the accepted commands for a flow, using the [AI Rules](../ai-rules.md) feature.
+You can now use the event by matching a found intent with a flow command, by setting that intent as one of the accepted commands for a flow, using the [AI Rules](ai-rules.md) feature.
 
 Alternatively, you can also decide to match buttons or other actions within a flow with the found data. For instance, you can use NLP to detect a `YES_INTENT`  and match it without having to list all the possible ways to say "yes" in the button's `accepts` array.
 
