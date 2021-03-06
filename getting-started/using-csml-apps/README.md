@@ -1,6 +1,6 @@
-# Functions and Apps
+# Apps and Integrations
 
-CSML provides a way to execute external code in any language of your choice via a _Foreign Function Interface_, represented by the `Fn()` keyword.
+CSML provides a way to execute external code in any language of your choice via a _Foreign Function Interface_, represented by the `App()` keyword.
 
 Here are some ideas for CSML integrations:
 
@@ -11,10 +11,10 @@ Here are some ideas for CSML integrations:
 * analyze text with [SAP Conversational AI](https://cai.tools.sap/), [Dialogflow](https://dialogflow.cloud.google.com/), [Rasa](https://rasa.com/)
 * book meetings on [Google Calendar](https://calendar.google.com/), [Hubspot](https://hubspot.com), [Calendly](https://calendly.com/fr)
 * trigger events in [Zapier](https://zapier.com), [IFTTT](https://ifttt.com/), [Integromat](https://www.integromat.com/)
-* generate QR codes, format documents, upload images
+* generate QR codes, format documents, upload images...
 * and many more!
 
-There are 2 ways you can augment your CSML chatbot by connecting it to other services: importing custom code, or installing ready-to-use CSML Apps.
+There are 2 ways you can augment your CSML chatbot by connecting it to other services: authoring your own custom apps, or installing ready-to-use CSML Integrations.
 
 ## 
 

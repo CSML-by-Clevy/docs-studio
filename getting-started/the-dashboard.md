@@ -14,7 +14,7 @@ You will find 3 different panels: the **Assistant**, the **Checklist** and the *
 
 The Assistant, taking the form of a simple chatbot, will help you quickly identify the current status of your chatbot and give you hints into what you could improve to make an even better chatbot. There are 2 sections, corresponding to the 2 major phases of preparing a chatbot for production: development, and deployment.
 
-The **Development assistant** will lead you to add more flows to your bot, remember more information about your end users and add more capabilities with the help of CSML apps and custom functions.
+The **Development assistant** will lead you to add more flows to your bot, remember more information about your end users and add more capabilities with the help of integrations and custom apps.
 
 The **Deployment assistant** will help you add your chatbot to a communication channel or manage your existing channels.
 

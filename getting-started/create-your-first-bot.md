@@ -88,21 +88,21 @@ email:
 
 ## **Sending data to Mailchimp**
 
-Thanks to our app store, you can install the Mailchimp app in a few clicks \(you'll just need to get your API Region, API key and contact list ID\). The App function needs an option parameter that encloses all the informations that Mailchimp needs.
+Thanks to our apps directory, you can install the Mailchimp app in a few clicks \(you'll just need to get your API Region, API key and contact list ID\). The app needs an option parameter that encloses all the informations that Mailchimp needs.
 
-Note that `Fn(...)` needs to be used in a `do` statement.
+Note that `App(...)` needs to be used in a `do` statement.
 
 ```cpp
 save:
-    // prepare the arguments required by the mailchimp function
+    // prepare the arguments required by the mailchimp app
     do options = {
         "listId": "d8acdcc85f",
         "email": nlEmail,
         "firstname": nlFirstname,
         "lastname": nlLastname,
     }
-    // execute the function
-    do mailchimpResponse = Fn("mailchimp", action="subscribeToList", options=options)
+    // execute the app
+    do mailchimpResponse = App("mailchimp", action="subscribeToList", options=options)
 
     say Typing(2000)
     say "I have added you to our newsletter subscription list !"
@@ -122,7 +122,7 @@ feedback:
     hold
 
     // query the NLP service
-    do sapcaiResponse = Fn("sap/cai", text=event)
+    do sapcaiResponse = App("sap/cai", text=event)
 
     // this contains the sentiment analysis of the query
     say sapcaiResponse.results.sentiment
@@ -197,7 +197,7 @@ feedback:
     hold
 
     // query the NLP service
-    do sapcaiResponse = Fn("sap/cai", text=event)
+    do sapcaiResponse = App("sap/cai", text=event)
 
     // this contains the sentiment analysis of the query
     say sapcaiResponse.results.sentiment
@@ -216,15 +216,15 @@ feedback:
 
 
 save:
-    // prepare the arguments required by the mailchimp function
+    // prepare the arguments required by the mailchimp app
     do options = {
         "listId": "d8acdcc85f",
         "email": nlEmail,
         "firstname": nlFirstname,
         "lastname": nlLastname,
     }
-    // execute the function
-    do mailchimpResponse = Fn("mailchimp", action="subscribeToList", options=options)
+    // execute the app
+    do mailchimpResponse = App("mailchimp", action="subscribeToList", options=options)
 
     say Typing(2000)
     say "I have added you to our newsletter subscription list !"
