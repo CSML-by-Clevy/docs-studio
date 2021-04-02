@@ -18,7 +18,8 @@ Some common scenarios:
 
 ![In this example, the chatbot already knows the user&apos;s email address and first name](../../.gitbook/assets/image%20%2870%29.png)
 
-The injected data is available in the `_metadata` global variable, available in every flow. The code of the example above is:
+The injected data is available in the `_metadata` global variable, available in every flow.  
+The code of the example above is:
 
 ```cpp
 start:

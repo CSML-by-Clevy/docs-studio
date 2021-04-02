@@ -20,9 +20,9 @@ Select **Interactivity and Shortcuts** in the left-side menu. Switch it on and e
 
 ![](../../.gitbook/assets/image%20%289%29.png)
 
-Select **OAuth and Permissions** in the left-side menu**.** Verify that the following minimum **Bot Token Scopes** are selected: `app_mentions:read`, `im:history`, `im:read`, `im:write`, `chat:write`, `links:read`, `links:write`, `files:read` and `files:write`.
+Select **OAuth and Permissions** in the left-side menu**.** Verify that the following minimum **Bot Token Scopes** are selected: `app_mentions:read`, `im:history`, `im:read`, `im:write`, `chat:write`, `links:read`, `links:write`, `files:read` ,`files:write`and `users.profile:read`.
 
-![](../../.gitbook/assets/image%20%286%29.png)
+![](../../.gitbook/assets/capture-de-cran-2021-03-24-a-13.38.06.png)
 
 At the top of the page, click on **Install App to Workspace**. You will be redirected to confirm your identity; you need to **Authorize** the app.
 

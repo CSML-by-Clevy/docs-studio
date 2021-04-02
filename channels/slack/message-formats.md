@@ -116,3 +116,21 @@ For a complete reference of all the code presented on this page, refer to the [f
 
 {% embed url="https://gist.github.com/frsechet/f2c59db56c149dade53c77598229d188" caption="" %}
 
+## Event Metadata
+
+A sample `_metadata`  for an incoming event will be similar to the following object:
+
+```javascript
+{
+  "_channel": {
+    "app_id": "A01NUE2CBHC",
+    "type": "slack",
+    "name": "Slack channel"
+  },
+  "last_name": "darrigade",
+  "user_id": "U01M7F9U93K",
+  "email": "mathieu.darrigade@clevy.io",
+  "first_name": "mathieu"
+}
+```
+
