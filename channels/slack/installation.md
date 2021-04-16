@@ -16,7 +16,7 @@ On the same page, click on **Add Bot User Event** under **Subscribe to Bot Event
 
 ![](../../.gitbook/assets/image%20%285%29.png)
 
-Select **Interactivity and Shortcuts** in the left-side menu. Switch it on and enter [**https://clients.csml.dev/prod/slack/receive**](https://clients.csml.dev/prod/slack/receive) in the **Request URL** field, then click on **Save Changes.**
+Select **Interactivity and Shortcuts** in the left-side menu. Switch it on and enter [**https://clients.csml.dev/v1/slack/receive**](https://clients.csml.dev/prod/slack/receive) in the **Request URL** field, then click on **Save Changes.**
 
 ![](../../.gitbook/assets/image%20%289%29.png)
 
