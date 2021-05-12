@@ -17,6 +17,7 @@
 * [Livechat](getting-started/livechat/README.md)
   * [Chatwoot](getting-started/livechat/chatwoot.md)
   * [Gorgias](getting-started/livechat/gorgias.md)
+* [Bot Configuration Options](getting-started/bot-configuration-options.md)
 * [💻 CSML Language Reference](https://docs.csml.dev/language)
 
 ## 🔌 Studio API <a id="api"></a>
@@ -36,8 +37,8 @@
 * [Webapp](channels/webapp/README.md)
   * [Installation](channels/webapp/installation.md)
   * [Configuration](channels/webapp/configuration.md)
+  * [Other Features](channels/webapp/features.md)
   * [Chatbox](channels/webapp/chatbox.md)
-  * [Features](channels/webapp/features.md)
   * [Message formats](channels/webapp/message-formats.md)
 * [Messenger](channels/messenger/README.md)
   * [Installation](channels/messenger/installation.md)

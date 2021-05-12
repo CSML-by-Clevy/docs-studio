@@ -66,6 +66,23 @@ say "user clicked on button with the {{event}} payload"
 The Webapp channel also supports single `Button` components. However, as cross-channel support for single buttons is not guaranteed, we encourage you to use the standard Question component instead, with a title.
 {% endhint %}
 
+## QuickReply
+
+Quick replies are similar to Questions, where the buttons are removed from view once the user has selected one of them. In a majority of scenarios, you should prefer QuickReplies over regular questions, especially when you don't want the user to be able to scroll up and select one of the buttons after they have made a first choice. Questions should be used when a button is used as a trigger to a given flow \(as configured in the bot's [AI Rules](../../getting-started/nlp/ai-rules.md)\).
+
+```cpp
+say QuickReply(
+  "Do you like cheese?",
+  buttons=[Button("Yes 🧀"), Button("Also yes 🫕")]
+)
+```
+
+![](../../.gitbook/assets/image%20%2882%29.png)
+
+{% hint style="info" %}
+Try this bot: [https://play.csml.dev/bot/0e85f280-d502-4535-8b78-fb763979777e](https://play.csml.dev/bot/0e85f280-d502-4535-8b78-fb763979777e)
+{% endhint %}
+
 ## Video, Audio
 
 The Video component supports links to mp4 files, as well as Youtube, Vimeo and Dailymotion URLs. The Audio component supports links to mp3 files, as well as Spotify, Soundcloud and Deezer URLs.
@@ -174,8 +191,11 @@ say "{{event.get_content()}}"
   "input_mode":"range",
   "payload":"2021-04-07T00:00:00.000+02:00,2021-04-15T00:00:00.000+02:00"
 }
-
 ```
+
+{% hint style="info" %}
+Try this bot: [https://play.csml.dev/bot/8ec99c8c-5bfb-44cd-974d-b7781009279b](https://play.csml.dev/bot/8ec99c8c-5bfb-44cd-974d-b7781009279b)
+{% endhint %}
 
 ## Full reference
 

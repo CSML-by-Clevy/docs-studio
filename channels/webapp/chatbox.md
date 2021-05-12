@@ -6,7 +6,7 @@ The webapp channel also comes with a configurable website plugin \(called the **
 
 Simply add the following line of code in your source code, just before the closing `</body>` tag \(replace it with the actual line that you can find in your Webapp configuration panel\):
 
-```text
+```markup
 <script
   src="https://chatbox.csml.dev/script.min.js?token=CHATBOX_TOKEN"
   id="clevy-chatbox"
@@ -18,6 +18,8 @@ Once this is done, a chat bubble will appear as follows on every page where that
 
 ![](../../.gitbook/assets/image%20%2837%29.png)
 
+## Adding a Custom Greeting
+
 CSML Studio has an option to display an optional greeting text when the chatbox is closed:
 
 ![](../../.gitbook/assets/image%20%2836%29.png)
@@ -26,5 +28,25 @@ The content of the text bubble is configurable in the Chatbox settings at the bo
 
 ![](../../.gitbook/assets/image%20%2838%29.png)
 
+## Optional Parameters
 
+Several parameters are available as [standard HTML data attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes) to maximize compatibility across browsers.
+
+```markup
+<script
+  src="{CHATBOX_URL}"
+  id="clevy-chatbox"
+  data-position="left"
+  data-webapp-metadata="%7B%22firstname%22%3A%22Jane%22%2C%22email%22%3A%22jane.doe%40company.com%22%7D"
+  async>
+</script>
+```
+
+### data-position
+
+By default, the chatbox will be displayed on the right side of the screen. To display the chatbox on the left instead, simply add `data-position="left"`.
+
+### data-webapp-metadata
+
+To add custom metadata in a chatbox \(see this page for more information about injecting metadata in the webapp\), you need to add a `data-webapp-metadata` attribute to the chatbox initialization script tag that contains the encoded \(with [javascript's encodeURIComponent function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent)\) JSON string of the metadata you want to inject. For example `data-webapp-metadata="%7B%22email%22%3A%22jane.doe%40company.com%22%7D"`
 
