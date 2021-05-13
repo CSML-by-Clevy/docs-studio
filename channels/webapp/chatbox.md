@@ -48,5 +48,29 @@ By default, the chatbox will be displayed on the right side of the screen. To di
 
 ### data-webapp-metadata
 
-To add custom metadata in a chatbox \(see this page for more information about injecting metadata in the webapp\), you need to add a `data-webapp-metadata` attribute to the chatbox initialization script tag that contains the encoded \(with [javascript's encodeURIComponent function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent)\) JSON string of the metadata you want to inject. For example `data-webapp-metadata="%7B%22email%22%3A%22jane.doe%40company.com%22%7D"`
+To add custom metadata in a chatbox \(see this page for more information about injecting metadata in the webapp\), you need to add a `data-webapp-metadata` attribute to the chatbox initialization script tag that contains the encoded \(with [javascript's encodeURIComponent function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent)\) JSON string of the metadata you want to inject.
+
+For example: `data-webapp-metadata="%7B%22email%22%3A%22jane.doe%40company.com%22%7D"`
+
+### data-logo-url
+
+You can configure a custom image to be used as the chatbox logo by setting this parameter to the URL of your image. You can use a transparent png or a svg to achieve this effect below, or directly use a square image \(it will be rounded automatically\) without a transparent background to use as the logo.
+
+For example: `data-logo-url="https://cdn.clevy.io/clevy-logo-square-white.png"`
+
+![](../../.gitbook/assets/image%20%2887%29.png)
+
+### data-launcher-fill, data-launcher-background
+
+These two parameters let you change the fill color of the default icons, as well as the background for the launcher button.
+
+Any valid CSS value for these elements is accepted. The default values are:
+
+```markup
+<script src="{CHATBOX_URL}"
+  id="clevy-chatbox"
+  data-launcher-fill="#ffffff"
+  data-launcher-background="linear-gradient(135deg, #4f89fc 0, #1965ff 51%, #104dc7 100%)"
+  async></script>
+```
 
