@@ -39,7 +39,7 @@
   * [Configuration](channels/webapp/configuration.md)
   * [Other Features](channels/webapp/features.md)
   * [Chatbox](channels/webapp/chatbox.md)
-  * [Message formats](channels/webapp/message-formats.md)
+  * [Message Formats](channels/webapp/message-formats.md)
 * [Messenger](channels/messenger/README.md)
   * [Installation](channels/messenger/installation.md)
   * [Configuration](channels/messenger/configuration.md)

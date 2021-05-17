@@ -1,4 +1,4 @@
-# Message formats
+# Message Formats
 
 ## Text
 

@@ -48,7 +48,7 @@ By default, the chatbox will be displayed on the right side of the screen. To di
 
 ### data-webapp-metadata
 
-To add custom metadata in a chatbox \(see this page for more information about injecting metadata in the webapp\), you need to add a `data-webapp-metadata` attribute to the chatbox initialization script tag that contains the encoded \(with [javascript's encodeURIComponent function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent)\) JSON string of the metadata you want to inject.
+To add custom metadata in a chatbox \([see this page for more information about injecting metadata in the webapp](features.md#injecting-conversation-metadata)\), you need to add a `data-webapp-metadata` attribute to the chatbox initialization script tag that contains the encoded \(with [javascript's encodeURIComponent function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent)\) JSON string of the metadata you want to inject.
 
 For example: `data-webapp-metadata="%7B%22email%22%3A%22jane.doe%40company.com%22%7D"`
 
