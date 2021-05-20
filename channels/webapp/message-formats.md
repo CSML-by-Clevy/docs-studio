@@ -197,9 +197,73 @@ say "{{event.get_content()}}"
 Try this bot: [https://play.csml.dev/bot/8ec99c8c-5bfb-44cd-974d-b7781009279b](https://play.csml.dev/bot/8ec99c8c-5bfb-44cd-974d-b7781009279b)
 {% endhint %}
 
-## Full reference
+## Input
 
-For a complete reference of all the code presented on this page, refer to the [following gist](https://gist.github.com/frsechet/a081fd649fc9f37372f144961f19533a):
+To gain some control over what a user can enter in a form \(for example, if you need to make sure they only enter an email address or a valid number when required\), you can also use the `Input` component.
 
-{% embed url="https://gist.github.com/frsechet/a081fd649fc9f37372f144961f19533a" caption="" %}
+There are several variants of input fields: `email`, `text`, `textarea`, `number`. By default, inputs are `type="text"`. All parameters are optional, and the basic usage is as follows:
+
+```cpp
+say Input(
+  type="text", // default
+  title="What is this field?",
+  description="Some details about what is expected",
+  minlength=0, // for text/email/textarea inputs only
+  maxlength=100, // for text/email/textarea inputs only
+  required=false,
+  placeholder="This is an input",
+  default_value="This is set by default",
+  submit_label="Submit" // the text for the validation button, defaults to OK
+)
+```
+
+![](../../.gitbook/assets/image%20%2890%29.png)
+
+You can check this reference about the minlength and maxlength parameters: [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text\#additional\_attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text#additional_attributes)
+
+A completely bare `say Input()` component will result in this simple, empty text input:
+
+![](../../.gitbook/assets/image%20%2891%29.png)
+
+Inputs with `type="number"` can have some different parameters, just like HTML inputs \(all are optional as well\):
+
+```cpp
+say Input(
+  type="number",
+  title="Enter a number",
+  min=-14.3,
+  max=42,
+  // the other parameters from the previous example also apply
+)
+```
+
+![](../../.gitbook/assets/image%20%2889%29.png)
+
+You can check this reference about the min and max parameters: [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input/number\#additional\_attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input/number#additional_attributes)
+
+## Multiselect
+
+If you want to let users select multiple options, the `Multiselect()` component is the solution. Users will be able to select any number of options in the given list. You can force a `min` and `max` number of choices, or if `required=true`, it means that at least one option must be selected to continue.
+
+```cpp
+say Multiselect(
+  title="Why do you like CSML?",
+  description="Select all options that apply!",
+  min=2,
+  submit_label="Yes, that's it!",
+  options=[
+    { "value": "easy", "label": "It's easy to learn" },
+    { "value": "fast", "label": "It's pretty quick" },
+    { "value": "scalable", "label": "It's scalable" },
+    { "value": "fun", "label": "It's fun" },
+    { "value": "pako", "label": "The mascot 🦜 is cool" },
+  ]
+)
+```
+
+![](../../.gitbook/assets/image%20%2892%29.png)
+
+When several options are selected, you will receive a comma-separated list of the corresponding values \(not the label\), in the order they were selected by the user. In the case above, you would receive:
+
+![](../../.gitbook/assets/image%20%2893%29.png)
 
