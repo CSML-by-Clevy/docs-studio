@@ -252,18 +252,18 @@ say Multiselect(
   min=2,
   submit_label="Yes, that's it!",
   options=[
-    { "value": "easy", "label": "It's easy to learn" },
-    { "value": "fast", "label": "It's pretty quick" },
-    { "value": "scalable", "label": "It's scalable" },
-    { "value": "fun", "label": "It's fun" },
-    { "value": "pako", "label": "The mascot 🦜 is cool" },
+    Button("It's easy to learn", payload="easy"),
+    Button("It's pretty quick", payload="fast"),
+    Button("It's scalable", payload="scalable"),
+    Button("It's fun", payload="fun"),
+    Button("The mascot 🦜 is cool", payload="pako"),
   ]
 )
 ```
 
 ![](../../.gitbook/assets/image%20%2892%29.png)
 
-When several options are selected, you will receive a comma-separated list of the corresponding values \(not the label\), in the order they were selected by the user. In the case above, you would receive:
+When several options are selected, you will receive a comma-separated list of the corresponding payloads \(_not necessarily the button's title!_\), in the order they were selected by the user. In the case above, you would receive:
 
 ![](../../.gitbook/assets/image%20%2893%29.png)
 
