@@ -28,9 +28,9 @@ The content of the text bubble is configurable in the Chatbox settings at the bo
 
 ![](../../.gitbook/assets/image%20%2838%29.png)
 
-## Optional Parameters
+## Optional Attributes
 
-Several parameters are available as [standard HTML data attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes) to maximize compatibility across browsers.
+Several configurations are available as [standard HTML data attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes) to maximize compatibility across browsers.
 
 ```markup
 <script
