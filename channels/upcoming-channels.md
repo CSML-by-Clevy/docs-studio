@@ -4,13 +4,15 @@ description: in no particular order!
 
 # Upcoming channels
 
-## SMS \(via Callr\)
+The following channels \(in no particular order\) are on our roadmap.
 
-## SMS \(via Twilio\)
+* SMS \(via Callr\)
+* SMS \(via Twilio\)
+* Whatsapp \(via Twilio\)
+* Telegram
+* Discord
+* Instagram
+* WeChat
 
-## Telegram
 
-## WeChat
-
-## Viber
 
