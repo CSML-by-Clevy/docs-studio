@@ -4,7 +4,7 @@
 
 To get started, go to your bot's **Settings &gt; Livechat** then select Chatwoot as your livechat support platform.
 
-![](../../.gitbook/assets/image%20%2829%29.png)
+![](../../.gitbook/assets/cleanshot-2021-06-04-at-12.37.58-2x.png)
 
 You will need to retrieve:
 

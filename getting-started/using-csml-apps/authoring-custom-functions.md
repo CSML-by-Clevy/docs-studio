@@ -40,7 +40,7 @@ To test this program, simply run `node test.js` at the root of the project. You 
 
 Select **Add Custom App** at the top-right corner of the apps page, which brings you directly to Quick Mode \(nodejs\). Simply copy-paste the content of index.js into the code editor, choose a name for your app, then click **Save**.
 
-![](../../.gitbook/assets/image%20%2833%29.png)
+![](../../.gitbook/assets/cleanshot-2021-06-04-at-12.30.29-2x%20%281%29.png)
 
 You can now use your app in your CSML Chatbot, like this:
 

@@ -6,7 +6,7 @@
 
 To get started, go to your bot's **Settings &gt; Livechat** then select Gorgias as your livechat support platform.
 
-![](../../.gitbook/assets/image%20%2819%29.png)
+![](../../.gitbook/assets/cleanshot-2021-06-04-at-12.37.31-2x.png)
 
 In your Gorgias backoffice, visit **Settings &gt; REST API** and copy/paste the information in the next screen:
 

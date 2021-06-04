@@ -35,7 +35,7 @@ In a conversational logic, CSML allows the chatbot to wait for a user answer usi
 
 Here is an example of a simple interaction where the bot is asking if the user likes guitar and waiting for two specific answers in order to trigger actions.
 
-![](.gitbook/assets/gs-interactions.gif)
+![](.gitbook/assets/cleanshot-2021-06-04-at-10.34.57.gif)
 
 ## **Memory and local variables**
 
@@ -50,9 +50,7 @@ You can output any variable into a string value with the double curly braces.
 
 You can select an existing integration in the apps library or add your own function coded in any language. Find a few examples in our [GitHub repository](https://github.com/CSML-by-Clevy) and how to use functions in our [documentation.](https://docs.csml.dev/#custom-code-execution)
 
-Once your function is uploaded, you can test it and call it in a CSML flow. Watch an example below or [read more about functions and apps here](getting-started/using-csml-apps/)!
-
-![](.gitbook/assets/gs-functions.gif)
+Once your function is uploaded, you can test it and call it in a CSML flow. [Read more about functions and apps here](getting-started/using-csml-apps/)!
 
 ## **Deploy your chatbot**
 

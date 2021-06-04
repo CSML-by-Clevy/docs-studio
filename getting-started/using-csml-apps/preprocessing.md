@@ -27,7 +27,7 @@ exports.handler = async (event) => {
     return {
       content_type: 'image',
       content: {
-        url: 'https://www.papillesetpupilles.fr/wp-content/uploads/2019/04/Hot-dog-%C2%A9nikolaskus-shutterstock.jpg',
+P        url: 'https://media.istockphoto.com/photos/hot-dog-on-white-picture-id1130731707',
         _original_event: event,
       },
     };
@@ -51,9 +51,9 @@ Next, go to **Apps &gt; Add Custom App** and under **Quick Mode**, simply copy a
 
 ![](../../.gitbook/assets/image%20%2834%29.png)
 
-Then, head to **Settings &gt; Preprocessing**. We only want to preprocess text events, but of course, we could do a similar app for other types of events. 
+Then, head to the **Preprocessing** page. We only want to preprocess text events, but of course, we could do a similar app for other types of events. 
 
-![](../../.gitbook/assets/image%20%2835%29.png)
+![](../../.gitbook/assets/cleanshot-2021-06-04-at-12.32.45-2x.png)
 
 Now, back to the CSML Editor, you can do something like the following:
 
@@ -64,5 +64,5 @@ start:
   goto end
 ```
 
-![](../../.gitbook/assets/image%20%2832%29.png)
+![](../../.gitbook/assets/cleanshot-2021-06-04-at-12.36.48-2x.png)
 

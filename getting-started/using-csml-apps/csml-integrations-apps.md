@@ -8,7 +8,7 @@ CSML Studio integrations are ready to use. To configure an integration, you only
 
 For instance, if you are looking to add some fun Gifs to your bot, you can try our [Giphy](https://giphy.com) integration. To get started, go to **Apps &gt; Available Integrations &gt; Giphy**.
 
-![](../../.gitbook/assets/image%20%2815%29.png)
+![](../../.gitbook/assets/cleanshot-2021-06-04-at-12.30.59-2x.png)
 
 Simply click on **Install**, and you are done! Some apps require credentials or API keys, but this one does not. If that's the case you are prompted to add _environment variables_ upon installation.
 

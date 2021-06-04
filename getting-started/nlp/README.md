@@ -2,8 +2,6 @@
 
 CSML Studio allows you to use your own pre-trained Natural Language Processing \(NLP\) service directly in your CSML chatbots with very little configuration. You can easily setup your favorite NLP provider in **AI & NLU &gt; NLU Configuration**:
 
-![](../../.gitbook/assets/image%20%2879%29.png)
-
 By default, all bots run in `Strict Mode`, where the input needs to exactly match one of the given rules to trigger a flow.
 
 When a NLP provider is configured, all `text` events will be sent to the NLP provider and returned either as a `payload` event if an intent is found, or untouched if no intent is found. When an intent is found, the value of the payload will be `intent:nameOfIntent`.
