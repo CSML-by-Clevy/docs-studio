@@ -8,7 +8,7 @@ To get started, you will need to create a Twilio account and purchase a phone nu
 
 ### Step 2: Configure the messaging webhook
 
-To configure the webhook, you can either use a TwiML app c or directly set a webhook in the messaging configuration panel. Either way, you will need to set the POST webhook to [https://clients.csml.dev/v1/twilio/sms/request](https://clients.csml.dev/v1/twilio/sms/request), for example like so:
+To configure the webhook, you can either use a TwiML app c or directly set a webhook in the messaging configuration panel. Either way, you will need to set the HTTP POST webhook to [https://clients.csml.dev/v1/twilio/sms/request](https://clients.csml.dev/v1/twilio/sms/request), for example like so:
 
 ![](../../.gitbook/assets/image%20%28100%29.png)
 
