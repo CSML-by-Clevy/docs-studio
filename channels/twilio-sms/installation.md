@@ -10,7 +10,7 @@ To get started, you will need to create a Twilio account and purchase a phone nu
 
 To configure the webhook, you can either use a TwiML app c or directly set a webhook in the messaging configuration panel. Either way, you will need to set the HTTP POST webhook to [https://clients.csml.dev/v1/twilio/sms/request](https://clients.csml.dev/v1/twilio/sms/request), for example like so:
 
-![](../../.gitbook/assets/image%20%28100%29.png)
+![](../../.gitbook/assets/image%20%28101%29.png)
 
 ### Step 3: Security and Authorization
 
@@ -22,7 +22,9 @@ The last step is to provide CSML Studio with means to make sure that the request
 
 To setup your Twilio SMS channel in CSML Studio, you will simply need to visit the Channels section and create a new Twilio SMS channel. Then simply fill the required fields with the information you gathered earlier.
 
-![](../../.gitbook/assets/image%20%2899%29.png)
+![](../../.gitbook/assets/image%20%28100%29.png)
 
 Once you click on **Submit**, your bot is ready to use!
+
+![](../../.gitbook/assets/image%20%2899%29.png)
 

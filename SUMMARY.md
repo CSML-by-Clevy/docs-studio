@@ -61,6 +61,7 @@
   * [Features and Limitations](channels/twilio-voice/features-and-limitations.md)
 * [Twilio SMS](channels/twilio-sms/README.md)
   * [Installation](channels/twilio-sms/installation.md)
+  * [Features and Limitations](channels/twilio-sms/features-and-limitations.md)
 * [Whatsapp \(via MessageBird\)](channels/whatsapp-via-messagebird/README.md)
   * [Installation](channels/whatsapp-via-messagebird/installation.md)
   * [Features](channels/whatsapp-via-messagebird/features.md)
