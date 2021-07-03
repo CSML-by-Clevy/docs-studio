@@ -267,3 +267,33 @@ When several options are selected, you will receive a comma-separated list of th
 
 ![](../../.gitbook/assets/image%20%2893%29.png)
 
+## LaTeX
+
+[LaTeX](https://en.wikipedia.org/wiki/LaTeX) is a popular language that lets you write \(among other things\) complex math formulas. The webapp and chatbox include [KaTeX](https://katex.org/) to support this language natively with a custom component:
+
+```cpp
+start:
+  say LaTeX(
+    "\(x^2 + y^2 = z^2\)",
+    // If the user has "audio mode" enabled the tts parameter
+    // will be used as the basis for the speech synthesis
+    tts="This is the Pythagorean theorem!",
+  )
+
+  say LaTeX("\\def\\arraystretch{1.5}
+   \\begin{array}{c:c:c}
+   a & b & c \\\\ \\hline
+   d & e & f \\\\
+   \\hdashline
+   g & h & i
+\\end{array}")
+```
+
+![](../../.gitbook/assets/image%20%28102%29.png)
+
+You can find more examples of supported formats on the KaTeX documentation: [https://katex.org/docs/supported.html](https://katex.org/docs/supported.html). Please keep in mind that backslashes \(`\`\) must be escaped properly in your code!
+
+{% hint style="info" %}
+Try this bot: [https://play.csml.dev/bot/19ba90fc-bfc0-4350-a2b0-9ceff8aff039](https://play.csml.dev/bot/19ba90fc-bfc0-4350-a2b0-9ceff8aff039)
+{% endhint %}
+
