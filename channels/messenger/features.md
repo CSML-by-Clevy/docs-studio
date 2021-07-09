@@ -178,7 +178,10 @@ A sample `_metadata`  for an incoming event will be similar to the following obj
   "first_name": "Tutu",
   "id": "3806023792815674",
   "last_name": "Tata",
-  "name": "Tutu Tata"
+  "name": "Tutu Tata",
+  "gender": "male",
+  "locale": "en_US",
+  "timezone": 2
 }
 ```
 
