@@ -20,9 +20,9 @@ You will also need a Facebook Business page linked to your Instagram Business ac
 
 To connect your Instagram account to your CSML Studio chatbot, visit the **Channels** page, then click on **Instagram** to create a new Instagram channel. Then, follow the Login with Facebook flow, and make sure to select both the Instagram Business Account, and the Facebook Page it is linked with:
 
-![](../../.gitbook/assets/image%20%28109%29.png)
+![](../../.gitbook/assets/image%20%28110%29.png)
 
-![](../../.gitbook/assets/image%20%28106%29.png)
+![](../../.gitbook/assets/image%20%28107%29.png)
 
 Also, make sure that all the requested permissions are checked:
 

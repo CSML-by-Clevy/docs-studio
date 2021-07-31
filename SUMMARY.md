@@ -61,6 +61,8 @@
   * [Features](channels/whatsapp-via-messagebird/features.md)
 * [Instagram](channels/instagram/README.md)
   * [Installation](channels/instagram/installation.md)
+  * [Configuration](channels/instagram/configuration.md)
+  * [Features](channels/instagram/features.md)
 * [Telegram](channels/telegram.md)
 * [SMS \(with Twilio\)](channels/twilio-sms/README.md)
   * [Installation](channels/twilio-sms/installation.md)
