@@ -6,12 +6,8 @@ description: in no particular order!
 
 The following channels \(in no particular order\) are on our roadmap.
 
-* SMS \(via Callr\)
-* SMS \(via Twilio\)
-* Whatsapp \(via Twilio\)
-* Telegram
+* Viber
 * Discord
-* Instagram
 * WeChat
 
 
