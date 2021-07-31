@@ -14,7 +14,7 @@ The easiest way to develop CSML chatbots is by using the [CSML development studi
 
 Each bot gives you a full access to the CSML framework - a set of specialized tools to make and customize your chatbots : code editor, chatbox, apps, functions and files library, analytics and channels.
 
-![](.gitbook/assets/gs-bots.gif)
+![Some of the Chatbot Templates available in CSML Studio](.gitbook/assets/image%20%28103%29.png)
 
 ## **Create your own conversational experiences**
 
