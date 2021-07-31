@@ -1,6 +1,6 @@
 # Installation
 
-## Setup
+## Instagram Setup
 
 ### Instagram Business Account
 
