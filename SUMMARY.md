@@ -72,9 +72,9 @@
 * [Callbots \(with Twilio\)](channels/twilio-voice/README.md)
   * [Installation](channels/twilio-voice/installation.md)
   * [Features and Limitations](channels/twilio-voice/features-and-limitations.md)
-* [Amazon Alexa \(beta\)](channels/alexa/README.md)
+* [Amazon Alexa](channels/alexa/README.md)
   * [Installation](channels/alexa/installation.md)
-* [Google Assistant \(beta\)](channels/google-assistant/README.md)
+* [Google Assistant](channels/google-assistant/README.md)
   * [Installation](channels/google-assistant/installation.md)
 * [Upcoming channels](channels/upcoming-channels.md)
 

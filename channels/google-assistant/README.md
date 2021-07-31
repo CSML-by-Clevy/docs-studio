@@ -1,2 +1,2 @@
-# Google Assistant \(beta\)
+# Google Assistant
 
