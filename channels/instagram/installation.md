@@ -11,12 +11,6 @@ Some common issues may come up and prevent you to correctly connect your chatbot
 * Make sure that your Instagram account has the **Business** type \(_**not**_ the Creator type\). You can switch from a Creator to a Business account under **Settings &gt; Account &gt; Switch to Business Account**.
 * You also need to **allow access to messages** for the chatbot to be able to access them. [Here is how](https://www.facebook.com/help/instagram/791161338412168).
 
-{% hint style="warning" %}
-Instagram Messaging APIs are currently in [rollout phase 2](https://developers.facebook.com/docs/messenger-platform/instagram/rollout), which means only accounts with 1,000 to 100,000 followers can currently deploy Instagram chatbots. It will be accessible to all accounts later this year.
-
-If your account does not fit this requirement, you can create a test account on Instagram \(starting with `test_`\) and follow the same steps described below.
-{% endhint %}
-
 ### Facebook Business Page
 
 You will also need a Facebook page linked to your Instagram Business account. You can easily create a new page or use an existing one, and connect it to your Instagram account by [following this process](https://www.facebook.com/help/1148909221857370).
