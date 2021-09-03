@@ -371,11 +371,11 @@ Validate bot data against the CSML interpreter
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="bot" type="object" required=false %}
-a bot object as returned from the GET /bot operation
+{% api-method-body-parameters %}
+{% api-method-parameter name="" type="object" required=false %}
+The bot object as retrieved from the GET /bot operation
 {% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
