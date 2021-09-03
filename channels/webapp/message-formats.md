@@ -142,7 +142,25 @@ do card3 = Card(
 say Carousel(cards=[card1, card2, card3])
 ```
 
-![](../../.gitbook/assets/image%20%2811%29.png)
+![](../../.gitbook/assets/image%20%28120%29.png)
+
+The cards themselves can be made clickable by adding an optional `default_action` Url\(\) parameter:
+
+```cpp
+do card = Card(
+    "The Marshall Mathers LP",
+    subtitle="Release date: May 23, 2000",
+    default_action=Url("https://en.wikipedia.org/wiki/Eminem"),
+    image_url="https://upload.wikimedia.org/wikipedia/en/a/ae/The_Marshall_Mathers_LP.jpg",
+    buttons=[Button("Listen to this album", payload="marshallmatherslp1")]
+)
+```
+
+The carousel can also automatically navigate horizontaly by adding the optional `autoplay` parameter \(which defaults to `false`\):
+
+```cpp
+say Carousel([ card1, card2, card3 ], autoplay=true)
+```
 
 ## Calendar
 

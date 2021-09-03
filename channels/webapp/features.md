@@ -1,4 +1,4 @@
-# Other Features
+# Customization
 
 ## Injecting Conversation Metadata
 
