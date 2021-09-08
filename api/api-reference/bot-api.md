@@ -31,6 +31,9 @@ Retrieve the bot for this integration
   "default_flow": "fd2e74e5-1305-4650-a300-8097d71df01f",
   "created_at": "2019-12-11T18:59:39.391Z",
   "updated_at": "2019-12-13T01:27:38.653Z",
+  "env": {
+    "MY_VAR": "somevalue"
+  },
   "flows": [
       {
       "id": "fd2e74e5-1305-4650-a300-8097d71df01f",
@@ -66,6 +69,10 @@ Update a bot's name, default\_flow and/or description. Parameters that are not s
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
+{% api-method-parameter name="env" type="object" required=false %}
+key/value hash of bot environment variables
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="default\_flow" type="string" required=false %}
 ID of default flow to set \(flow must exist\)
 {% endapi-method-parameter %}
