@@ -59,8 +59,8 @@ start:
   )
   hold
   
-  if (event match btny) say "I knew it!"
-  else if (event match btnn) say "I think you are lying..."
+  if (event.match(btny)) say "I knew it!"
+  else if (event.match(btnn)) say "I think you are lying..."
   
   goto end
 ```
