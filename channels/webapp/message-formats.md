@@ -25,7 +25,7 @@ say Typing(1000)
 
 ![](../../.gitbook/assets/cleanshot-2020-04-30-at-09.49.26.gif)
 
-Obviously, `Wait` is also supported \(it simply does not display a typing indicator or anything for the given duration\).
+Obviously, `Wait` is also supported (it simply does not display a typing indicator or anything for the given duration).
 
 ## Image
 
@@ -68,7 +68,7 @@ The Webapp channel also supports single `Button` components. However, as cross-c
 
 ## QuickReply
 
-Quick replies are similar to Questions, where the buttons are removed from view once the user has selected one of them. In a majority of scenarios, you should prefer QuickReplies over regular questions, especially when you don't want the user to be able to scroll up and select one of the buttons after they have made a first choice. Questions should be used when a button is used as a trigger to a given flow \(as configured in the bot's [AI Rules](../../getting-started/nlp/ai-rules.md)\).
+Quick replies are similar to Questions, where the buttons are removed from view once the user has selected one of them. In a majority of scenarios, you should prefer QuickReplies over regular questions, especially when you don't want the user to be able to scroll up and select one of the buttons after they have made a first choice. Questions should be used when a button is used as a trigger to a given flow (as configured in the bot's [AI Rules](../../getting-started/nlp/ai-rules.md)).
 
 ```cpp
 say QuickReply(
@@ -77,7 +77,7 @@ say QuickReply(
 )
 ```
 
-![](../../.gitbook/assets/image%20%2882%29.png)
+![](<../../.gitbook/assets/image (84).png>)
 
 {% hint style="info" %}
 Try this bot: [https://play.csml.dev/bot/0e85f280-d502-4535-8b78-fb763979777e](https://play.csml.dev/bot/0e85f280-d502-4535-8b78-fb763979777e)
@@ -142,9 +142,9 @@ do card3 = Card(
 say Carousel(cards=[card1, card2, card3])
 ```
 
-![](../../.gitbook/assets/image%20%28120%29.png)
+![](<../../.gitbook/assets/image (119).png>)
 
-The cards themselves can be made clickable by adding an optional `default_action` Url\(\) parameter:
+The cards themselves can be made clickable by adding an optional `default_action` Url() parameter:
 
 ```cpp
 do card = Card(
@@ -156,7 +156,7 @@ do card = Card(
 )
 ```
 
-The carousel can also automatically navigate horizontaly by adding the optional `autoplay` parameter \(which defaults to `false`\):
+The carousel can also automatically navigate horizontaly by adding the optional `autoplay` parameter (which defaults to `false`):
 
 ```cpp
 say Carousel([ card1, card2, card3 ], autoplay=true)
@@ -170,9 +170,9 @@ This component will display a rich calendar in the webapp. By default, when pass
 say Calendar()
 ```
 
-![single mode](../../.gitbook/assets/image%20%2871%29.png)
+![single mode](<../../.gitbook/assets/image (72).png>)
 
-Optional parameters allow to set a `min_date` and/or `max_date` \(by unix timestamp, in milliseconds\) or an `input_mode` to accept `single` \(the default\) `multiple` or `range` inputs by the user:
+Optional parameters allow to set a `min_date` and/or `max_date` (by unix timestamp, in milliseconds) or an `input_mode` to accept `single` (the default) `multiple` or `range` inputs by the user:
 
 ```cpp
 say Calendar(
@@ -182,9 +182,9 @@ say Calendar(
 )
 ```
 
-![range mode](../../.gitbook/assets/image%20%2873%29.png)
+![range mode](<../../.gitbook/assets/image (73).png>)
 
-![multiple mode](../../.gitbook/assets/image%20%2872%29.png)
+![multiple mode](<../../.gitbook/assets/image (74).png>)
 
 The `event` value of a Calendar input will be comma-separated values of all user inputs. Also, `event.input_mode` will be set to the mode of the requested calendar, so that you can differenciate between `single`, `multiple` and `range` modes when receiving values.
 
@@ -217,7 +217,7 @@ Try this bot: [https://play.csml.dev/bot/8ec99c8c-5bfb-44cd-974d-b7781009279b](h
 
 ## Input
 
-To gain some control over what a user can enter in a form \(for example, if you need to make sure they only enter an email address or a valid number when required\), you can also use the `Input` component.
+To gain some control over what a user can enter in a form (for example, if you need to make sure they only enter an email address or a valid number when required), you can also use the `Input` component.
 
 There are several variants of input fields: `email`, `text`, `textarea`, `number`. By default, inputs are `type="text"`. All parameters are optional, and the basic usage is as follows:
 
@@ -235,15 +235,15 @@ say Input(
 )
 ```
 
-![](../../.gitbook/assets/image%20%2890%29.png)
+![](<../../.gitbook/assets/image (88).png>)
 
-You can check this reference about the minlength and maxlength parameters: [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text\#additional\_attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text#additional_attributes)
+You can check this reference about the minlength and maxlength parameters: [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text#additional_attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text#additional_attributes)
 
 A completely bare `say Input()` component will result in this simple, empty text input:
 
-![](../../.gitbook/assets/image%20%2891%29.png)
+![](<../../.gitbook/assets/image (87).png>)
 
-Inputs with `type="number"` can have some different parameters, just like HTML inputs \(all are optional as well\):
+Inputs with `type="number"` can have some different parameters, just like HTML inputs (all are optional as well):
 
 ```cpp
 say Input(
@@ -255,9 +255,9 @@ say Input(
 )
 ```
 
-![](../../.gitbook/assets/image%20%2889%29.png)
+![](<../../.gitbook/assets/image (89).png>)
 
-You can check this reference about the min and max parameters: [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input/number\#additional\_attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input/number#additional_attributes)
+You can check this reference about the min and max parameters: [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input/number#additional_attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input/number#additional_attributes)
 
 ## Multiselect
 
@@ -279,15 +279,15 @@ say Multiselect(
 )
 ```
 
-![](../../.gitbook/assets/image%20%2892%29.png)
+![](<../../.gitbook/assets/image (91).png>)
 
-When several options are selected, you will receive a comma-separated list of the corresponding payloads \(_not necessarily the button's title!_\), in the order they were selected by the user. In the case above, you would receive:
+When several options are selected, you will receive a comma-separated list of the corresponding payloads (_not necessarily the button's title!_), in the order they were selected by the user. In the case above, you would receive:
 
-![](../../.gitbook/assets/image%20%2893%29.png)
+![](<../../.gitbook/assets/image (92).png>)
 
 ## LaTeX
 
-[LaTeX](https://en.wikipedia.org/wiki/LaTeX) is a popular language that lets you write \(among other things\) complex math formulas. The webapp and chatbox include [KaTeX](https://katex.org/) to support this language natively with a custom component:
+[LaTeX](https://en.wikipedia.org/wiki/LaTeX) is a popular language that lets you write (among other things) complex math formulas. The webapp and chatbox include [KaTeX](https://katex.org) to support this language natively with a custom component:
 
 ```cpp
 start:
@@ -307,11 +307,10 @@ start:
 \\end{array}")
 ```
 
-![](../../.gitbook/assets/image%20%28102%29.png)
+![](<../../.gitbook/assets/image (101).png>)
 
-You can find more examples of supported formats on the KaTeX documentation: [https://katex.org/docs/supported.html](https://katex.org/docs/supported.html). Please keep in mind that backslashes \(`\`\) must be escaped properly in your code!
+You can find more examples of supported formats on the KaTeX documentation: [https://katex.org/docs/supported.html](https://katex.org/docs/supported.html). Please keep in mind that backslashes (`\`) must be escaped properly in your code!
 
 {% hint style="info" %}
 Try this bot: [https://play.csml.dev/bot/19ba90fc-bfc0-4350-a2b0-9ceff8aff039](https://play.csml.dev/bot/19ba90fc-bfc0-4350-a2b0-9ceff8aff039)
 {% endhint %}
-

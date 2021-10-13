@@ -23,13 +23,13 @@ Registering your chatbot for production use on Whatsapp takes a few days. Please
 
 ## Connecting Whatsapp to CSML Studio
 
-In your bot in CSML Studio, go to **Channels** &gt; **Connect a new channel,** then select **Whatsapp**.
+In your bot in CSML Studio, go to **Channels** > **Connect a new channel,** then select **Whatsapp**.
 
-In the next screen, enter a name and description for your channel \(it is purely informational and can be changed later\) then add your MessageBird credentials. You will need 3 pieces of information:
+In the next screen, enter a name and description for your channel (it is purely informational and can be changed later) then add your MessageBird credentials. You will need 3 pieces of information:
 
 ![](../../.gitbook/assets/capture-de-cran-2020-04-15-17.49.03.png)
 
-The API Key can be found in the [Developers &gt; API access panel](https://dashboard.messagebird.com/en/developers/access) \(you _must_ use the `live API key`\) and the Signing Key can be found in the [Developers &gt; API settings panel](https://dashboard.messagebird.com/en/developers/settings#).
+The API Key can be found in the [Developers > API access panel](https://dashboard.messagebird.com/en/developers/access) (you _must_ use the `live API key`) and the Signing Key can be found in the [Developers > API settings panel](https://dashboard.messagebird.com/en/developers/settings#).
 
 The Channel ID will be given to you at the end of the setup process for the Whatsapp channel on MessageBird's dashboard.
 
@@ -38,4 +38,3 @@ If you are in Sandbox Mode, you need to scan the QR Code and initiate the conver
 ![](../../.gitbook/assets/capture-de-cran-2020-04-15-17.55.09.png)
 
 After you have completed this step, submit the new channel in CSML Studio and you are good to go! All messages sent from/to your Whatsapp number will be sent to your chatbot.
-

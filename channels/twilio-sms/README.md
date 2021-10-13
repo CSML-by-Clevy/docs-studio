@@ -1,2 +1,2 @@
-# SMS \(with Twilio\)
+# SMS (with Twilio)
 

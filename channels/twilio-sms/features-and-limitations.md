@@ -5,7 +5,7 @@
 As you can expect, not all CSML components work well with a SMS chatbot, as there is no support for any visual component or buttons. However you can use all of the following standard components:
 
 * Text
-* Question \(buttons will be added in a new line under the question's title\)
+* Question (buttons will be added in a new line under the question's title)
 * Image
 
 Other components will be automatically reduced to simple text components.
@@ -41,4 +41,3 @@ Each call made to CSML Studio will have a number of metadata, based on what info
   }
 }
 ```
-

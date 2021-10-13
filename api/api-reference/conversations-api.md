@@ -1,5 +1,5 @@
 ---
-description: 'With the Conversations API, you can manage your client''s conversation statuses'
+description: With the Conversations API, you can manage your client's conversation statuses
 ---
 
 # Conversations API
@@ -10,7 +10,7 @@ Find out whether a user currently has an open conversation on the current channe
 
 ### Request example
 
-```text
+```
 curl -X "POST" "https://clients.csml.dev/v1/api/conversations/open" \
      -H 'content-type: application/json' \
      -H 'accept: application/json' \
@@ -44,4 +44,3 @@ curl -X "POST" "https://clients.csml.dev/v1/api/conversations/open" \
   }
 }
 ```
-

@@ -4,9 +4,9 @@ Every time you login to visit your chatbot, you will be greeted by your chatbot'
 
 Here is what it looks like:
 
-![](../.gitbook/assets/cleanshot-2021-06-04-at-11.00.16-2x.png)
+![](<../.gitbook/assets/CleanShot 2021-06-04 at 11.00.16@2x.png>)
 
-You will find 2 different panels: the **Assistant** and the **Checklist**. Let's see what each panel does!
+You will find 2 different panels: the **Assistant **and the **Checklist**. Let's see what each panel does!
 
 ### Assistant panel
 
@@ -30,7 +30,7 @@ Make sure every item of the checklist is ticked, and you will be on your path to
 
 Another section that's very important is the Activity page.
 
-![](../.gitbook/assets/cleanshot-2021-06-04-at-11.02.24-2x.png)
+![](<../.gitbook/assets/CleanShot 2021-06-04 at 11.02.24@2x.png>)
 
 This page, as the name indicates, gives you a high-level overview over your chatbot's activity in the past 3 months. If you are seeing a steady increase in usage, then you are probably doing things right. However, if your numbers are stalling or decreasing, perhaps you can take some action like sending a broadcast or adding new content?
 
@@ -39,4 +39,3 @@ The activity panel's content is updated every night, so if you juste created and
 {% endhint %}
 
 We trust that you will find **The Dashboard** quite instructive in your path to create the greatest possible chatbot!
-

@@ -9,13 +9,13 @@ The scheduler is a good way to plan events to happen at a later time. There are 
 * **webhook**, when you want a certain URL to be notified at a later time
 * **broadcast**, when you want to create a new conversation with the user later
 
-To install the CSML scheduler, go to Apps &gt; Available Integrations &gt; Scheduler, and click **Install**.
+To install the CSML scheduler, go to Apps > Available Integrations > Scheduler, and click **Install**.
 
 ### Example scenario
 
 Imagine an e-commerce chatbot where the user leaves the conversation before checkout, but has items in their cart. In that situation, you might want to send them a reminder a few hours later that they have items in their shopping cart and they might not want to loose them. Heck, why not throw a discount code with it?
 
-![](../../.gitbook/assets/image%20%2814%29.png)
+![](<../../.gitbook/assets/image (18).png>)
 
 Of course, if the user did go through with their order, you want to cancel this reminder, because it does not make sense to keep it.
 
@@ -81,7 +81,7 @@ This means that in about 10 minutes, the endpoint [`https://my.url.com/whatever`
 ### Scheduling a broadcast
 
 {% hint style="warning" %}
-Channels that do not support the broadcast feature will also not support scheduled broadcasts.  
+Channels that do not support the broadcast feature will also not support scheduled broadcasts.\
 Hence, **scheduled broadcasts are currently only supported on MS Teams, Messenger and Workchat** channels.
 {% endhint %}
 
@@ -102,7 +102,7 @@ This means that in about 30 minutes, the user will receive a new conversation in
 
 ### Cancelling a schedule
 
-It is possible to cancel a scheduled event by calling the following app, where schedule\_id is the ID of the schedule you want to cancel:
+It is possible to cancel a scheduled event by calling the following app, where schedule_id is the ID of the schedule you want to cancel:
 
 ```cpp
 Fn(
@@ -131,9 +131,8 @@ Fn(
 
 * Events will be executed within 1 minute after your event is scheduled.
 * If you do not set your own `schedule_id`, a random `schedule_id` will be generated.
-* You can use the `delay` \(with either human-readable times, such as `"1 hr"`, `"5 min"` or a number of milliseconds\) or the `schedule_time` \(an ISO-formatted time string OR unix timestamp integer describing when to schedule the event. Example: `1592843603`, `"2020-06-22T16:33:44.377Z"`\) parameters to set the time for your event.
+* You can use the `delay` (with either human-readable times, such as `"1 hr"`, `"5 min"` or a number of milliseconds) or the `schedule_time` (an ISO-formatted time string OR unix timestamp integer describing when to schedule the event. Example: `1592843603`, `"2020-06-22T16:33:44.377Z"`) parameters to set the time for your event.
 * You can schedule events at any point within the next 1 minute - 1 month.
 * Failed events will not be retried. We guarantee that the event will go off, but make sure that your endpoint is available at the time of the scheduled webhook, or that the channel supports scheduled broadcasts.
 
-### 
-
+###

@@ -14,5 +14,4 @@ Hence, the complete endpoint for the API is `https://clients.csml.dev/v1/api`.
 
 ## Throttling
 
-To ensure the stability of downstream systems, API requests are throttled. Each client \(a set of API key/secret\) can only send up to 50 reqs/sec. Over this limit, an error code is returned and the request will not be treated.
-
+To ensure the stability of downstream systems, API requests are throttled. Each client (a set of API key/secret) can only send up to 50 reqs/sec. Over this limit, an error code is returned and the request will not be treated.

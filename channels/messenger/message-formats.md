@@ -7,7 +7,7 @@ say "His palms are sweaty, knees weak, arms are heavy" // short form
 say Text("There's vomit on his sweater already, mom's spaghetti") // long form
 ```
 
-![](../../.gitbook/assets/img_0300.jpg)
+![](../../.gitbook/assets/img\_0300.jpg)
 
 Markdown support is scarce for Messenger, and various clients may render it differently. [As mentioned in the documentation](https://www.facebook.com/help/147348452522644), text formatting is only visible on a computer, and will not appear in the Messenger app on mobile.
 
@@ -15,7 +15,7 @@ Markdown support is scarce for Messenger, and various clients may render it diff
 say "He's _nervous_, but **on the surface** he looks [calm and ready](https://www.youtube.com/watch?v=_Yhyp-_hX2s)"
 ```
 
-![Markdown content on mobile](../../.gitbook/assets/img_0302.jpg)
+![Markdown content on mobile](../../.gitbook/assets/img\_0302.jpg)
 
 ![Markdown content on desktop](../../.gitbook/assets/capture-de-cran-2020-05-03-10.10.10.png)
 
@@ -25,9 +25,9 @@ say "He's _nervous_, but **on the surface** he looks [calm and ready](https://ww
 say Typing(1000)
 ```
 
-![](../../.gitbook/assets/img_0304.jpg)
+![](../../.gitbook/assets/img\_0304.jpg)
 
-Obviously, `Wait` is also supported \(it simply does not display a typing indicator or anything for the given duration\).
+Obviously, `Wait` is also supported (it simply does not display a typing indicator or anything for the given duration).
 
 ## Question, Button
 
@@ -38,7 +38,7 @@ say Question(
 )
 ```
 
-![](../../.gitbook/assets/img_0306.jpg)
+![](../../.gitbook/assets/img\_0306.jpg)
 
 Both `Button()` and `Url()` button types are supported:
 
@@ -52,11 +52,11 @@ say Question(
 )
 ```
 
-You can also take advantage of Facebook's "[quick\_reply](https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies)" buttons. Here they are shown with a given payload \(which would also work on the above example\). There are 2 main differences between regular buttons and quick\_replies:
+You can also take advantage of Facebook's "[quick_reply](https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies)" buttons. Here they are shown with a given payload (which would also work on the above example). There are 2 main differences between regular buttons and quick_replies:
 
-* you can have a maximum of 3 buttons, but up to 13 quick\_reply buttons
-* quick\_reply buttons go away once the user clicks on one or says something, regular buttons stay forever
-* quick\_reply buttons do not support `Url()` types
+* you can have a maximum of 3 buttons, but up to 13 quick_reply buttons
+* quick_reply buttons go away once the user clicks on one or says something, regular buttons stay forever
+* quick_reply buttons do not support `Url()` types
 
 ```cpp
 say Question(
@@ -69,7 +69,7 @@ say Question(
 )
 ```
 
-![](../../.gitbook/assets/img_0307.jpg)
+![](../../.gitbook/assets/img\_0307.jpg)
 
 {% hint style="warning" %}
 Messenger does not support a rendering a single`Button` component by itself. You must use buttons as part of `Question` or `Card` components.
@@ -83,8 +83,8 @@ If for some reason, we are unable to send a file, it will fallback to a simple `
 
 The main limitations to know about are:
 
-* file must be publicly accessible \(not behind firewall, not requiring any authentication\)
-* file must be &lt; 25MB in size
+* file must be publicly accessible (not behind firewall, not requiring any authentication)
+* file must be < 25MB in size
 * file must be able to upload to messenger in a reasonable amount of time
 
 ```cpp
@@ -93,7 +93,7 @@ say Video("https://cdn.csml.dev/customers/93bfb0df-fb6b-4ed2-87b0-8d93a09b0ad8/f
 say Audio("https://open.spotify.com/track/1xB3YT8Rakvnfcc1dp2kzJ")
 ```
 
-![](../../.gitbook/assets/img_0309.jpg)
+![](../../.gitbook/assets/img\_0309.jpg)
 
 ## Url
 
@@ -103,7 +103,7 @@ Send the given URL in a simple text component.
 say Url("https://www.wikipedia.org/")
 ```
 
-![](../../.gitbook/assets/img_0310.jpg)
+![](../../.gitbook/assets/img\_0310.jpg)
 
 If a text parameter is present, it will be ignored, as Messenger is unable to display hyperlinks. The raw URL will always be used.
 
@@ -150,7 +150,7 @@ do card3 = Card(
 say Carousel(cards=[card1, card2, card3])
 ```
 
-![](../../.gitbook/assets/img_0311.jpg)
+![](../../.gitbook/assets/img\_0311.jpg)
 
 The `Card` component on Messenger supports up to 3 `Button` or `Url` buttons. You can also define an optional `default_action` with a `Url` component on each card to make the card itself clickable.
 
@@ -223,5 +223,4 @@ say {
 
 For a complete reference of all the code presented on this page, refer to the [following gist](https://gist.github.com/frsechet/ad0f371cef0f27ae26efd28de87a8436):
 
-{% embed url="https://gist.github.com/frsechet/ad0f371cef0f27ae26efd28de87a8436" caption="" %}
-
+{% embed url="https://gist.github.com/frsechet/ad0f371cef0f27ae26efd28de87a8436" %}

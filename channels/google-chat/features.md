@@ -4,7 +4,7 @@
 
 Google Chat lets you format text. So you can either use regular text or formatted text:
 
-```cpp
+````cpp
 say "His palms are sweaty, knees weak, arms are heavy" // short form
 say Text("There's vomit on his sweater already, mom's spaghetti") // long form
 
@@ -19,11 +19,11 @@ say Text("There's vomit on his sweater already, mom's spaghetti") // long form
 
 say "He's _nervous_, but *on the surface* he looks ~calm and ready~  To `drop` candies, but he ```keeps on forgettin```" 
 
-```
+````
 
-![Regular text](../../.gitbook/assets/text-simple-google.png)
+![Regular text](<../../.gitbook/assets/Text simple - google (1).png>)
 
-![Formatted text](../../.gitbook/assets/text-formatte-google.png)
+![Formatted text](<../../.gitbook/assets/Text formatté - google.png>)
 
 ## Typing, Wait
 
@@ -37,7 +37,7 @@ Google Chat unfurls URLs and displays a preview of the content of the page. For 
 say Url("https://www.wikipedia.org/")
 ```
 
-![](../../.gitbook/assets/url.png)
+![](../../.gitbook/assets/Url.png)
 
 Google does not provide a way to display an audio player or to upload a file from the bot. These components will be rendered as simple Urls.
 
@@ -47,13 +47,13 @@ Google does not provide a way to display an audio player or to upload a file fro
 say Image("https://picsum.photos/200")
 ```
 
-![](../../.gitbook/assets/image%20%2866%29.png)
+![](../../.gitbook/assets/Image.png)
 
 ## Video
 
 In some cases, Google Chat will be able to automatically display a video player in the conversation. This is obviously the case with Youtube videos, but it also works with some other players.
 
-![](../../.gitbook/assets/video-player-known-by-google%20%281%29.png)
+![](<../../.gitbook/assets/Video - player known by google (1).png>)
 
 In other cases, you can add some optional parameters to the video to wrap it and render it better:
 
@@ -72,7 +72,7 @@ say Video(
 
 ```
 
-![](../../.gitbook/assets/video-wrapped-in-a-card.png)
+![](<../../.gitbook/assets/Video - wrapped in a card.png>)
 
 ## Carousel, Card
 
@@ -114,7 +114,7 @@ do card3 = Card(
 say Carousel(cards=[card1, card2, card3])
 ```
 
-![](../../.gitbook/assets/carousel.png)
+![](../../.gitbook/assets/Carousel.png)
 
 ## Raw objects
 
@@ -137,7 +137,7 @@ say {
 
 This example renders a raw image:
 
-![](../../.gitbook/assets/raw-image-object.png)
+![](<../../.gitbook/assets/Raw image object.png>)
 
 ## Slash Commands
 
@@ -145,11 +145,11 @@ In the Google Chat configuration panel, you can setup slash commands for your bo
 
 To setup a slash command, you need to create the command like so:
 
-![](../../.gitbook/assets/image%20%2859%29.png)
+![](<../../.gitbook/assets/image (64).png>)
 
 Then, in the AI Rules panel in CSML Studio, add a rule for this command triggering a specific flow:
 
-![](../../.gitbook/assets/image%20%2864%29.png)
+![](<../../.gitbook/assets/image (65).png>)
 
 When the command is used, the specified flow will be triggered with the following payload:
 
@@ -180,4 +180,3 @@ A sample `_metadata`  for an incoming event will be similar to the following obj
 
 
 ```
-

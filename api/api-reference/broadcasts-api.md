@@ -4,11 +4,11 @@ A broadcast is a message sent proactively from the bot to a user, without the us
 
 ## POST /broadcasts
 
-Send a broadcast on the requested channel \(supported channels only\) to the requested client. Broadcast requests are queued and usually sent within a few seconds. If a target is unavailable, no error is generated.
+Send a broadcast on the requested channel (supported channels only) to the requested client. Broadcast requests are queued and usually sent within a few seconds. If a target is unavailable, no error is generated.
 
 ### Request example
 
-```text
+```
 curl "https://clients.csml.dev/v1/api/broadcasts" \
      -H 'content-type: application/json' \
      -H 'accept: application/json' \
@@ -53,4 +53,3 @@ curl "https://clients.csml.dev/v1/api/broadcasts" \
   }
 }
 ```
-

@@ -1,14 +1,18 @@
 # Features and message formats
 
-Workplace Chat is very, very similar to Messenger \(except that it's grey\). Please refer to Messenger's CSML documentation:
+Workplace Chat is very, very similar to Messenger (except that it's grey). Please refer to Messenger's CSML documentation:
 
-{% page-ref page="../messenger/features.md" %}
+{% content-ref url="../messenger/features.md" %}
+[features.md](../messenger/features.md)
+{% endcontent-ref %}
 
-{% page-ref page="../messenger/message-formats.md" %}
+{% content-ref url="../messenger/message-formats.md" %}
+[message-formats.md](../messenger/message-formats.md)
+{% endcontent-ref %}
 
 ## Broadcasts
 
-Broadcasts can be sent without any limitation to any of your Workplace Chat users, with either their valid Workplace email address or ID as the user\_id.
+Broadcasts can be sent without any limitation to any of your Workplace Chat users, with either their valid Workplace email address or ID as the user_id.
 
 ## Event Metadata
 
@@ -38,4 +42,3 @@ A sample `_metadata`  for an incoming event will be similar to the following obj
   }
 }
 ```
-

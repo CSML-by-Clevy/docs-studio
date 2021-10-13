@@ -9,7 +9,7 @@ The Broadcast feature allows you to trigger any flow for any given user or list 
 ![](../../.gitbook/assets/capture-de-cran-2020-04-20-19.23.15.png)
 
 * Under **Flow**, select the flow you want to trigger
-* Under **Targets**, list the emails \(one per line\) you want to receive the broadcast
+* Under **Targets**, list the emails (one per line) you want to receive the broadcast
 * Under **Context**, you can optionally add any additional context that you want to set in the `_metadata` object for this broadcast
 
 Once you hit **Send**, the broadcast will be sent immediately.
@@ -19,4 +19,3 @@ Once you hit **Send**, the broadcast will be sent immediately.
 
 If the broadcast were to fail sending for any reason, you would not want to retry all the users again, as some may receive the broadcast twice!
 {% endhint %}
-

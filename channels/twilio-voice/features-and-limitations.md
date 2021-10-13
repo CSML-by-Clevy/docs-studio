@@ -4,10 +4,10 @@
 
 Designing a callbot is very different from designing a text-based chatbot. There are however some extra rules to make a successful callbot:
 
-* Keep your all your sections short. Nobody wants to listen to \(and can remember\) a huge block of text!
-* This integration supports both speech and DTMF \(keypad\) inputs. When you can, let the caller use the number keypad on their phone, as it has much better success rates than speech to text!
+* Keep your all your sections short. Nobody wants to listen to (and can remember) a huge block of text!
+* This integration supports both speech and DTMF (keypad) inputs. When you can, let the caller use the number keypad on their phone, as it has much better success rates than speech to text!
 * It is impossible/difficult to know in advance what language a user will speak, so we recommend using a different phone number/TwiML app for each language that you intend to serve with this chatbot.
-* All conversations start at the welcome\_flow define in the channel. Callbot conversations never continue where they left off.
+* All conversations start at the welcome_flow define in the channel. Callbot conversations never continue where they left off.
 * To hung up on a user, simply reach a `goto end`.
 * By default, there is a timeout of 5s on every `hold`. If the user does or says nothing, the conversation stops.
 
@@ -17,7 +17,7 @@ Twilio has a web interface to test your chatbot on your TwiML App page. You can 
 **Note: this web interface does not support the CallForwarding component.**
 {% endhint %}
 
-![](../../.gitbook/assets/image%20%2852%29.png)
+![](<../../.gitbook/assets/image (54).png>)
 
 ## Components
 
@@ -78,4 +78,3 @@ Each call made to CSML Studio will have a number of metadata, based on what info
 ## Limitations
 
 * For now, you can not create multilingual Twilio callbots as the language is set in the channels settings. However, this feature can be added upon request, so let us know if you need it!
-

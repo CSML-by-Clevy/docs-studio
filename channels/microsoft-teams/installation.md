@@ -6,7 +6,7 @@ description: How to setup a Microsoft Teams channel in CSML Studio
 
 The installation process of a Microsoft Teams chatbot has many steps. You will also need to be able to create an app and bot on your Microsoft Teams and Azure tenants. Once
 
-To get started, visit **Channels &gt; Connect new channel &gt; Microsoft Teams \(beta\)**.
+To get started, visit **Channels > Connect new channel > Microsoft Teams (beta)**.
 
 ## 1. Create a bot on Microsoft Bot Framework
 
@@ -22,15 +22,15 @@ Next, select **Create Microsoft App ID and password**.
 
 ![](../../.gitbook/assets/capture-de-cran-2020-04-26-18.33.57.png)
 
-You will be taken to a new page on Azure to register a new app \(or list existing apps\). Click on **New registration**.
+You will be taken to a new page on Azure to register a new app (or list existing apps). Click on **New registration**.
 
 ![](../../.gitbook/assets/capture-de-cran-2020-04-26-18.37.06.png)
 
-On the next page, fill in a **Name**, select the **Accounts in any organizational directory - Multitenant** option \(the reason is that you will be using the Microsoft Bot Framework tenant for your bot, which will require access to the app as well\) and check **Background process and Automation** under Platform configuration, then click Register.
+On the next page, fill in a **Name**, select the **Accounts in any organizational directory - Multitenant** option (the reason is that you will be using the Microsoft Bot Framework tenant for your bot, which will require access to the app as well) and check **Background process and Automation** under Platform configuration, then click Register.
 
 ![](../../.gitbook/assets/capture-de-cran-2020-04-26-18.39.12.png)
 
-On the next page, create a **New client secret**, give it a **name** and a validity date \(if you select anything other than Never, you will need to come back occasionally and get a new secret\), submit, then take note of the given secret \(you will never be able to see it again\).
+On the next page, create a **New client secret**, give it a **name** and a validity date (if you select anything other than Never, you will need to come back occasionally and get a new secret), submit, then take note of the given secret (you will never be able to see it again).
 
 ![](../../.gitbook/assets/capture-de-cran-2020-04-26-18.42.32.png)
 
@@ -66,13 +66,13 @@ In the next page, you can generate and download a **Manifest** for your Microsof
 Experts only: you can also use Microsoft Team's App Studio to generate a valid manifest.
 {% endhint %}
 
-![](../../.gitbook/assets/capture-de-cran-2020-04-26-19.06.16%20%281%29.png)
+![](<../../.gitbook/assets/capture-de-cran-2020-04-26-19.06.16 (1).png>)
 
-Upon saving, a **manifest.zip** file will be downloaded to your computer. Save it somewhere for the next \(and final\) installation step.
+Upon saving, a **manifest.zip** file will be downloaded to your computer. Save it somewhere for the next (and final) installation step.
 
 ## 4. Deploy your bot on Microsoft Teams
 
-On Microsoft Teams \(web or desktop\), find the **Apps** panel, then select **Upload custom app &gt; Upload for MY\_TEAM** \(obviously, replace MY\_TEAM with the name of your own team\).
+On Microsoft Teams (web or desktop), find the **Apps** panel, then select **Upload custom app > Upload for MY_TEAM** (obviously, replace MY_TEAM with the name of your own team).
 
 ![](../../.gitbook/assets/capture-de-cran-2020-04-26-19.08.09.png)
 
@@ -83,4 +83,3 @@ Then, click on the App you just uploaded, then select Add.
 Voilà! Your bot is now available to all users in your team:
 
 ![](../../.gitbook/assets/capture-de-cran-2020-04-26-19.20.29.png)
-

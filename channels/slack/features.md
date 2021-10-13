@@ -36,4 +36,3 @@ A sample `_metadata`  for an incoming event will be similar to the following obj
   }
 }
 ```
-

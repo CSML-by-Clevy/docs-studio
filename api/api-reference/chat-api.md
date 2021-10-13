@@ -35,7 +35,7 @@ curl -X "POST" "https://clients.csml.dev/v1/api/chat" \
 
 #### Valid request message payloads
 
-The following message types are accepted \(see below for payload examples\): `text`, `image`, `video`, `audio`, `file`, `url`, `payload`, `flow_trigger`.
+The following message types are accepted (see below for payload examples): `text`, `image`, `video`, `audio`, `file`, `url`, `payload`, `flow_trigger`.
 
 Additional properties can be added to the message's `content` and will be available as `event.my_added_prop` in the context of the CSML.
 
@@ -63,19 +63,19 @@ To trigger a specific flow, you can send the following event:
 }
 ```
 
-You can also choose to force-close any previously open conversation with `close_flows`. If you don't close previous conversations and the flow is a recursive flow \(i.e has no `hold` keywords\), then the previous conversation will be relaunched at the last available step in that flow.
+You can also choose to force-close any previously open conversation with `close_flows`. If you don't close previous conversations and the flow is a recursive flow (i.e has no `hold` keywords), then the previous conversation will be relaunched at the last available step in that flow.
 
 ### Request body
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| \*metadata | `object` | Key-value pairs of metadata to inject into the conversation |
-| request\_id | `string` | A random client-issued string for tracing requests. If none is provided, will be automatically generated. |
-| \*payload | `object` | see [message payload definitions](https://docs.csml.dev/language/message-payloads) |
-| \*payload.content\_type | `string` |  |
-| \*payload.content | `object` |  |
-| \*client | `object` |  |
-| \*client.user\_id | `string` | the user's unique identifier |
+| Name                   | Type     | Description                                                                                               |
+| ---------------------- | -------- | --------------------------------------------------------------------------------------------------------- |
+| \*metadata             | `object` | Key-value pairs of metadata to inject into the conversation                                               |
+| request_id             | `string` | A random client-issued string for tracing requests. If none is provided, will be automatically generated. |
+| \*payload              | `object` | see [message payload definitions](https://docs.csml.dev/language/message-payloads)                        |
+| \*payload.content_type | `string` |                                                                                                           |
+| \*payload.content      | `object` |                                                                                                           |
+| \*client               | `object` |                                                                                                           |
+| \*client.user_id       | `string` | the user's unique identifier                                                                              |
 
 ```javascript
 {
@@ -98,18 +98,18 @@ You can also choose to force-close any previously open conversation with `close_
 
 ### Response body
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| request\_id | `string` | A random client-issued string for tracing requests. If none is provided, will be automatically generated |
-| interaction\_id | `string` | A random server-generated ID for the interaction |
-| \*messages | `array` | All the messages to send to the client in order |
-| \*message.payload | `object` | See `Message payloads` below |
-| \*client | `object` |  |
-| \*client.bot\_id | `string` | the bot's ID |
-| \*client.channel\_id | `string` | the channels's ID |
-| \*client.user\_id | `string` | the user's unique identifier |
-| \*received\_at | `string` | UTC time at which the message was received by the CSML server |
-| \*is\_authorized | `boolean` | whether or not the user is authorized to query the chat |
+| Name                | Type      | Description                                                                                              |
+| ------------------- | --------- | -------------------------------------------------------------------------------------------------------- |
+| request_id          | `string`  | A random client-issued string for tracing requests. If none is provided, will be automatically generated |
+| interaction_id      | `string`  | A random server-generated ID for the interaction                                                         |
+| \*messages          | `array`   | All the messages to send to the client in order                                                          |
+| \*message.payload   | `object`  | See `Message payloads` below                                                                             |
+| \*client            | `object`  |                                                                                                          |
+| \*client.bot_id     | `string`  | the bot's ID                                                                                             |
+| \*client.channel_id | `string`  | the channels's ID                                                                                        |
+| \*client.user_id    | `string`  | the user's unique identifier                                                                             |
+| \*received_at       | `string`  | UTC time at which the message was received by the CSML server                                            |
+| \*is_authorized     | `boolean` | whether or not the user is authorized to query the chat                                                  |
 
 ```javascript
 {
@@ -137,4 +137,3 @@ You can also choose to force-close any previously open conversation with `close_
   "is_authorized": true
 }
 ```
-

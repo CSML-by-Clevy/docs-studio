@@ -6,13 +6,13 @@ Using the CSML Studio, you can connect and deploy your chatbot on a number of co
 
 CSML can not compensate for limitations in each third-party channel. Instead, it provides a universal way to describe conversational components and an adaptor will try to match with what is available on that channel.
 
-![Example whatsapp buttons list](../.gitbook/assets/img_0161.PNG)
+![Example whatsapp buttons list](../.gitbook/assets/img\_0161.PNG)
 
 In most cases, CSML will try to find a sensible default behavior for each component on each channel. For instance, some channels can not display actual buttons so they will be displayed as plain text: in that case, a good practice is to place buttons in an ordered list and accept the buttons number as a trigger for that button.
 
 ## Native channel behavior
 
-In most cases, CSML offers to send a raw object to the channel adapter. For example, whilst CSML does not \(yet\) cover Airline Templates for Messenger, you can always send a raw [Check-In Template](https://developers.facebook.com/docs/messenger-platform/send-messages/template/airline/#check_in) object if you need it:
+In most cases, CSML offers to send a raw object to the channel adapter. For example, whilst CSML does not (yet) cover Airline Templates for Messenger, you can always send a raw [Check-In Template](https://developers.facebook.com/docs/messenger-platform/send-messages/template/airline/#check_in) object if you need it:
 
 ```cpp
 say {
@@ -65,4 +65,3 @@ do channel_type = _metadata._channel.type
 if (channel_type == "whatsapp-messagebird") say Button("1 - Pick me!")
 else if (channel_type == "webapp") say Button("Pick me!")
 ```
-

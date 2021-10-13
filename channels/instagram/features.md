@@ -8,7 +8,7 @@ Messenger channel supports many CSML components: `Text`, `Typing`, `Wait`, `Imag
 
 Note that the `Typing` component is converted to a simpler `Wait` component, and `Carousel` components are entirely unavailable.
 
-Also, all types of `Buttons` do not display at all on the web version of Instagram \(but a vast majority of Instagram users are on the mobile app\).
+Also, all types of `Buttons` do not display at all on the web version of Instagram (but a vast majority of Instagram users are on the mobile app).
 
 ## Broadcast
 
@@ -20,7 +20,7 @@ Instagram supports [broadcasts](../../api/api-reference/broadcasts-api.md), with
 
 ## Limitations
 
-In general, all Instagram limitations apply. For example, texts can not be larger than 2000 UTF-8 characters, and attachment sizes \(Videos, Audio, Files\) can not be larger than 25MB.
+In general, all Instagram limitations apply. For example, texts can not be larger than 2000 UTF-8 characters, and attachment sizes (Videos, Audio, Files) can not be larger than 25MB.
 
 Regular buttons are limited to 13 per component. The length of the button title should also never be longer than 20 characters.
 
@@ -42,4 +42,3 @@ A sample `_metadata`  for an incoming event will be similar to the following obj
   "profile_pic":"https://example.com/XXXX"
 }
 ```
-

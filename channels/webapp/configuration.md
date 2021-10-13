@@ -29,4 +29,3 @@ If you want your users to be able to quickly launch any of your flows, you can u
 In mobile view, the applications menu will show at the bottom of the screen and slide up when activated:
 
 ![](../../.gitbook/assets/capture-de-cran-2020-04-12-22.44.00.png)
-

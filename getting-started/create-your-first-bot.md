@@ -12,8 +12,8 @@ At the end of this tutorial, here is what you will be able to:
 
 ## Writing your CSML flow
 
-A CSML flow always starts in the `start` step, in this step, we introduce the chatbot.  
-Note that `Typing(2000)` needs to be preceded by the `say` keyword, this will show the three little jumping dots on the screen, suggesting the chatbot is typing, this action will last 2 seconds \(2000 milliseconds\).
+A CSML flow always starts in the `start` step, in this step, we introduce the chatbot.\
+Note that `Typing(2000)` needs to be preceded by the `say` keyword, this will show the three little jumping dots on the screen, suggesting the chatbot is typing, this action will last 2 seconds (2000 milliseconds).
 
 ```cpp
 start:
@@ -26,7 +26,7 @@ We can then move on to the next step in which we will start asking for user info
 
 ## **Asking questions and remembering answers**
 
-With CSML, in order to wait for the user to reply to a question \(or anything else for that matter\), we use the keyword `hold`, the chatbot then waits for the user to reply. After answering, the user input will be placed in the `event` variable.
+With CSML, in order to wait for the user to reply to a question (or anything else for that matter), we use the keyword `hold`, the chatbot then waits for the user to reply. After answering, the user input will be placed in the `event` variable.
 
 Note: the event variable is scoped to the current step, which basically means that `event` will be wiped off the memory once the chatbot goes out of the current step.
 
@@ -88,7 +88,7 @@ email:
 
 ## **Sending data to Mailchimp**
 
-Thanks to our apps directory, you can install the Mailchimp app in a few clicks \(you'll just need to get your API Region, API key and contact list ID\). The app needs an option parameter that encloses all the informations that Mailchimp needs.
+Thanks to our apps directory, you can install the Mailchimp app in a few clicks (you'll just need to get your API Region, API key and contact list ID). The app needs an option parameter that encloses all the informations that Mailchimp needs.
 
 Note that `App(...)` needs to be used in a `do` statement.
 
@@ -114,7 +114,7 @@ Now it's time to get some feedback from the user!
 
 ## **NLP coming into play**
 
-We want to use the [SAP Conversational AI](https://cai.tools.sap/) to find out if the user's input is positive, neutral or negative. The API returns this as sentiments. If you want to see the full response from the API, you can print it using `say "{{sapcaiResponse}}"`
+We want to use the [SAP Conversational AI](https://cai.tools.sap) to find out if the user's input is positive, neutral or negative. The API returns this as sentiments. If you want to see the full response from the API, you can print it using `say "{{sapcaiResponse}}"`
 
 ```cpp
 feedback:
@@ -233,4 +233,3 @@ save:
 ```
 
 If you have any question, please come ask us on [Slack](https://join.slack.com/t/csml-by-clevy/shared_invite/enQtODAxMzY2MDQ4Mjk0LWZjOTZlODI0YTMxZTg4ZGIwZDEzYTRlYmU1NmZjYWM2MjAwZTU5MmU2NDdhNmU2N2Q5ZTU2ZTcxZDYzNTBhNTc)!
-

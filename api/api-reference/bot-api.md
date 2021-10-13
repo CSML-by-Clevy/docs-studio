@@ -4,24 +4,12 @@ description: The Bot API allows you to retrieve information about your bot and i
 
 # Bot API
 
-{% api-method method="get" host="https://clients.csml.dev/v1" path="/api/bot" %}
-{% api-method-summary %}
-Get bot
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://clients.csml.dev/v1" path="/api/bot" method="get" summary="Get bot" %}
+{% swagger-description %}
 Retrieve the bot for this integration
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 {
   "id": "06e63f93-2e1a-4f76-b174-9c4aa6e31401",
@@ -52,47 +40,31 @@ Retrieve the bot for this integration
   ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="put" host="https://clients.csml.dev/v1" path="/api/bot" %}
-{% api-method-summary %}
-Update bot
-{% endapi-method-summary %}
+{% swagger baseUrl="https://clients.csml.dev/v1" path="/api/bot" method="put" summary="Update bot" %}
+{% swagger-description %}
+Update a bot's name, default_flow and/or description. Parameters that are not set will not be changed.
+{% endswagger-description %}
 
-{% api-method-description %}
-Update a bot's name, default\_flow and/or description. Parameters that are not set will not be changed.
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="env" type="object" required=false %}
+{% swagger-parameter in="body" name="env" type="object" %}
 key/value hash of bot environment variables
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="default\_flow" type="string" required=false %}
-ID of default flow to set \(flow must exist\)
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="default_flow" type="string" %}
+ID of default flow to set (flow must exist)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="description" type="string" required=false %}
+{% swagger-parameter in="body" name="description" type="string" %}
 
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="name" type="string" required=false %}
+{% swagger-parameter in="body" name="name" type="string" %}
 
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 {
   "id": "06e63f93-2e1a-4f76-b174-9c4aa6e31401",
@@ -120,29 +92,15 @@ ID of default flow to set \(flow must exist\)
   ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="get" host="https://clients.csml.dev/v1" path="/api/bot/flows" %}
-{% api-method-summary %}
-Get bot flows
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://clients.csml.dev/v1" path="/api/bot/flows" method="get" summary="Get bot flows" %}
+{% swagger-description %}
 Retrieve all the flows in the current bot
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 [
   {
@@ -161,48 +119,36 @@ Retrieve all the flows in the current bot
   ...
 ]
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="post" host="https://clients.csml.dev/v1" path="/api/bot/flows" %}
-{% api-method-summary %}
-Create Flow
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://clients.csml.dev/v1" path="/api/bot/flows" method="post" summary="Create Flow" %}
+{% swagger-description %}
 Add a new flow to the current bot
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="description" type="string" required=false %}
+{% swagger-parameter in="body" name="description" type="string" %}
 Description of the flow to create
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="commands" type="array" required=false %}
-Commands that will trigger the flow.  
-Example: \["some", "command"\]
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="commands" type="array" %}
+Commands that will trigger the flow.
 
-{% api-method-parameter name="content" type="string" required=true %}
+\
+
+
+Example: ["some", "command"]
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="content" type="string" %}
 CSML Flow
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="name" type="string" required=true %}
+{% swagger-parameter in="body" name="name" type="string" %}
 Name of the flow
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 {
   "id": "c3187b49-5833-4572-960f-a6eedd59d9cd",
@@ -218,35 +164,19 @@ Name of the flow
   "updated_at": "2020-08-23T17:54:39.461Z"
 } 
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="get" host="https://clients/csml.dev/v1" path="/api/bot/flows/:flow\_id" %}
-{% api-method-summary %}
-Get flow
-{% endapi-method-summary %}
+{% swagger baseUrl="https://clients/csml.dev/v1" path="/api/bot/flows/:flow_id" method="get" summary="Get flow" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
+{% swagger-parameter in="path" name="flow_id" type="string" %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="flow\_id" type="string" required=true %}
+{% endswagger-parameter %}
 
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 {
   "id": "fd2e74e5-1305-4650-a300-8097d71df01f",
@@ -265,49 +195,31 @@ Get flow
 
 
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="put" host="https://clients/csml.dev/v1" path="/api/bot/flows/:flow\_id" %}
-{% api-method-summary %}
-Update flow
-{% endapi-method-summary %}
+{% swagger baseUrl="https://clients/csml.dev/v1" path="/api/bot/flows/:flow_id" method="put" summary="Update flow" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
+{% swagger-parameter in="path" name="flow_id" type="string" %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="flow\_id" type="string" required=true %}
+{% endswagger-parameter %}
 
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% swagger-parameter in="body" name="commands" type="array" %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="commands" type="array" required=false %}
+{% endswagger-parameter %}
 
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="content" type="string" %}
 
-{% api-method-parameter name="content" type="string" required=true %}
+{% endswagger-parameter %}
 
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="description" type="string" %}
 
-{% api-method-parameter name="description" type="string" required=false %}
+{% endswagger-parameter %}
 
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=204 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="204" description="" %}
 ```javascript
 {
   "id": "c3187b49-5833-4572-960f-a6eedd59d9cd",
@@ -323,29 +235,15 @@ Update flow
   "updated_at": "2020-08-23T17:54:39.461Z"
 } 
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="get" host="https://clients.csml.dev/v1" path="/api/bot/usage" %}
-{% api-method-summary %}
-Bot usage
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://clients.csml.dev/v1" path="/api/bot/usage" method="get" summary="Bot usage" %}
+{% swagger-description %}
 Get usage information about a bot
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 {
   "currentmonth": {
@@ -362,35 +260,19 @@ Get usage information about a bot
   }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="post" host="https://clients.csml.dev/v1" path="/api/bot/validate" %}
-{% api-method-summary %}
-Validate bot
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://clients.csml.dev/v1" path="/api/bot/validate" method="post" summary="Validate bot" %}
+{% swagger-description %}
 Validate bot data against the CSML interpreter
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="" type="object" required=true %}
+{% swagger-parameter in="body" name="" type="object" %}
 The bot object as retrieved from the GET /bot operation
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 // bot is valid
 {
@@ -411,29 +293,15 @@ The bot object as retrieved from the GET /bot operation
   ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="post" host="https://clients.csml.dev/v1" path="/api/bot/build" %}
-{% api-method-summary %}
-Build bot
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://clients.csml.dev/v1" path="/api/bot/build" method="post" summary="Build bot" %}
+{% swagger-description %}
 Build a new version of the bot
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 {
   "id": "3944ec9b-81c8-4b58-854d-b412c89b8e42",
@@ -454,36 +322,24 @@ Build a new version of the bot
   ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="get" host="https://clients.csml.dev/v1" path="/api/bot/build" %}
-{% api-method-summary %}
-Get bot build version
-{% endapi-method-summary %}
+{% swagger baseUrl="https://clients.csml.dev/v1" path="/api/bot/build" method="get" summary="Get bot build version" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
+{% swagger-parameter in="query" name="version_id" type="string" %}
+ID of version to retrieve.
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-query-parameters %}
-{% api-method-parameter name="version\_id" type="string" required=false %}
-ID of version to retrieve.  
-Defaults to \`latest\` if not set.
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
-{% endapi-method-request %}
+\
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
 
-{% endapi-method-response-example-description %}
+Defaults to `latest` if not set.
+{% endswagger-parameter %}
 
+{% swagger-response status="200" description="" %}
 ```javascript
 {
   "id": "3944ec9b-81c8-4b58-854d-b412c89b8e42",
@@ -504,8 +360,5 @@ Defaults to \`latest\` if not set.
   ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
+{% endswagger-response %}
+{% endswagger %}

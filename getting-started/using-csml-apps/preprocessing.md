@@ -6,15 +6,15 @@ CSML Studio also offers a way to preprocess every incoming event of certain type
 * translate incoming text
 * save uploaded files to a dedicated file storage
 * perform OCR on each uploaded image
-* run a custom natural language processing library on text inputs \(for that use case, you may also want to look at [Natural Language Processing](../nlp/)\)
+* run a custom natural language processing library on text inputs (for that use case, you may also want to look at [Natural Language Processing](../nlp/))
 
-Preprocessors are simply external apps that are run on every incoming event \(of the given type\) and return a valid CSML event. The only specificity is that the parameters it must accept and return are standard CSML event payloads. Preprocessors that fail to accept or return such payloads are simply ignored and your incoming event will not be transformed.
+Preprocessors are simply external apps that are run on every incoming event (of the given type) and return a valid CSML event. The only specificity is that the parameters it must accept and return are standard CSML event payloads. Preprocessors that fail to accept or return such payloads are simply ignored and your incoming event will not be transformed.
 
 ## How to add a CSML preprocessor
 
 Let's create a simple Text preprocessor that will return a picture of a hot dog if the user had the word "hot dog" in their input, or change the text to `"Not hot dog"`  otherwise.
 
-To add a preprocessor, you first need to add a _preprocessor-compatible_ app under the apps section \(see here\). For this tutorial, let's just use the Quick Mode, but of course you can use Complete Mode as well.
+To add a preprocessor, you first need to add a _preprocessor-compatible _app under the apps section (see here). For this tutorial, let's just use the Quick Mode, but of course you can use Complete Mode as well.
 
 This is the code we are going to use:
 
@@ -47,13 +47,13 @@ P        url: 'https://media.istockphoto.com/photos/hot-dog-on-white-picture-id1
 
 It is really simple: if the user text input contains the words "hot dog" anywhere, then return an image of a hotdog. Otherwise, change the text to "Not hot dog". In both cases, the original, untransformed event is still accessible with `event._original_event` in you CSML code, if needed.
 
-Next, go to **Apps &gt; Add Custom App** and under **Quick Mode**, simply copy and paste it, select a name for your app \(for instance, `hotdog` seems like a fitting name\), and click save.
+Next, go to **Apps > Add Custom App** and under **Quick Mode**, simply copy and paste it, select a name for your app (for instance, `hotdog` seems like a fitting name), and click save.
 
-![](../../.gitbook/assets/image%20%2834%29.png)
+![](<../../.gitbook/assets/image (33).png>)
 
-Then, head to the **Preprocessing** page. We only want to preprocess text events, but of course, we could do a similar app for other types of events. 
+Then, head to the** Preprocessing** page. We only want to preprocess text events, but of course, we could do a similar app for other types of events. 
 
-![](../../.gitbook/assets/cleanshot-2021-06-04-at-12.32.45-2x.png)
+![](<../../.gitbook/assets/CleanShot 2021-06-04 at 12.32.45@2x.png>)
 
 Now, back to the CSML Editor, you can do something like the following:
 
@@ -64,5 +64,4 @@ start:
   goto end
 ```
 
-![](../../.gitbook/assets/cleanshot-2021-06-04-at-12.36.48-2x.png)
-
+![](<../../.gitbook/assets/CleanShot 2021-06-04 at 12.36.48@2x.png>)

@@ -14,11 +14,11 @@ say Text("There's vomit on his sweater already, mom's spaghetti")
 say "He's _nervous_, but **on the surface** he looks ~calm and ready~"
 ```
 
-![](../../.gitbook/assets/img_0328.jpg)
+![](../../.gitbook/assets/img\_0328.jpg)
 
 ## Typing, Wait
 
-In Slack, `Wait` and `Typing` have the same behavior. No typing indicator exists in slack, so the bot will simply wait for the duration given \(in milliseconds\).
+In Slack, `Wait` and `Typing` have the same behavior. No typing indicator exists in slack, so the bot will simply wait for the duration given (in milliseconds).
 
 ```cpp
 say Typing(1000)
@@ -42,11 +42,11 @@ hold
 say "User selected: {{event}}"
 ```
 
-![Before selecting an option](../../.gitbook/assets/img_0329.jpg)
+![Before selecting an option](../../.gitbook/assets/img\_0329.jpg)
 
 CSML Studio will also take advantage of Slack's features to update the content of the component when an option is chosen, so that the user's choice appears clearly after they select an option.
 
-![After selecting the option &quot;Slim Shady&quot;](../../.gitbook/assets/img_0330.jpg)
+![After selecting the option "Slim Shady"](../../.gitbook/assets/img\_0330.jpg)
 
 ## Image
 
@@ -56,7 +56,7 @@ Send the URL of an image. Slack will attempt to display it.
 say Image("http://placekitten.com/500/500")
 ```
 
-![](../../.gitbook/assets/img_0331.jpg)
+![](../../.gitbook/assets/img\_0331.jpg)
 
 ## Video, Audio, Url
 
@@ -68,7 +68,7 @@ say Audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3")
 say Url("https://www.wikipedia.org/")
 ```
 
-![](../../.gitbook/assets/img_0332.jpg)
+![](../../.gitbook/assets/img\_0332.jpg)
 
 ## Carousel, Card
 
@@ -114,7 +114,7 @@ You can add several `Button` or `Url` buttons to your `Card` components.
 
 For a complete reference of all the code presented on this page, refer to the [following gist](https://gist.github.com/frsechet/f2c59db56c149dade53c77598229d188):
 
-{% embed url="https://gist.github.com/frsechet/f2c59db56c149dade53c77598229d188" caption="" %}
+{% embed url="https://gist.github.com/frsechet/f2c59db56c149dade53c77598229d188" %}
 
 ## Event Metadata
 
@@ -133,4 +133,3 @@ A sample `_metadata`  for an incoming event will be similar to the following obj
   "first_name": "mathieu"
 }
 ```
-

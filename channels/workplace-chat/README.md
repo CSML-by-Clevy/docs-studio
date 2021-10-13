@@ -5,4 +5,3 @@ The Workplace Chat channel offers more or less the same features and limitations
 {% hint style="info" %}
 CSML is available as a free [third-party app for Workplace](https://www.facebook.com/workplace/integration?app_id=640400313362257).
 {% endhint %}
-
