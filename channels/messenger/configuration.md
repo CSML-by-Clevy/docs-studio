@@ -16,7 +16,7 @@ To configure a welcome flow, simply select it in the dropdown list the flow you 
 
 ## Referral Parameters
 
-You can use [Referral (or Ref Parameters](https://developers.facebook.com/docs/messenger-platform/discovery/m-me-links) to directly send users to various sections of your chatbot instead of the standard Welcome Flow. There are two scenarios:
+You can use [Referral (or Ref Parameters)](https://developers.facebook.com/docs/messenger-platform/discovery/m-me-links) to directly send users to various sections of your chatbot instead of the standard Welcome Flow. There are two scenarios:
 
 * If the user has never used your bot before (or has deleted their conversation), they will be shown the default Get Started button but when they click on it, they will reach the target flow instead of the welcome flow
 * If the user has already used the bot, they will directly go to the defined flow, in place of where they were before.
