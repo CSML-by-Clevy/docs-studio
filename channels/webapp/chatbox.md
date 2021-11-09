@@ -30,7 +30,7 @@ The content of the text bubble is configurable in the Chatbox settings at the bo
 
 ## Optional Attributes
 
-Several configurations are available as [standard HTML data attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes) to maximize compatibility across browsers.
+Several configurations are available as [standard HTML data attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use\_data\_attributes) to maximize compatibility across browsers.
 
 ```markup
 <script
@@ -48,7 +48,7 @@ By default, the chatbox will be displayed on the right side of the screen. To di
 
 ### data-webapp-metadata
 
-To add custom metadata in a chatbox ([see this page for more information about injecting metadata in the webapp](features.md#injecting-conversation-metadata)), you need to add a `data-webapp-metadata` attribute to the chatbox initialization script tag that contains the encoded (with [javascript's encodeURIComponent function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent)) JSON string of the metadata you want to inject.
+To add custom metadata in a chatbox ([see this page for more information about injecting metadata in the webapp](features.md#injecting-conversation-metadata)), you need to add a `data-webapp-metadata` attribute to the chatbox initialization script tag that contains the encoded (with [javascript's encodeURIComponent function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/encodeURIComponent)) JSON string of the metadata you want to inject.
 
 For example: `data-webapp-metadata="%7B%22email%22%3A%22jane.doe%40company.com%22%7D"`
 
@@ -71,5 +71,27 @@ Any valid CSS value for these elements is accepted. The default values are:
   id="clevy-chatbox"
   data-launcher-fill="#ffffff"
   data-launcher-background="linear-gradient(135deg, #4f89fc 0, #1965ff 51%, #104dc7 100%)"
+  async></script>
+```
+
+### data-force-open
+
+Force the chatbox to open as soon as the script is loaded. Not recommended as it might be a bit agressive for the visitors of the page, but may be useful in some cases!
+
+```html
+<script src="{CHATBOX_URL}"
+  id="clevy-chatbox"
+  data-force-open="true"
+  async></script>
+```
+
+### data-ref
+
+Set the inner webapp's ref param to trigger a specific flow or step
+
+```html
+<script src="{CHATBOX_URL}"
+  id="clevy-chatbox"
+  data-ref="someRefParam"
   async></script>
 ```
