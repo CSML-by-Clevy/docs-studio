@@ -13,8 +13,7 @@ You can query the Chat API by sending a simple text message for analysis. This w
 curl -X "POST" "https://clients.csml.dev/v1/api/chat" \
      -H 'content-type: application/json' \
      -H 'accept: application/json' \
-     -H 'x-api-key: ${API_KEY}|${TIMESTAMP}' \
-     -H 'x-api-signature: sha256=HMAC_SHA256(${API_KEY}|${TIMESTAMP}, ${API_SECRET}, "hex")' \
+     -H 'x-api-key: ${API_KEY}' \
      -d $'{
             "client": {
               "user_id": "some-user-id"
@@ -67,15 +66,15 @@ You can also choose to force-close any previously open conversation with `close_
 
 ### Request body
 
-| Name                   | Type     | Description                                                                                               |
-| ---------------------- | -------- | --------------------------------------------------------------------------------------------------------- |
-| \*metadata             | `object` | Key-value pairs of metadata to inject into the conversation                                               |
-| request_id             | `string` | A random client-issued string for tracing requests. If none is provided, will be automatically generated. |
-| \*payload              | `object` | see [message payload definitions](https://docs.csml.dev/language/message-payloads)                        |
-| \*payload.content_type | `string` |                                                                                                           |
-| \*payload.content      | `object` |                                                                                                           |
-| \*client               | `object` |                                                                                                           |
-| \*client.user_id       | `string` | the user's unique identifier                                                                              |
+| Name                    | Type     | Description                                                                                               |
+| ----------------------- | -------- | --------------------------------------------------------------------------------------------------------- |
+| \*metadata              | `object` | Key-value pairs of metadata to inject into the conversation                                               |
+| request\_id             | `string` | A random client-issued string for tracing requests. If none is provided, will be automatically generated. |
+| \*payload               | `object` | see [message payload definitions](https://docs.csml.dev/language/message-payloads)                        |
+| \*payload.content\_type | `string` |                                                                                                           |
+| \*payload.content       | `object` |                                                                                                           |
+| \*client                | `object` |                                                                                                           |
+| \*client.user\_id       | `string` | the user's unique identifier                                                                              |
 
 ```javascript
 {
@@ -98,18 +97,18 @@ You can also choose to force-close any previously open conversation with `close_
 
 ### Response body
 
-| Name                | Type      | Description                                                                                              |
-| ------------------- | --------- | -------------------------------------------------------------------------------------------------------- |
-| request_id          | `string`  | A random client-issued string for tracing requests. If none is provided, will be automatically generated |
-| interaction_id      | `string`  | A random server-generated ID for the interaction                                                         |
-| \*messages          | `array`   | All the messages to send to the client in order                                                          |
-| \*message.payload   | `object`  | See `Message payloads` below                                                                             |
-| \*client            | `object`  |                                                                                                          |
-| \*client.bot_id     | `string`  | the bot's ID                                                                                             |
-| \*client.channel_id | `string`  | the channels's ID                                                                                        |
-| \*client.user_id    | `string`  | the user's unique identifier                                                                             |
-| \*received_at       | `string`  | UTC time at which the message was received by the CSML server                                            |
-| \*is_authorized     | `boolean` | whether or not the user is authorized to query the chat                                                  |
+| Name                 | Type      | Description                                                                                              |
+| -------------------- | --------- | -------------------------------------------------------------------------------------------------------- |
+| request\_id          | `string`  | A random client-issued string for tracing requests. If none is provided, will be automatically generated |
+| interaction\_id      | `string`  | A random server-generated ID for the interaction                                                         |
+| \*messages           | `array`   | All the messages to send to the client in order                                                          |
+| \*message.payload    | `object`  | See `Message payloads` below                                                                             |
+| \*client             | `object`  |                                                                                                          |
+| \*client.bot\_id     | `string`  | the bot's ID                                                                                             |
+| \*client.channel\_id | `string`  | the channels's ID                                                                                        |
+| \*client.user\_id    | `string`  | the user's unique identifier                                                                             |
+| \*received\_at       | `string`  | UTC time at which the message was received by the CSML server                                            |
+| \*is\_authorized     | `boolean` | whether or not the user is authorized to query the chat                                                  |
 
 ```javascript
 {

@@ -20,16 +20,16 @@
 * [Bot Configuration Options](getting-started/bot-configuration-options.md)
 * [💻 CSML Language Reference](https://docs.csml.dev/language)
 
-## 🔌 Studio API <a id="api"></a>
+## 🔌 Studio API <a href="api" id="api"></a>
 
 * [Getting Started](api/introduction.md)
 * [Authentication](api/authentication.md)
 * [Studio CLI](api/studio-cli.md)
 * [API Reference](api/api-reference/README.md)
   * [Chat API](api/api-reference/chat-api.md)
+  * [Broadcasts API](api/api-reference/broadcasts-api.md)
   * [Bot API](api/api-reference/bot-api.md)
   * [Conversations API](api/api-reference/conversations-api.md)
-  * [Broadcasts API](api/api-reference/broadcasts-api.md)
 
 ## 📱 Channels
 
@@ -56,7 +56,7 @@
 * [Google Chat](channels/google-chat/README.md)
   * [Installation](channels/google-chat/installation.md)
   * [Features](channels/google-chat/features.md)
-* [Whatsapp \(with MessageBird\)](channels/whatsapp-via-messagebird/README.md)
+* [Whatsapp (with MessageBird)](channels/whatsapp-via-messagebird/README.md)
   * [Installation](channels/whatsapp-via-messagebird/installation.md)
   * [Features](channels/whatsapp-via-messagebird/features.md)
 * [Instagram](channels/instagram/README.md)
@@ -66,14 +66,14 @@
 * [Telegram](channels/telegram/README.md)
   * [Installation](channels/telegram/installation.md)
   * [Features](channels/telegram/features.md)
-* [SMS \(with Twilio\)](channels/twilio-sms/README.md)
+* [SMS (with Twilio)](channels/twilio-sms/README.md)
   * [Installation](channels/twilio-sms/installation.md)
   * [Features and Limitations](channels/twilio-sms/features-and-limitations.md)
 * [Slack](channels/slack/README.md)
   * [Installation](channels/slack/installation.md)
   * [Message formats](channels/slack/message-formats.md)
   * [Features](channels/slack/features.md)
-* [Callbots \(with Twilio\)](channels/twilio-voice/README.md)
+* [Callbots (with Twilio)](channels/twilio-voice/README.md)
   * [Installation](channels/twilio-voice/installation.md)
   * [Features and Limitations](channels/twilio-voice/features-and-limitations.md)
 * [Amazon Alexa](channels/alexa/README.md)
@@ -81,4 +81,3 @@
 * [Google Assistant](channels/google-assistant/README.md)
   * [Installation](channels/google-assistant/installation.md)
 * [Upcoming channels](channels/upcoming-channels.md)
-

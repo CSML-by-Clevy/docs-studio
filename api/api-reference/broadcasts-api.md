@@ -13,7 +13,6 @@ curl "https://clients.csml.dev/v1/api/broadcasts" \
      -H 'content-type: application/json' \
      -H 'accept: application/json' \
      -H 'x-api-key: ${X-API-KEY}' \
-     -H 'x-api-signature: ${X-API-SIGNATURE}'
      -d $'{
   "payload": {
     "content": {
