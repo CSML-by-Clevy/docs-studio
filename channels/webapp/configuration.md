@@ -42,10 +42,10 @@ Or you can use the following special syntax:
 
 ```yaml
 # will redirect to the step NAME_OF_STEP in the flow called NAME_OF_FLOW
-https://m.me/12345678901234?ref=target:NAME_OF_STEP@NAME_OF_FLOW
+https://chat.csml.dev/s/abc12345678901234?ref=target:NAME_OF_STEP@NAME_OF_FLOW
 
 # or, if no step is provided, the `start` step will be used
-https://m.me/12345678901234?ref=target:NAME_OF_FLOW
+https://chat.csml.dev/s/abc12345678901234?ref=target:NAME_OF_FLOW
 ```
 
 The main advantage of the second syntax is that you can generate the links on the go; however, the first method is more flexible as you can easily change where a link is redirected even after it is created, and the content of the Ref parameter is entirely customizable.
