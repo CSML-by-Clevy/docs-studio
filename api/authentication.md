@@ -28,7 +28,7 @@ curl -X "POST" "https://API_ENDPOINT" \
 **Private Endpoints** are endpoints that should only be accessible to the developer of the chabot, allowing to modify the chatbot in its entirety or access conversation data (Bot and Conversations API endpoints). To authentify your Private Endpoints requests you need to set the `X-Api-Key` and `X-Api-Signature` headers. The CSML Studio Private APIs use HMAC authentication to ensure that all calls are properly signed with both the API Key and API Secret, while preventing man-in-the-middle attacks and replay attacks
 
 {% hint style="danger" %}
-**The X-Api-Signature process MUST NEVER be done on the client side, as this would let any person in control of your API Secret also control your bot (make changes, get user data...). **Obviously, never share your API Secret with anyone in clear text.
+**The X-Api-Signature process MUST NEVER be done on the client side, as this would let any person in control of your API Secret also control your bot (make changes, get user data...).** Obviously, never share your API Secret with anyone in clear text.
 {% endhint %}
 
 In the `X-Api-Key` header, concatenate the API Key and the current unix timestamp (in seconds), separated by the `|` character.\

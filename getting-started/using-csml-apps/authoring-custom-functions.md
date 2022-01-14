@@ -14,7 +14,7 @@ In CSML Studio, apps are run by default on AWS Lambda, which ensures maximum ava
 To get started with AWS Lambda compatible deployment package in any language, [you can refer to this documentation](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-features.html#gettingstarted-features-package).
 
 {% hint style="warning" %}
-**Deprecation notice: **the original `Fn()` notation for calling Apps (formerly called Functions) in your CSML code has been replaced by the newer `App()` built-in as of CSML v1.5. Both notations will continue to work until CSML v2 is released, but this documentation will only reference the new `App()` usage from now on.
+**Deprecation notice:** the original `Fn()` notation for calling Apps (formerly called Functions) in your CSML code has been replaced by the newer `App()` built-in as of CSML v1.5. Both notations will continue to work until CSML v2 is released, but this documentation will only reference the new `App()` usage from now on.
 {% endhint %}
 
 ## Quick Mode
@@ -38,7 +38,7 @@ To test this program, simply run `node test.js` at the root of the project. You 
 
 #### Authoring in Quick Mode
 
-Select **Add Custom App **at the top-right corner of the apps page, which brings you directly to Quick Mode (nodejs). Simply copy-paste the content of index.js into the code editor, choose a name for your app, then click **Save**.
+Select **Add Custom App** at the top-right corner of the apps page, which brings you directly to Quick Mode (nodejs). Simply copy-paste the content of index.js into the code editor, choose a name for your app, then click **Save**.
 
 ![](<../../.gitbook/assets/CleanShot 2021-06-04 at 12.30.29@2x.png>)
 
@@ -79,4 +79,4 @@ Once you are done, simply save. You can now use your app in your CSML Chatbot as
 * It is always a good practice to only return what you intend to use. For example, if you are interfacing with a product catalog, do you need to get all 3542 items in the catalog, or will the first 5 suffice? If you are retrieving a list of items, what properties from that list do you actually need?
 * Apps are limited to 30s of execution time. If it takes longer, the app will stop and return an error.
 * Apps only get 512MB of RAM by default. Any excessive resource usage will lead the app to stop its execution immediately.
-* If you are saving the output of your app to a `do x = App(..) `(or a `remember`), the data is subject to the usual memory size limitations. In general, if your app returns more than a few KB of data, ask yourself if you really need all that data that you most likely won't be able to display in a chatbot (text-based, so really light) or if you shouldn't strip it down directly in the app itself!
+* If you are saving the output of your app to a `do x = App(..)` (or a `remember`), the data is subject to the usual memory size limitations. In general, if your app returns more than a few KB of data, ask yourself if you really need all that data that you most likely won't be able to display in a chatbot (text-based, so really light) or if you shouldn't strip it down directly in the app itself!

@@ -24,7 +24,7 @@ Once the skill is built, you will need to connect it with CSML Studio. This step
 
 ![](<../../.gitbook/assets/image (42).png>)
 
-Then, in CSML Studio, create a new Alexa channel for your bot under **Channels > Amazon Alexa **and set the name and ID of your skill. You will also need to copy the **HTTPS Endpoint URL** to configure the Skill in the ASK console later. You can then save for now!
+Then, in CSML Studio, create a new Alexa channel for your bot under **Channels > Amazon Alexa** and set the name and ID of your skill. You will also need to copy the **HTTPS Endpoint URL** to configure the Skill in the ASK console later. You can then save for now!
 
 ![](<../../.gitbook/assets/image (44).png>)
 

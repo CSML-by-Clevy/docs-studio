@@ -4,7 +4,7 @@
 
 It acts as a linguistic/syntactic abstraction layer, designed for humans who want to let other humans interact with any machine, in any setting. The syntax is designed to be learned in a matter of minutes, but also scales to any complexity of chatbot.
 
-CSML handles seamlessy and automatically **short and long-term memory **slots, **metadata** injection, and can be plugged in with any external system by means of [**channel integrations**](channels/introduction.md) or [**custom APIs**](api/introduction.md), as well as consume scripts **in any programming languages** using built-in parallelized runtimes.
+CSML handles seamlessy and automatically **short and long-term memory** slots, **metadata** injection, and can be plugged in with any external system by means of [**channel integrations**](channels/introduction.md) or [**custom APIs**](api/introduction.md), as well as consume scripts **in any programming languages** using built-in parallelized runtimes.
 
 To learn more about CSML, you can read this [article](https://medium.com/clevyio/announcing-csml-a-new-open-source-language-to-easily-build-full-featured-chatbots-3787e43ab707).
 

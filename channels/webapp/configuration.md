@@ -36,7 +36,7 @@ You can launch a specific flow (and step) instead of the default Welcome Flow wh
 
 There are two ways to use Ref parameters to redirect to flows. You can either configure them in the channel's settings page by adding connections between custom Ref parameters and a target flow:
 
-![](<../../.gitbook/assets/image (122).png>)
+![](<../../.gitbook/assets/image (122) (1).png>)
 
 Or you can use the following special syntax:
 
@@ -50,3 +50,85 @@ https://chat.csml.dev/s/abc12345678901234?ref=target:NAME_OF_FLOW
 
 The main advantage of the second syntax is that you can generate the links on the go; however, the first method is more flexible as you can easily change where a link is redirected even after it is created, and the content of the Ref parameter is entirely customizable.
 
+## Autocomplete
+
+The autocomplete feature helps your chatbot provide a list of up to 5 items that are contextualized to what the user is currently typing. Think of it as quickly hitting one of the first google search results!
+
+![](<../../.gitbook/assets/image (122).png>)
+
+To configure Autocomplete, you need to have a backend endpoint that will handle the requests and respond accordingly. You can configure this endpoint in the webapp's configuration panel:
+
+![](<../../.gitbook/assets/image (121).png>)
+
+The request that will be performed by the webapp will be as follows:
+
+```
+curl -X "POST" "https://my.example.com/autocomplete?token=some-auth-token" \
+     -H 'Content-Type: application/json;charset=utf-8' \
+     -d $'{"text": "Give me the best result"}'
+```
+
+Your endpoint must return results within 5 seconds as an `application/json` content-type, formatted as an array of maximum 5 results containing a title, optional highlighting matches, and the corresponding payload.&#x20;
+
+```json
+[
+  {
+    "title": "What is the best result?",
+    "matches": {
+      "highlights": [
+        {
+          "word": "What",
+          "highlight": false
+        },
+        {
+          "word": "is",
+          "highlight": false
+        },
+        {
+          "word": "the",
+          "highlight": false
+        },
+        {
+          "word": "best",
+          "highlight": true
+        },
+        {
+          "word": "result",
+          "highlight": true
+        },
+        {
+          "word": "?",
+          "highlight": false
+        }
+      ],
+      "text": "What is the best result?",
+      "has_highlights": true
+    },
+    "payload": "RESULT_ONE_PAYLOAD"
+  },
+  {
+    "title": "Another good result",
+    "matches": {
+      "highlights": [
+        {
+          "word": "Another",
+          "highlight": false
+        },
+        {
+          "word": "good",
+          "highlight": false
+        },
+        {
+          "word": "result",
+          "highlight": true
+        }
+      ],
+      "text": "Another nice result",
+      "has_highlights": true
+    },
+    "payload": "ANOTHER_RESULT_PAYLOAD"
+  }
+]
+```
+
+When a user selects a result, it will behave as a button click where the text is displayed and the payload is sent to the chatbot.

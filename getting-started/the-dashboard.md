@@ -6,11 +6,11 @@ Here is what it looks like:
 
 ![](<../.gitbook/assets/CleanShot 2021-06-04 at 11.00.16@2x.png>)
 
-You will find 2 different panels: the **Assistant **and the **Checklist**. Let's see what each panel does!
+You will find 2 different panels: the **Assistant** and the **Checklist**. Let's see what each panel does!
 
 ### Assistant panel
 
-![Assistant panel](https://cloud.headwayapp.co/changelogs_images/images/big/000/055/692-7db48a3bfeeff34384fccafde1556fb93d1cc7e2.png)
+![Assistant panel](https://cloud.headwayapp.co/changelogs\_images/images/big/000/055/692-7db48a3bfeeff34384fccafde1556fb93d1cc7e2.png)
 
 The Assistant, taking the form of a simple chatbot, will help you quickly identify the current status of your chatbot and give you hints into what you could improve to make an even better chatbot. There are 2 sections, corresponding to the 2 major phases of preparing a chatbot for production: development, and deployment.
 
@@ -20,7 +20,7 @@ The **Deployment assistant** will help you add your chatbot to a communication c
 
 ### Checklist panel
 
-![Checklist panel](https://cloud.headwayapp.co/changelogs_images/images/big/000/055/693-3a2d7b3afc3449134250f0dfb295f21958731366.png)
+![Checklist panel](https://cloud.headwayapp.co/changelogs\_images/images/big/000/055/693-3a2d7b3afc3449134250f0dfb295f21958731366.png)
 
 The checklist will help you quickly identify areas where you can improve your chatbot. It tells you what is missing to make your chatbot as complete as possible in the form of a simple to-do list of what most good chatbots should be doing.
 

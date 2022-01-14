@@ -14,7 +14,7 @@ Preprocessors are simply external apps that are run on every incoming event (of 
 
 Let's create a simple Text preprocessor that will return a picture of a hot dog if the user had the word "hot dog" in their input, or change the text to `"Not hot dog"`  otherwise.
 
-To add a preprocessor, you first need to add a _preprocessor-compatible _app under the apps section (see here). For this tutorial, let's just use the Quick Mode, but of course you can use Complete Mode as well.
+To add a preprocessor, you first need to add a _preprocessor-compatible_ app under the apps section (see here). For this tutorial, let's just use the Quick Mode, but of course you can use Complete Mode as well.
 
 This is the code we are going to use:
 
@@ -51,7 +51,7 @@ Next, go to **Apps > Add Custom App** and under **Quick Mode**, simply copy and 
 
 ![](<../../.gitbook/assets/image (33).png>)
 
-Then, head to the** Preprocessing** page. We only want to preprocess text events, but of course, we could do a similar app for other types of events. 
+Then, head to the **Preprocessing** page. We only want to preprocess text events, but of course, we could do a similar app for other types of events.&#x20;
 
 ![](<../../.gitbook/assets/CleanShot 2021-06-04 at 12.32.45@2x.png>)
 

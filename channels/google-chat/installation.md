@@ -20,9 +20,9 @@ In the next screen, grant the **Project > Editor** role to the service account:
 
 ![](<../../.gitbook/assets/image (58).png>)
 
-The third step (_Grant users access to this service account_) is optional and can be skipped. Click on Done to create the service account. 
+The third step (_Grant users access to this service account_) is optional and can be skipped. Click on Done to create the service account.&#x20;
 
-Once the service account is created, you will need to generate a key. Select the service account, click on **Add Key > Create New Key**, select **JSON **as the Key type, and save the file.
+Once the service account is created, you will need to generate a key. Select the service account, click on **Add Key > Create New Key**, select **JSON** as the Key type, and save the file.
 
 ## Setup the channel in CSML Studio
 

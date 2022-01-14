@@ -1,6 +1,6 @@
 # Installation
 
-Creating a Telegram chatbot is particularly easy. You only need to get a regular Telegram account, then to interact with [**@BotFather**](https://t.me/botfather)** **on Telegram, which is a built-in bot that will help you setup your own bot!
+Creating a Telegram chatbot is particularly easy. You only need to get a regular Telegram account, then to interact with [**@BotFather**](https://t.me/botfather) **** on Telegram, which is a built-in bot that will help you setup your own bot!
 
 ## Telegram's @BotFather
 
