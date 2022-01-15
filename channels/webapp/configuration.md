@@ -132,3 +132,16 @@ Your endpoint must return results within 5 seconds as an `application/json` cont
 ```
 
 When a user selects a result, it will behave as a button click where the text is displayed and the payload is sent to the chatbot.
+
+### Enabling/disabling autocomplete
+
+If an autocomplete endpoint is set, it will be enabled by default. However, it can be disabled or reenabled dynamically in your CSML script:
+
+```cpp
+say Autocomplete(false)
+say Autocomplete(true)
+```
+
+{% hint style="info" %}
+Autocomplete status is not persisted across page reloads. When reloading the page, this will always be set to `true` by default!
+{% endhint %}
