@@ -105,7 +105,7 @@ This means that in about 30 minutes, the user will receive a new conversation in
 It is possible to cancel a scheduled event by calling the following app, where schedule\_id is the ID of the schedule you want to cancel:
 
 ```cpp
-App(
+do App(
     "utils/scheduler",
     action = "cancel",
     schedule_id = schedule_id
