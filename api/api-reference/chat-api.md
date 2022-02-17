@@ -100,7 +100,7 @@ You can also choose to force-close any previously open conversation with `close_
 | Name                 | Type      | Description                                                                                              |
 | -------------------- | --------- | -------------------------------------------------------------------------------------------------------- |
 | request\_id          | `string`  | A random client-issued string for tracing requests. If none is provided, will be automatically generated |
-| interaction\_id      | `string`  | A random server-generated ID for the interaction                                                         |
+| conversation\_end    | `boolean` | Whether the flow ends after this message                                                                 |
 | \*messages           | `array`   | All the messages to send to the client in order                                                          |
 | \*message.payload    | `object`  | See `Message payloads` below                                                                             |
 | \*client             | `object`  |                                                                                                          |
@@ -108,12 +108,10 @@ You can also choose to force-close any previously open conversation with `close_
 | \*client.channel\_id | `string`  | the channels's ID                                                                                        |
 | \*client.user\_id    | `string`  | the user's unique identifier                                                                             |
 | \*received\_at       | `string`  | UTC time at which the message was received by the CSML server                                            |
-| \*is\_authorized     | `boolean` | whether or not the user is authorized to query the chat                                                  |
 
 ```javascript
 {
   "request_id": "045338c4-f214-4f94-b1a7-3255b3d70f3c",
-  "interaction_id": "47ead3a7-1614-4dac-8f85-ebbd2dbc0123",
   "messages": [
     {
       "conversation_id": "f2461d23-6069-4f78-ae81-f127e4c3d9a0",
@@ -132,7 +130,6 @@ You can also choose to force-close any previously open conversation with `close_
     "channel_id": "dd446008-3768-41df-9be9-f6ea0371f920",
     "user_id": "some-user-id"
   },
-  "received_at": "2019-11-16T17:48:26.519Z",
-  "is_authorized": true
+  "received_at": "2019-11-16T17:48:26.519Z"
 }
 ```
