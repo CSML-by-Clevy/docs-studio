@@ -326,6 +326,12 @@ start:
 
 You can find more examples of supported formats on the KaTeX documentation: [https://katex.org/docs/supported.html](https://katex.org/docs/supported.html). Please keep in mind that backslashes (`\`) must be escaped properly in your code!
 
+You can also add LaTeX inline in any standard text like by encapsulating it inside `{latex}...{/latex}` tags:
+
+```cpp
+say "This equation {latex} \(x^2 + y^2 = z^2\) {/latex} is super cool"
+```
+
 {% hint style="info" %}
-Try this bot: [https://play.csml.dev/bot/19ba90fc-bfc0-4350-a2b0-9ceff8aff039](https://play.csml.dev/bot/19ba90fc-bfc0-4350-a2b0-9ceff8aff039)
+Try this bot: [https://play.csml.dev/bot/16a2034a-bf28-41b7-afb5-dc7d5aee0d25](https://play.csml.dev/bot/16a2034a-bf28-41b7-afb5-dc7d5aee0d25)
 {% endhint %}
