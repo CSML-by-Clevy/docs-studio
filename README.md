@@ -10,7 +10,7 @@ To learn more about CSML, you can read this [article](https://medium.com/clevyio
 
 ## Build your chatbot with CSML Studio
 
-The easiest way to develop CSML chatbots is by using the [CSML development studio](https://studio.csml.dev), using a sample bot available in your library or by creating your own.
+The easiest way to develop CSML chatbots is by using the [CSML development studio](https://studio.csml.dev/), using a sample bot available in your library or by creating your own.
 
 Each bot gives you a full access to the CSML framework - a set of specialized tools to make and customize your chatbots : code editor, chatbox, apps, functions and files library, analytics and channels.
 

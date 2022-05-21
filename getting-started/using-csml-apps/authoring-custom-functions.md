@@ -28,7 +28,7 @@ The easiest way to author custom apps in CSML Studio is to use the **Quick Mode*
 
 If you need more configuration options (other languages, bigger package size, custom modules), we recommend using the **Complete Mode** as explained below.
 
-As an example, let's create a simple nodejs 12.x app that will return a random user from [RandomUser.me](https://randomuser.me). This code performs a simple GET request to https://randomuser.me/api and returns the first user in the returned array. The code is available [here on github](https://github.com/frsechet/csml-function-example-node12): download it or clone it to get started.
+As an example, let's create a simple nodejs 12.x app that will return a random user from [RandomUser.me](https://randomuser.me/). This code performs a simple GET request to https://randomuser.me/api and returns the first user in the returned array. The code is available [here on github](https://github.com/frsechet/csml-function-example-node12): download it or clone it to get started.
 
 #### The App Code
 

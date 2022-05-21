@@ -20,13 +20,15 @@ Once this is done, a chat bubble will appear as follows on every page where that
 
 ## Adding a Custom Greeting
 
-CSML Studio has an option to display an optional greeting text when the chatbox is closed:
+The Chatbox lets you configure a custom popup message as well as up to three Quick Action buttons to help you engage more actively with your customers. If both fields are left empty, only the blue chat icon will appear. You can also configure only a popup message or only the action buttons! You can find these configuration options in the Chatbox settings, one of the Web Chat configuration panels.
 
-![](<../../.gitbook/assets/image (36).png>)
+![The end result](<../../.gitbook/assets/image (121).png>)
 
-The content of the text bubble is configurable in the Chatbox settings at the bottom of the Webapp configuration panel. If that field is left empty, only the blue chat icon will appear.
+{% hint style="info" %}
+When configuring Quick Action buttons, you must provide both a title and a payload. The payload can be any string that will be interpreted by CSML. In the example below, those buttons contain a simple payload that match corresponding flows. You can also use an AI Rule trigger as a payload!
+{% endhint %}
 
-![](<../../.gitbook/assets/image (37).png>)
+![](<../../.gitbook/assets/image (123).png>)
 
 ## Optional Attributes
 

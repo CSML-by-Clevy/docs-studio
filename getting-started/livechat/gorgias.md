@@ -2,7 +2,7 @@
 
 ## Configuration
 
-[Gorgias](https://www.gorgias.com) is a support platform specialized in e-commerce. It is the perfect solution if you are a Shopify or Magento user!
+[Gorgias](https://www.gorgias.com/) is a support platform specialized in e-commerce. It is the perfect solution if you are a Shopify or Magento user!
 
 To get started, go to your bot's **Settings > Livechat** then select Gorgias as your livechat support platform.
 

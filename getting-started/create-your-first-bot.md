@@ -114,7 +114,7 @@ Now it's time to get some feedback from the user!
 
 ## **NLP coming into play**
 
-We want to use the [SAP Conversational AI](https://cai.tools.sap) to find out if the user's input is positive, neutral or negative. The API returns this as sentiments. If you want to see the full response from the API, you can print it using `say "{{sapcaiResponse}}"`
+We want to use the [SAP Conversational AI](https://cai.tools.sap/) to find out if the user's input is positive, neutral or negative. The API returns this as sentiments. If you want to see the full response from the API, you can print it using `say "{{sapcaiResponse}}"`
 
 ```cpp
 feedback:
@@ -232,4 +232,4 @@ save:
     goto feedback
 ```
 
-If you have any question, please come ask us on [Slack](https://join.slack.com/t/csml-by-clevy/shared_invite/enQtODAxMzY2MDQ4Mjk0LWZjOTZlODI0YTMxZTg4ZGIwZDEzYTRlYmU1NmZjYWM2MjAwZTU5MmU2NDdhNmU2N2Q5ZTU2ZTcxZDYzNTBhNTc)!
+If you have any question, please come ask us on [Slack](https://join.slack.com/t/csml-by-clevy/shared\_invite/enQtODAxMzY2MDQ4Mjk0LWZjOTZlODI0YTMxZTg4ZGIwZDEzYTRlYmU1NmZjYWM2MjAwZTU5MmU2NDdhNmU2N2Q5ZTU2ZTcxZDYzNTBhNTc)!

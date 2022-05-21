@@ -302,7 +302,7 @@ When several options are selected, you will receive a comma-separated list of th
 
 ## LaTeX
 
-[LaTeX](https://en.wikipedia.org/wiki/LaTeX) is a popular language that lets you write (among other things) complex math formulas. The webapp and chatbox include [KaTeX](https://katex.org) to support this language natively with a custom component:
+[LaTeX](https://en.wikipedia.org/wiki/LaTeX) is a popular language that lets you write (among other things) complex math formulas. The webapp and chatbox include [KaTeX](https://katex.org/) to support this language natively with a custom component:
 
 ```cpp
 start:
