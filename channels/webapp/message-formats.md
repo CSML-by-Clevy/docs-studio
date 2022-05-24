@@ -234,7 +234,7 @@ Try this bot: [https://play.csml.dev/bot/8ec99c8c-5bfb-44cd-974d-b7781009279b](h
 
 To gain some control over what a user can enter in a form (for example, if you need to make sure they only enter an email address or a valid number when required), you can also use the `Input` component.
 
-There are several variants of input fields: `email`, `text`, `textarea`, `number`. By default, inputs are `type="text"`. All parameters are optional, and the basic usage is as follows:
+There are several variants of input fields: `email`, `text`, `textarea`, `number` and `password`. By default, inputs are `type="text"`. All parameters are optional, and the basic usage is as follows:
 
 ```cpp
 say Input(
@@ -272,7 +272,11 @@ say Input(
 
 ![](<../../.gitbook/assets/image (89).png>)
 
-You can check this reference about the min and max parameters: [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input/number#additional\_attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input/number#additional\_attributes)
+You can check this reference about the min and max parameters: [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input/number#additional\_attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input/number#additional\_attributes).
+
+{% hint style="info" %}
+To learn more about the inputs with type="password", read the documentation about secure inputs (`hold_secure`): [https://docs.csml.dev/language/standard-library/keywords#hold\_secure](https://docs.csml.dev/language/standard-library/keywords#hold\_secure)
+{% endhint %}
 
 ## Multiselect
 
