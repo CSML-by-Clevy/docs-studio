@@ -28,7 +28,7 @@ You will be taken to a new page on Azure to register a new app (or list existing
 
 On the next page, fill in a **Name**, select the **Accounts in any organizational directory - Multitenant** option (the reason is that you will be using the Microsoft Bot Framework tenant for your bot, which will require access to the app as well) and check **Background process and Automation** under Platform configuration, then click Register.
 
-![](../../.gitbook/assets/capture-de-cran-2020-04-26-18.39.12.png)
+![](<../../.gitbook/assets/CleanShot 2022-06-16 at 14.13.00.png>)
 
 On the next page, create a **New client secret**, give it a **name** and a validity date (if you select anything other than Never, you will need to come back occasionally and get a new secret), submit, then take note of the given secret (you will never be able to see it again).
 
@@ -72,7 +72,7 @@ Upon saving, a **manifest.zip** file will be downloaded to your computer. Save i
 
 ## 4. Deploy your bot on Microsoft Teams
 
-On Microsoft Teams (web or desktop), find the **Apps** panel, then select **Upload custom app > Upload for MY_TEAM** (obviously, replace MY_TEAM with the name of your own team).
+On Microsoft Teams (web or desktop), find the **Apps** panel, then select **Upload custom app > Upload for MY\_TEAM** (obviously, replace MY\_TEAM with the name of your own team).
 
 ![](../../.gitbook/assets/capture-de-cran-2020-04-26-19.08.09.png)
 
