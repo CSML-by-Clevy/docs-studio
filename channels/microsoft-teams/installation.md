@@ -26,7 +26,9 @@ You will be taken to a new page on Azure to register a new app (or list existing
 
 ![](../../.gitbook/assets/capture-de-cran-2020-04-26-18.37.06.png)
 
-On the next page, fill in a **Name**, select the **Accounts in any organizational directory - Multitenant** option (the reason is that you will be using the Microsoft Bot Framework tenant for your bot, which will require access to the app as well) and check **Background process and Automation** under Platform configuration, then click Register.
+On the next page, fill in a **Name**, select the **Accounts in any organizational directory - Multitenant** option (the reason is that you will be using the Microsoft Bot Framework tenant for your bot, which will require access to the app as well).
+
+You can leave the **Redirect URI** fields empty, then click **Register**.
 
 ![](<../../.gitbook/assets/CleanShot 2022-06-16 at 14.13.00.png>)
 
