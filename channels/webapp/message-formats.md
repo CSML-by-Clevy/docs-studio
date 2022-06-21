@@ -350,6 +350,32 @@ When several options are selected, you will receive a comma-separated list of th
 
 ![](<../../.gitbook/assets/image (92).png>)
 
+## Dropdown
+
+Like the Radio component, the Dropdown lets users pick an option from a list:
+
+![](<../../.gitbook/assets/image (122).png>)
+
+```cpp
+say Dropdown(
+  // Mandatory list of options
+  options=[
+    Button("It's easy to learn", payload="easy"),
+    Button("It's pretty quick", payload="fast"),
+    Button("It's scalable", payload="scalable"),
+    Button("It's fun", payload="fun"),
+    Button("The mascot 🦜 is cool", payload="pako"),
+  ],
+
+  // Optional parameters
+  title="Why do you like CSML?",
+  description="Select the principal reason!",
+  placeholder="They are all good reasons...",
+  selected="easy", // value selected by default
+  submit_label="Yes, that's it!",
+)
+```
+
 ## LaTeX
 
 [LaTeX](https://en.wikipedia.org/wiki/LaTeX) is a popular language that lets you write (among other things) complex math formulas. The webapp and chatbox include [KaTeX](https://katex.org/) to support this language natively with a custom component:
@@ -402,7 +428,7 @@ say Signature(
 )
 ```
 
-![Signature field with all parameters](<../../.gitbook/assets/image (122).png>)
+![Signature field with all parameters](<../../.gitbook/assets/image (122) (1).png>)
 
 {% hint style="info" %}
 Try this bot: [https://play.csml.dev/bot/709747e1-ade7-4db3-b29f-b1514ac4744d](https://play.csml.dev/bot/709747e1-ade7-4db3-b29f-b1514ac4744d)
