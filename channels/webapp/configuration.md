@@ -36,7 +36,7 @@ You can launch a specific flow (and step) instead of the default Welcome Flow wh
 
 There are two ways to use Ref parameters to redirect to flows. You can either configure them in the channel's settings page by adding connections between custom Ref parameters and a target flow:
 
-![](<../../.gitbook/assets/image (122) (1) (1).png>)
+![](<../../.gitbook/assets/image (122) (1) (1) (1).png>)
 
 Or you can use the following special syntax:
 
@@ -54,7 +54,7 @@ The main advantage of the second syntax is that you can generate the links on th
 
 The autocomplete feature helps your chatbot provide a list of up to 5 items that are contextualized to what the user is currently typing. Think of it as quickly hitting one of the first google search results!
 
-![](<../../.gitbook/assets/image (122) (1).png>)
+![](<../../.gitbook/assets/image (122) (1) (1).png>)
 
 To configure Autocomplete, you need to have a backend endpoint that will handle the requests and respond accordingly. You can configure this endpoint in the webapp's configuration panel:
 

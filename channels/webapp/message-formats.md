@@ -339,3 +339,25 @@ say "This equation {latex} \(x^2 + y^2 = z^2\) {/latex} is super cool"
 {% hint style="info" %}
 Try this bot: [https://play.csml.dev/bot/16a2034a-bf28-41b7-afb5-dc7d5aee0d25](https://play.csml.dev/bot/16a2034a-bf28-41b7-afb5-dc7d5aee0d25)
 {% endhint %}
+
+## Signature
+
+You can display a simple signature field i.e to collect user consent and receive it as a png file.
+
+```cpp
+// Display a simple signature field
+say Signature()
+
+// The field can be customized (all parameters are optional)
+say Signature(
+  "Please sign here!",
+  description="Yes please do!",
+  submit_label="I consent"
+)
+```
+
+![Signature field with all parameters](<../../.gitbook/assets/image (122).png>)
+
+{% hint style="info" %}
+Try this bot: [https://play.csml.dev/bot/709747e1-ade7-4db3-b29f-b1514ac4744d](https://play.csml.dev/bot/709747e1-ade7-4db3-b29f-b1514ac4744d)
+{% endhint %}
