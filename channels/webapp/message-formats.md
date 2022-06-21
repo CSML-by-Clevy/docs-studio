@@ -278,12 +278,56 @@ You can check this reference about the min and max parameters: [https://develope
 To learn more about the inputs with type="password", read the documentation about secure inputs (`hold_secure`): [https://docs.csml.dev/language/standard-library/keywords#hold\_secure](https://docs.csml.dev/language/standard-library/keywords#hold\_secure)
 {% endhint %}
 
-## Multiselect
+## Radio
 
-If you want to let users select multiple options, the `Multiselect()` component is the solution. Users will be able to select any number of options in the given list. You can force a `min` and `max` number of choices, or if `required=true`, it means that at least one option must be selected to continue.
+Display a radio buttons component:
 
 ```cpp
+say Radio(
+  // Mandatory
+  options = [
+    Button("Cats 🐕", payload="meow"),
+    Button("Dogs 🐶", payload="woof"),
+    Button("Hot dogs 🌭", payload="yummy"),
+  ],
+
+  // Optional fields:
+  title="What's your favorite animal?",
+  description="You can only pick one!",
+  selected = "yummy", // Preselect a value
+)
+```
+
+![](<../../.gitbook/assets/image (125).png>)
+
+{% hint style="info" %}
+
+{% endhint %}
+
+## Multiselect, Checkbox
+
+If you want to let users select multiple options, the `Multiselect()` or \`Checkbox()\` components are a great solution. Users will be able to select any number of options in the given list. You can force a `min` and `max` number of choices, or if `required=true`, it means that at least one option must be selected to continue.
+
+Both the Multiselect and Checkbox components work exactly the same, only the display will be different. Try both to find out which one suits you best!
+
+```cpp
+// A list of options that are highlighted as you select them
 say Multiselect(
+  title="Why do you like CSML?",
+  description="Select all options that apply!",
+  min=2,
+  submit_label="Yes, that's it!",
+  options=[
+    Button("It's easy to learn", payload="easy"),
+    Button("It's pretty quick", payload="fast"),
+    Button("It's scalable", payload="scalable"),
+    Button("It's fun", payload="fun"),
+    Button("The mascot 🦜 is cool", payload="pako"),
+  ]
+)
+
+// The same component also works as a simple checkbox list
+say Checkbox(
   title="Why do you like CSML?",
   description="Select all options that apply!",
   min=2,
@@ -298,7 +342,9 @@ say Multiselect(
 )
 ```
 
-![](<../../.gitbook/assets/image (91).png>)
+![Multiselect example](<../../.gitbook/assets/image (91).png>)
+
+![Checkbox example](<../../.gitbook/assets/image (124).png>)
 
 When several options are selected, you will receive a comma-separated list of the corresponding payloads (_not necessarily the button's title!_), in the order they were selected by the user. In the case above, you would receive:
 
