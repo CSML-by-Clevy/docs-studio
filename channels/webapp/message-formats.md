@@ -298,7 +298,7 @@ say Radio(
 )
 ```
 
-![](<../../.gitbook/assets/image (125).png>)
+![](<../../.gitbook/assets/image (125) (1).png>)
 
 {% hint style="info" %}
 
