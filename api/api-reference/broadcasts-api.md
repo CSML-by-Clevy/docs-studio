@@ -2,6 +2,10 @@
 
 A broadcast is a message sent proactively from the bot to a user, without the user sending a request first. It is a great way to reengage your users, for example to remind them about a conversation they didn't finish, or let them know a product they ordered has been shipped.
 
+{% hint style="info" %}
+Broadcasts are only available on the PRO plan
+{% endhint %}
+
 ## POST /broadcasts
 
 Send a broadcast on the requested channel (supported channels only) to the requested client. Broadcast requests are queued and usually sent within a few seconds. If a target is unavailable, no error is generated.
