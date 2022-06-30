@@ -123,13 +123,13 @@ A sample `_metadata`  for an incoming event will be similar to the following obj
 ```javascript
 {
   "_channel": {
-    "app_id": "A01NUE2CBHC",
+    "app_id": "YYYYYYYYY",
     "type": "slack",
     "name": "Slack channel"
   },
-  "last_name": "darrigade",
-  "user_id": "U01M7F9U93K",
-  "email": "mathieu.darrigade@clevy.io",
-  "first_name": "mathieu"
+  "last_name": "Doe",
+  "user_id": "XXXXXXXX",
+  "email": "john.doe@example.com",
+  "first_name": "John"
 }
 ```
