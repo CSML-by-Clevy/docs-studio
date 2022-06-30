@@ -14,11 +14,11 @@ say Text("There's vomit on his sweater already, mom's spaghetti")
 say "He's _nervous_, but **on the surface** he looks ~calm and ready~"
 ```
 
-![](../../.gitbook/assets/img\_0328.jpg)
+![](<../../.gitbook/assets/image (130).png>)
 
 ## Typing, Wait
 
-In Slack, `Wait` and `Typing` have the same behavior. No typing indicator exists in slack, so the bot will simply wait for the duration given (in milliseconds).
+In Slack, `Wait` and `Typing` have the same behavior. No typing indicator exists in slack, so the bot will simply wait for the duration given (in milliseconds) before the next message is processed.
 
 ```cpp
 say Typing(1000)
@@ -42,21 +42,25 @@ hold
 say "User selected: {{event}}"
 ```
 
-![Before selecting an option](../../.gitbook/assets/img\_0329.jpg)
+![](<../../.gitbook/assets/image (129).png>)
 
 CSML Studio will also take advantage of Slack's features to update the content of the component when an option is chosen, so that the user's choice appears clearly after they select an option.
 
-![After selecting the option "Slim Shady"](../../.gitbook/assets/img\_0330.jpg)
+![](<../../.gitbook/assets/image (126).png>)
 
 ## Image
 
 Send the URL of an image. Slack will attempt to display it.
 
 ```cpp
-say Image("http://placekitten.com/500/500")
+say Image(
+  "http://placekitten.com/500/500",
+  title="Nice kitten", // optional
+  alt="this is a photo of a cute kitten", // optional
+)
 ```
 
-![](../../.gitbook/assets/img\_0331.jpg)
+![Both title and alt text are optional but will be available on Slack!](<../../.gitbook/assets/image (123).png>)
 
 ## Video, Audio, Url
 
@@ -109,6 +113,68 @@ say Carousel(cards=[card1, card2, card3])
 ![](../../.gitbook/assets/capture-de-cran-2020-05-06-19.09.59.png)
 
 You can add several `Button` or `Url` buttons to your `Card` components.
+
+## Input, Textarea
+
+```cpp
+// the same works with Textarea()
+say Input(
+  title="Enter something below",
+  description="This is a simple text field, and you can say whatever you want",
+  placeholder="Whatever you want",
+  submit_label="Submit",
+)
+```
+
+![](<../../.gitbook/assets/image (131).png>)
+
+## Radio, Dropdown
+
+```cpp
+// the same works with Dropdown()
+say Radio(
+  // Mandatory
+  options = [
+    Button("Cats 🐕", payload="meow"),
+    Button("Dogs 🐶", payload="woof"),
+    Button("Hot dogs 🌭", payload="yummy"),
+  ],
+
+  // Optional fields:
+  title="What's your favorite animal?",
+  description="You can only pick one!",
+)
+```
+
+![](<../../.gitbook/assets/image (125).png>)
+
+## Multiselect, Checkbox
+
+```cpp
+// the same works with Multiselect()
+say Checkbox(
+  // Mandatory
+  options = [
+    Button("Cats 🐕", payload="meow"),
+    Button("Dogs 🐶", payload="woof"),
+    Button("Hot dogs 🌭", payload="yummy"),
+  ],
+
+  // Optional fields:
+  title="What's your favorite animal?",
+  description="You can pick many!",
+)
+```
+
+![](<../../.gitbook/assets/image (132).png>)
+
+## Calendar
+
+```cpp
+say Calendar(title="Select your date of birth", submit_label="OK")
+```
+
+![](<../../.gitbook/assets/image (124).png>)
 
 ## Full reference
 

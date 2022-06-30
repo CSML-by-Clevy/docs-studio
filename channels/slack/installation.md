@@ -6,11 +6,11 @@ description: Step by step guide to install a Slack channel
 
 The Slack integration provides you with a **Manifest** that allows you to setup most of the heavy Slack App configuration in seconds. To get started, simply click on the link provided here:
 
-![](<../../.gitbook/assets/image (127).png>)
+![](<../../.gitbook/assets/image (127) (1).png>)
 
 Simply follow the on-screen instructions until the app is installed to your workspace. You will be required to allow the app to perform the necessary actions - you must be a workspace admin to do that.
 
-![](<../../.gitbook/assets/image (125).png>)
+![](<../../.gitbook/assets/image (125) (1).png>)
 
 You will still need to perform a few actions to correctly setup your app. First, visit the **App Manifest** menu. It may have an orange warning box at the top: in that case, click the "**Click here to verify**" link to make that warning disappear. Another way to perform this verification if needed is by visiting **Event Subscriptions** and performing the same operation.
 
@@ -26,7 +26,7 @@ Next, select **App Home** in the left-side menu. Enter a Display Name and a Defa
 
 At the bottom of the same **App Home** page, under **Show Tabs**, make sure the **Messages Tab** toggle is _on_ and the **Allow users to send Slash commands and messages from the messages tab** checkbox is _checked_.
 
-![](<../../.gitbook/assets/image (129).png>)
+![](<../../.gitbook/assets/image (129) (1).png>)
 
 Next, visit **Basic Information** from the left-side menu, copy the **App ID**, **Client ID**, **Client Secret** and **Signing Secret** under **App Credentials** and save them for later.
 
@@ -40,4 +40,4 @@ Finally, back in CSML Studio, paste the credentials you retrieved earlier: **Bot
 
 You should now be able to see your app in the left sidebar of your Slack workspace, under **Apps**. This is where you can chat with your slack bot!
 
-![](<../../.gitbook/assets/image (126).png>)
+![](<../../.gitbook/assets/image (126) (1).png>)

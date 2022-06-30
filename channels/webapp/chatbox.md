@@ -28,7 +28,7 @@ The Chatbox lets you configure a custom popup message as well as up to three Qui
 When configuring Quick Action buttons, you must provide both a title and a payload. The payload can be any string that will be interpreted by CSML. In the example below, those buttons contain a simple payload that match corresponding flows. You can also use an AI Rule trigger as a payload!
 {% endhint %}
 
-![](<../../.gitbook/assets/image (123).png>)
+![](<../../.gitbook/assets/image (123) (1).png>)
 
 ## Optional Attributes
 

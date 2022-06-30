@@ -298,11 +298,7 @@ say Radio(
 )
 ```
 
-![](<../../.gitbook/assets/image (125) (1).png>)
-
-{% hint style="info" %}
-
-{% endhint %}
+![](<../../.gitbook/assets/image (125) (1) (1).png>)
 
 ## Multiselect, Checkbox
 
@@ -344,7 +340,7 @@ say Checkbox(
 
 ![Multiselect example](<../../.gitbook/assets/image (91).png>)
 
-![Checkbox example](<../../.gitbook/assets/image (124).png>)
+![Checkbox example](<../../.gitbook/assets/image (124) (1).png>)
 
 When several options are selected, you will receive a comma-separated list of the corresponding payloads (_not necessarily the button's title!_), in the order they were selected by the user. In the case above, you would receive:
 
