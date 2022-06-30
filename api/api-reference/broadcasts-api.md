@@ -3,7 +3,7 @@
 A broadcast is a message sent proactively from the bot to a user, without the user sending a request first. It is a great way to reengage your users, for example to remind them about a conversation they didn't finish, or let them know a product they ordered has been shipped.
 
 {% hint style="info" %}
-Broadcasts are only available on the PRO plan
+Broadcasts are only available on the PRO plan. More information on the CSML Studio plans: [https://www.csml.dev/studio/pricing](https://www.csml.dev/studio/pricing)
 {% endhint %}
 
 ## POST /broadcasts
