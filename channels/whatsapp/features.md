@@ -1,4 +1,4 @@
-# Features
+# Features and Limitations
 
 ## Available components
 
@@ -13,6 +13,10 @@ Whatsapp supports the following components:
 Markdown is partially supported (only **bold**, _italic_ and ~~strikethrough~~).
 
 ## Limitations
+
+### Channel Availability
+
+As a security measure, user access tokens expire after about 60 days. If your Whatsapp chatbot remains unused for a longer time, the token will be automatically expired and you will need to reconnect your app to restore it.
 
 ### Buttons
 
