@@ -2,34 +2,23 @@
 
 ## Available components
 
-Whatsapp (via MessageBird) supports the following components:
+Whatsapp supports the following components:
 
-* `Text()` or string templates
-* `Object()` or JSON templates
-* `Wait()`
-* `Image()`
-* `Video()`
-* `Audio()`
-* `File()`
+* Simple texts
+* `Wait()` and `Typing()`
+* Medias: `Image(), Video(), Audio(), File()`
 * `Url()`
+* `Question()` and `QuickReply()`
 
 Markdown is partially supported (only **bold**, _italic_ and ~~strikethrough~~).
-
-To send completely custom requests, use `say Object(...)` . The content of the object will be forwarded as is in the request body. For a complete reference, please visit [MessageBird's API documentation](https://developers.messagebird.com/api/conversations/#whatsapp-api).
 
 ## Limitations
 
 ### Buttons
 
-Whatsapp has a very limited set of interactive components. Buttons for example are textual only, and your users will have to type the actual text of the button.
-
-![To select "Latest numbers", the user has to type "1" or use the emoji 🔢](../../.gitbook/assets/img\_0161.PNG)
+Whatsapp has a very limited set of interactive components. Buttons for example are textual only, and your users will have to type the actual text of the button
 
 The mapping of `Question()` and `Button()` components to text is performed automatically. However you need to set the right `title` and `accepts` values in order to correctly match the user's input.
-
-### Typing
-
-The typing indicator `...` is not supported and replaced by a simple `Wait()` component of the same duration.
 
 ### Urls
 
@@ -64,4 +53,4 @@ The file upload process happens asynchronously on Whatsapp, so messages might sh
 
 ### Carousel, Card
 
-`Carousel()` and `Card()` components are currently not supported.
+`Carousel()` and `Card()` components are not supported.

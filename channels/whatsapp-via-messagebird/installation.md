@@ -4,37 +4,33 @@
 
 There are two prerequisites for installing a Whatsapp bot in the CSML Studio.
 
-1. you MUST have a verified Facebook Business account
-2. you MUST have a MessageBird account
+1. you MUST have a verified Meta Business account
+2. you MUST have a Meta Developer account
 
-In case you have any question on how to get started with these two topics, please redirect your questions to MessageBird's support, as CSML Studio only connects to MessageBird's APIs.
-
-Once you have created a MessageBird account, you can immediately connect your bot in MessageBird's free Whatsapp "sandbox", which allows you to send and receive messages on Whatsapp for free and test your chatbot.
-
-{% hint style="info" %}
-Please refer to MessageBird's documentation on [Getting Started with the Whatsapp Sandbox](https://developers.messagebird.com/docs/conversations/whatsapp/getting-started-sandbox/).
-{% endhint %}
-
-Only once your account has been approved by Facebook into the private beta of Whatsapp Business will you be able to connect your chatbot to your real Whatsapp Business account.
-
-{% hint style="info" %}
-Registering your chatbot for production use on Whatsapp takes a few days. Please read MessageBird's documentation on [Getting Started with Whatsapp for Business](https://developers.messagebird.com/docs/conversations/whatsapp/getting-started-sandbox/).
-{% endhint %}
+And more generally, you must be able to follow this guide to setup a Meta app correctly: [https://developers.facebook.com/docs/whatsapp/business-management-api/get-started](https://developers.facebook.com/docs/whatsapp/business-management-api/get-started).
 
 ## Connecting Whatsapp to CSML Studio
 
 In your bot in CSML Studio, go to **Channels** > **Connect a new channel,** then select **Whatsapp**.
 
-In the next screen, enter a name and description for your channel (it is purely informational and can be changed later) then add your MessageBird credentials. You will need 3 pieces of information:
+In the next screen, enter a name and description for your channel (it is purely informational and can be changed later) and add the required credentials.
 
-![](../../.gitbook/assets/capture-de-cran-2020-04-15-17.49.03.png)
+![](<../../.gitbook/assets/CleanShot 2022-07-29 at 11.10.11@2x.png>)
 
-The API Key can be found in the [Developers > API access panel](https://dashboard.messagebird.com/en/developers/access) (you _must_ use the `live API key`) and the Signing Key can be found in the [Developers > API settings panel](https://dashboard.messagebird.com/en/developers/settings#).
+The **App ID** and **App Secret** can be found in the app's Basic Settings page:
 
-The Channel ID will be given to you at the end of the setup process for the Whatsapp channel on MessageBird's dashboard.
+![](<../../.gitbook/assets/CleanShot 2022-07-29 at 11.11.38@2x.png>)
 
-If you are in Sandbox Mode, you need to scan the QR Code and initiate the conversation before you can get the Channel ID. In that case, leave the **Sandbox Mode** checkbox checked.
+The **User Access Token** and **Phone Number ID** (_and not the actual phone number!_) can be foud under **Whatsapp > Getting Started**. You can start with one of the Test numbers provided by Facebook, but in production you will want to change that to your own phone number once it is properly configured.
 
-![](../../.gitbook/assets/capture-de-cran-2020-04-15-17.55.09.png)
+![](<../../.gitbook/assets/CleanShot 2022-07-29 at 11.07.01@2x.png>)
 
-After you have completed this step, submit the new channel in CSML Studio and you are good to go! All messages sent from/to your Whatsapp number will be sent to your chatbot.
+Then, click **Save** to setup the channel. In the following page, you will also receive your Webhook configuration parameters:
+
+![](../../.gitbook/assets/image.png)
+
+Use these parameters in the **Whatsapp > Configuration** page under **Callback URL** and **Verify token**. Make sure that you subscribe to the **messages** Webhook fields!
+
+![](<../../.gitbook/assets/CleanShot 2022-07-29 at 11.07.32@2x.png>)
+
+The final step before you can deploy this app to production is to [verify your business](https://www.facebook.com/business/help/2058515294227817) (if not already done), and obtain [the `whatsapp_business_management` permissions](https://developers.facebook.com/micro\_site/url/?click\_from\_context\_menu=true\&country=FR\&destination=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fpermissions%2Freference%2Fwhatsapp\_business\_management\&event\_type=click\&last\_nav\_impression\_id=1KC47D7snVtyQUZe8\&max\_percent\_page\_viewed=30\&max\_viewport\_height\_px=831\&max\_viewport\_width\_px=1512\&orig\_http\_referrer=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fwhatsapp%2Fbusiness-management-api%2Fget-started\&orig\_request\_uri=https%3A%2F%2Fdevelopers.facebook.com%2Fajax%2Fdocs%2Fnav%2F%3Fpath1%3Dwhatsapp%26path2%3Dbusiness-management-api%26path3%3Dget-started\&region=emea\&scrolled=true\&session\_id=1Q0luFHipTpQvWDFI\&site=developers).

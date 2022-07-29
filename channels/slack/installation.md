@@ -34,7 +34,7 @@ Next, visit **Basic Information** from the left-side menu, copy the **App ID**, 
 
 On the same page, you can also customize the appearance of your chatbot in Slack (image, colors...).
 
-![](../../.gitbook/assets/image.png)
+![](<../../.gitbook/assets/image (1).png>)
 
 Finally, back in CSML Studio, paste the credentials you retrieved earlier: **Bot User Token**, **App ID**, **Client ID**, **Client Secret**, **Signing Secret**, then click on **Submit**.
 

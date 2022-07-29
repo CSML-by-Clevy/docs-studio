@@ -20,7 +20,7 @@
 * [Bot Configuration Options](getting-started/bot-configuration-options.md)
 * [💻 CSML Language Reference](https://docs.csml.dev/language)
 
-## 🔌 Studio API <a href="api" id="api"></a>
+## 🔌 Studio API <a href="#api" id="api"></a>
 
 * [Getting Started](api/introduction.md)
 * [Authentication](api/authentication.md)
@@ -56,7 +56,7 @@
 * [Google Chat](channels/google-chat/README.md)
   * [Installation](channels/google-chat/installation.md)
   * [Features](channels/google-chat/features.md)
-* [Whatsapp (with MessageBird)](channels/whatsapp-via-messagebird/README.md)
+* [Whatsapp](channels/whatsapp-via-messagebird/README.md)
   * [Installation](channels/whatsapp-via-messagebird/installation.md)
   * [Features](channels/whatsapp-via-messagebird/features.md)
 * [Instagram](channels/instagram/README.md)
