@@ -1,6 +1,8 @@
 # Features and Limitations
 
-## Available components
+## Features
+
+### Available components
 
 Whatsapp supports the following components:
 
@@ -11,6 +13,10 @@ Whatsapp supports the following components:
 * `Question()` and `QuickReply()`
 
 Markdown is partially supported (only **bold**, _italic_ and ~~strikethrough~~).
+
+### QR Codes Messages
+
+Whatsapp provides an easy way to generate QR codes that let users reach your chatbot easily. You can read more about it here: [https://developers.facebook.com/docs/whatsapp/business-management-api/qr-codes](https://developers.facebook.com/docs/whatsapp/business-management-api/qr-codes)
 
 ## Limitations
 
