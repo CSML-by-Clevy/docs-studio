@@ -47,11 +47,11 @@ Has the following output:
 
 ### Video
 
-You must upload videos in mp4 format. Videos hosted on Youtube, Dailymotion or Vimeo will not display (use the `Url()` component).
+You must upload videos in mp4 format. Videos hosted on platforms such as Youtube, Dailymotion or Vimeo will not display (use the `Url()` component).
 
 ### Audio
 
-You must upload audio files in mp3 format. Audio files hosted on Spotify, Deezer or Soundcloud will not display (use the `Url()` component).
+You must upload audio files in mp3 format. Audio files hosted on platforms such as Spotify, Deezer or Soundcloud will not display (use the `Url()` component).
 
 ### Files
 
