@@ -29,7 +29,7 @@ Then, click **Save** to setup the channel. In the following page, you will also 
 
 ![](../../.gitbook/assets/image.png)
 
-Use these parameters in the **Whatsapp > Configuration** page under **Callback URL** and **Verify token**. Make sure that you subscribe to the **messages** Webhook fields!
+Use these parameters in the **Whatsapp > Configuration** page under **Callback URL** and **Verify token**. Make sure to also **subscribe to the `messages` Webhook field**.
 
 ![](<../../.gitbook/assets/CleanShot 2022-07-29 at 11.07.32@2x.png>)
 
