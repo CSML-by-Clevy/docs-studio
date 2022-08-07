@@ -56,7 +56,7 @@
 * [Google Chat](channels/google-chat/README.md)
   * [Installation](channels/google-chat/installation.md)
   * [Features](channels/google-chat/features.md)
-* [Whatsapp](channels/whatsapp/README.md)
+* [WhatsApp](channels/whatsapp/README.md)
   * [Installation](channels/whatsapp/installation.md)
   * [Features and Limitations](channels/whatsapp/features.md)
 * [Instagram](channels/instagram/README.md)

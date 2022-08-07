@@ -21,7 +21,7 @@ The **App ID** and **App Secret** can be found in the app's Basic Settings page:
 
 ![](<../../.gitbook/assets/CleanShot 2022-07-29 at 11.11.38@2x.png>)
 
-The **User Access Token** and **Phone Number ID** (_and not the actual phone number!_) can be foud under **Whatsapp > Getting Started**. You can start with one of the Test numbers provided by Facebook, but in production you will want to change that to your own phone number once it is properly configured.
+The **User Access Token,** **Phone Number ID** (_and not the actual phone number!_) and **WhatsApp Business Account ID** can be foud under **Whatsapp > Getting Started**. You can start with one of the Test numbers provided by Facebook, but in production you will want to change that to your own phone number once it is properly configured.
 
 ![](<../../.gitbook/assets/CleanShot 2022-07-29 at 11.07.01@2x.png>)
 
