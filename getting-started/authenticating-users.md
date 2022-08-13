@@ -61,7 +61,7 @@ Make sure to update all the values with your own!
 
 This will display the following button:
 
-![](../.gitbook/assets/image.png)
+![](<../.gitbook/assets/image (3).png>)
 
 If the response matches the button, it means that the OAuth flow succeeded. Otherwise, it was not successful (or the user did not authenticate at all).
 
@@ -76,7 +76,9 @@ else {
 
 Using the access token, you can then start authenticating your API calls to the given service!
 
-<pre class="language-cpp"><code class="lang-cpp">do listRepos = HTTP("https://api.github.com/user/repos").set({
+```cpp
+do listRepos = HTTP("https://api.github.com/user/repos").set({
   "Authorization": "token {{token}}",
-<strong>  "Accept": "application/vnd.github+json",
-</strong>}).send()</code></pre>
+  "Accept": "application/vnd.github+json"
+}).send()
+```

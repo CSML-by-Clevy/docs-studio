@@ -18,7 +18,7 @@ You will still need to perform a few actions to correctly setup your app. First,
 
 Next, visit the **OAuth & Permissions** menu, copy the **Bot User Token** and save it for later.
 
-![](<../../.gitbook/assets/image (3).png>)
+![](<../../.gitbook/assets/image (3) (1).png>)
 
 Next, select **App Home** in the left-side menu. Enter a Display Name and a Default Name for your bot and select **Always Show My Bot as Online**.
 
@@ -34,7 +34,7 @@ Next, visit **Basic Information** from the left-side menu, copy the **App ID**, 
 
 On the same page, you can also customize the appearance of your chatbot in Slack (image, colors...).
 
-![](<../../.gitbook/assets/image (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (1) (1).png>)
 
 Finally, back in CSML Studio, paste the credentials you retrieved earlier: **Bot User Token**, **App ID**, **Client ID**, **Client Secret**, **Signing Secret**, then click on **Submit**.
 

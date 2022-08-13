@@ -27,7 +27,7 @@ The **User Access Token,** **Phone Number ID** (_and not the actual phone number
 
 Then, click **Save** to setup the channel. In the following page, you will also receive your Webhook configuration parameters:
 
-![](<../../.gitbook/assets/image (1) (1).png>)
+![](<../../.gitbook/assets/image (1).png>)
 
 Use these parameters in the **Whatsapp > Configuration** page under **Callback URL** and **Verify token**. Make sure to also **subscribe to the `messages` Webhook field**.
 
