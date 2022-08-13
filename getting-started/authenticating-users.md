@@ -63,7 +63,7 @@ This will display the following button:
 
 ![](../.gitbook/assets/image.png)
 
-If the response matches the button value, it means that the OAuth flow succeeded. Otherwise, it was not successful (or the user did not authenticate at all).
+If the response matches the button, it means that the OAuth flow succeeded. Otherwise, it was not successful (or the user did not authenticate at all).
 
 ```cpp
 if (event.match(success)) {
