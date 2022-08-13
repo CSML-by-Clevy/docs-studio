@@ -50,7 +50,7 @@ say OAuthRequest(
     authorization_endpoint="https://github.com/login/oauth/authorize",
     token_endpoint="https://github.com/login/oauth/access_token",
     scope="repo user",
-    button=Button("Login on Github to continue", payload="OAUTH_SUCCESS") as success
+    button=Button("Login with Github", payload="OAUTH_SUCCESS") as success
 )
 hold
 ```
@@ -58,6 +58,10 @@ hold
 {% hint style="info" %}
 Make sure to update all the values with your own!
 {% endhint %}
+
+This will display the following button:
+
+![](../.gitbook/assets/image.png)
 
 If the response matches the button value, it means that the OAuth flow succeeded. Otherwise, it was not successful (or the user did not authenticate at all).
 
