@@ -429,3 +429,11 @@ say Signature(
 {% hint style="info" %}
 Try this bot: [https://play.csml.dev/bot/709747e1-ade7-4db3-b29f-b1514ac4744d](https://play.csml.dev/bot/709747e1-ade7-4db3-b29f-b1514ac4744d)
 {% endhint %}
+
+## OAuthRequest
+
+You can use the OAuthRequest component as specified here:
+
+{% content-ref url="../../getting-started/authenticating-users.md" %}
+[authenticating-users.md](../../getting-started/authenticating-users.md)
+{% endcontent-ref %}
