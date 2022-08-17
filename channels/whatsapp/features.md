@@ -30,6 +30,12 @@ Whatsapp has a very limited set of interactive components. Buttons for example a
 
 The mapping of `Question()` and `Button()` components to text is performed automatically. However you need to set the right `title` and `accepts` values in order to correctly match the user's input.
 
+{% hint style="warning" %}
+The title of a button must be between 1-20 characters long. You can however manually set a longer payload if needed:
+
+`say Button("Click here!", payload="MY_BUTTON_CLICK_HERE_PAYLOAD")`
+{% endhint %}
+
 ### Urls
 
 The `Url()` component does not support any alternative text or title. Only the given url will be shown as is.\
