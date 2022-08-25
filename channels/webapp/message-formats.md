@@ -126,9 +126,13 @@ The `Url` component will automatically retrieve the target's favicon if availabl
 
 ```cpp
 say Url("https://www.wikipedia.org/", text="Visit Wikipedia")
+
+// if you don't want to display the URL itself, making it harder
+// to identify that it is a link and not just an action button, add `hide_url=true`
+say Url("https://www.wikipedia.org/", text="Visit Wikipedia", hide_url=true)
 ```
 
-![](../../.gitbook/assets/capture-de-cran-2020-04-30-10.50.11.png)
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ## Carousel, Card
 

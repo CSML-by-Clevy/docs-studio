@@ -30,7 +30,7 @@ At the bottom of the same **App Home** page, under **Show Tabs**, make sure the 
 
 Next, visit **Basic Information** from the left-side menu, copy the **App ID**, **Client ID**, **Client Secret** and **Signing Secret** under **App Credentials** and save them for later.
 
-![](<../../.gitbook/assets/image (7).png>)
+![](<../../.gitbook/assets/image (7) (1).png>)
 
 On the same page, you can also customize the appearance of your chatbot in Slack (image, colors...).
 
