@@ -24,7 +24,7 @@ To initialize an OAuth flow for a given user, you should start by generating an 
 
 As an example, Github lets you create custom OAuth apps by visiting [https://github.com/settings/developers](https://github.com/settings/developers). As an aside, the "Personal Access Token" method that they offer is similar to creating a service account, but will perform all the API calls as they were made specifically by yourself, and never on behalf of the enduser. It may or may not let you build what you are looking for, hence the OAuth method, which lets the user perform all the calls as themselves.
 
-![](<../.gitbook/assets/image (5).png>)
+![](<../.gitbook/assets/image (5) (1).png>)
 
 {% hint style="danger" %}
 Note that the Callback URL (sometimes also called Redirect URL) should ALWAYS be `https://clients.csml.dev/v1/oauth/response`.
@@ -32,7 +32,7 @@ Note that the Callback URL (sometimes also called Redirect URL) should ALWAYS be
 
 You should then generate a Client Secret. **NEVER** share this value publicly!
 
-![](<../.gitbook/assets/image (4).png>)
+![](<../.gitbook/assets/image (4) (2).png>)
 
 We also need the Authorization Endpoint and Token Endpoint values, which we usually find in the API documentation in the "Auth" section. Sure enough, for github, this information can be found here:&#x20;
 
@@ -61,7 +61,7 @@ Make sure to update all the values with your own!
 
 This will display the following button:
 
-![](<../.gitbook/assets/image (3).png>)
+![](<../.gitbook/assets/image (3) (2).png>)
 
 If the response matches the button, it means that the OAuth flow succeeded. Otherwise, it was not successful (or the user did not authenticate at all).
 

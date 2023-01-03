@@ -10,7 +10,7 @@ To get started, go to your bot's **Settings > Livechat** then select Gorgias as 
 
 In your Gorgias backoffice, visit **Settings > REST API** and copy/paste the information in the next screen:
 
-![](<../../.gitbook/assets/image (22).png>)
+![](<../../.gitbook/assets/image (22) (1).png>)
 
 Then, in Gorgias, go to **Integrations > HTTP > Add new integration**, give it a name and description, check only the "ticket-message-created" event, then copy/paste the following URL under **URL:**
 
@@ -26,7 +26,7 @@ When you are done, click **Save** both in Gorgias and in CSML Studio. Voilà, yo
 
 You can configure a macro in Gorgias to trigger the `LIVECHAT_SESSION_END` event under **Settings > Macros**.
 
-![](<../../.gitbook/assets/image (23).png>)
+![](<../../.gitbook/assets/image (23) (1).png>)
 
 ## Getting customer information
 

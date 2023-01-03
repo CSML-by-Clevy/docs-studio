@@ -16,7 +16,7 @@ In the next section, give your skill a name and select the default language. Thi
 
 In the next screen, select **Start from scratch**. Alexa will then build your skill.
 
-![](<../../.gitbook/assets/image (41).png>)
+![](<../../.gitbook/assets/image (41) (1).png>)
 
 ## Step 2: Connecting your skill with CSML Studio
 
@@ -26,10 +26,10 @@ Once the skill is built, you will need to connect it with CSML Studio. This step
 
 Then, in CSML Studio, create a new Alexa channel for your bot under **Channels > Amazon Alexa** and set the name and ID of your skill. You will also need to copy the **HTTPS Endpoint URL** to configure the Skill in the ASK console later. You can then save for now!
 
-![](<../../.gitbook/assets/image (44).png>)
+![](<../../.gitbook/assets/image (44) (1).png>)
 
 To finalize the configuration, in the ASK Console, visit your skill's **Build tab > Endpoint**. By default, AWS Lambda ARN is selected: select **HTTPS** instead and under **Default Region**, paste your HTTPS Endpoint URL from CSML Studio and select the SSL Certificate option "_My development endpoint is a sub-domain of a domain that has a wildcard certificate from a certificate authority_", then click on **Save Endpoints**.
 
-![](<../../.gitbook/assets/image (45).png>)
+![](<../../.gitbook/assets/image (45) (1).png>)
 
 Your skill is now correctly configured with CSML Studio!

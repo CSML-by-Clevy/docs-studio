@@ -22,7 +22,7 @@ Next, visit the **OAuth & Permissions** menu, copy the **Bot User Token** and sa
 
 Next, select **App Home** in the left-side menu. Enter a Display Name and a Default Name for your bot and select **Always Show My Bot as Online**.
 
-![](<../../.gitbook/assets/image (2) (1).png>)
+![](<../../.gitbook/assets/image (2) (1) (1).png>)
 
 At the bottom of the same **App Home** page, under **Show Tabs**, make sure the **Messages Tab** toggle is _on_ and the **Allow users to send Slash commands and messages from the messages tab** checkbox is _checked_.
 
@@ -30,11 +30,11 @@ At the bottom of the same **App Home** page, under **Show Tabs**, make sure the 
 
 Next, visit **Basic Information** from the left-side menu, copy the **App ID**, **Client ID**, **Client Secret** and **Signing Secret** under **App Credentials** and save them for later.
 
-![](<../../.gitbook/assets/image (7) (1).png>)
+![](<../../.gitbook/assets/image (7) (1) (1).png>)
 
 On the same page, you can also customize the appearance of your chatbot in Slack (image, colors...).
 
-![](<../../.gitbook/assets/image (1) (1).png>)
+![](<../../.gitbook/assets/image (1) (1) (2).png>)
 
 Finally, back in CSML Studio, paste the credentials you retrieved earlier: **Bot User Token**, **App ID**, **Client ID**, **Client Secret**, **Signing Secret**, then click on **Submit**.
 

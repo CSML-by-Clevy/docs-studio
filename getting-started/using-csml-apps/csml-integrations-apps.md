@@ -21,6 +21,6 @@ start:
   goto end
 ```
 
-![The above code will generate a nice gif automatically!](<../../.gitbook/assets/image (17).png>)
+![The above code will generate a nice gif automatically!](<../../.gitbook/assets/image (17) (1).png>)
 
 ##

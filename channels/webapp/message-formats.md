@@ -132,7 +132,7 @@ say Url("https://www.wikipedia.org/", text="Visit Wikipedia")
 say Url("https://www.wikipedia.org/", text="Visit Wikipedia", hide_url=true)
 ```
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 ## Carousel, Card
 

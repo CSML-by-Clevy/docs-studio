@@ -8,8 +8,8 @@ To get started, go to your bot's **Settings > Livechat** then select Chatwoot as
 
 You will need to retrieve:
 
-* the URL of your Chatwoot instance. If you are using chatwoot.com, it will be `https://app.chatwoot.com` 
-* your access token (which you can find at the bottom of your profile settings) and 
+* the URL of your Chatwoot instance. If you are using chatwoot.com, it will be `https://app.chatwoot.com`&#x20;
+* your access token (which you can find at the bottom of your profile settings) and&#x20;
 
 ![](<../../.gitbook/assets/image (30).png>)
 
@@ -19,9 +19,9 @@ Hit **Save**, and a dedicated inbox will be created for you!
 
 We recommend you configure a "Signing off" canned response in Chatwoot to trigger the `LIVECHAT_SESSION_END` event under **Settings > Canned Responses**.
 
-![](<../../.gitbook/assets/image (31).png>)
+![](<../../.gitbook/assets/image (31) (1).png>)
 
-You can simply copy and paste the text below, or adjust to your liking - just make sure that the LIVECHAT_SESSION_END is at the end of the content.
+You can simply copy and paste the text below, or adjust to your liking - just make sure that the LIVECHAT\_SESSION\_END is at the end of the content.
 
 ```
 Let us know if we can do anything else for you - we are here to help.

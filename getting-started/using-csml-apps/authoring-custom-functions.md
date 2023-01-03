@@ -51,7 +51,7 @@ start:
   goto end 
 ```
 
-![](<../../.gitbook/assets/image (14).png>)
+![](<../../.gitbook/assets/image (14) (1).png>)
 
 ## Complete Mode
 
