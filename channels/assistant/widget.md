@@ -44,11 +44,11 @@ Several configurations are available as [standard HTML data attributes](https://
 
 By default, the widget will be displayed on the right side of the screen. To display the widget on the left instead, simply add `data-position="left"`.
 
-### data-assistant-metadata
+### data-metadata
 
-To add custom metadata in a widget ([see this page for more information about injecting metadata in the assistant](features.md)), you need to add a `data-widget-metadata` attribute to the widget initialization script tag that contains the encoded (with [javascript's encodeURIComponent function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/encodeURIComponent)) JSON string of the metadata you want to inject.
+To add custom metadata in a widget ([see this page for more information about injecting metadata in the assistant](features.md)), you need to add a `data-metadata` attribute to the widget initialization script tag that contains the encoded (with [javascript's encodeURIComponent function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/encodeURIComponent)) JSON string of the metadata you want to inject.
 
-For example: `data-assistant-metadata="%7B%22email%22%3A%22jane.doe%40company.com%22%7D"`
+For example: `data-metadata="%7B%22email%22%3A%22jane.doe%40company.com%22%7D"`
 
 ### data-logo-url
 
