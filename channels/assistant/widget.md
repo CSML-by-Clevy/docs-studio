@@ -35,7 +35,7 @@ Several configurations are available as [standard HTML data attributes](https://
   src="{WIDGET_URL}"
   id="clevy-widget"
   data-position="left"
-  data-widget-metadata="%7B%22firstname%22%3A%22Jane%22%2C%22email%22%3A%22jane.doe%40company.com%22%7D"
+  data-metadata="%7B%22firstname%22%3A%22Jane%22%2C%22email%22%3A%22jane.doe%40company.com%22%7D"
   async>
 </script>
 ```
