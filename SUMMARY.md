@@ -16,7 +16,6 @@
   * [Preprocessing](getting-started/using-csml-apps/preprocessing.md)
 * [Livechat](getting-started/livechat/README.md)
   * [Chatwoot](getting-started/livechat/chatwoot.md)
-  * [Gorgias](getting-started/livechat/gorgias.md)
 * [Bot Configuration Options](getting-started/bot-configuration-options.md)
 * [Authenticating Users](getting-started/authenticating-users.md)
 * [💻 CSML Language Reference](https://docs.csml.dev/language)
