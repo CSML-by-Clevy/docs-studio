@@ -77,21 +77,6 @@ say QuickReply(
 Try this bot: [https://play.csml.dev/bot/0e85f280-d502-4535-8b78-fb763979777e](https://play.csml.dev/bot/0e85f280-d502-4535-8b78-fb763979777e)
 {% endhint %}
 
-## UserInput
-
-In some cases it may be desirable to temporarily disable the user input to force the user to select one of the options without letting them type anything.
-
-```cpp
-say UserInput(false) // disables the user input
-say UserInput(true) // reenables the user input
-```
-
-Please note that if the page is refreshed, the user input will go back to being enabled by default even if it was first disabled.
-
-{% hint style="info" %}
-Try this bot: [https://play.csml.dev/bot/7eadb879-c0d9-407e-af88-c0dcf76f11b4](https://play.csml.dev/bot/7eadb879-c0d9-407e-af88-c0dcf76f11b4)
-{% endhint %}
-
 ## Video, Audio
 
 The Video component supports links to mp4 files, as well as Youtube, Vimeo and Dailymotion URLs. The Audio component supports links to mp3 files, as well as Spotify, Soundcloud and Deezer URLs.
